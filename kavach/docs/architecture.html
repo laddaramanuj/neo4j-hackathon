@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kavach — Technical Architecture</title>
+<style>
+  :root { --ink:#14213d; --muted:#4a5568; --line:#d5dde8; --neo:#018bff; --bank:#4c8eda; --text:#f08a4b;
+          --clue:#d81b60; --mem:#e5a100; --ok:#0f9d58; --soft:#f5f8fc; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#fff; font-family:"Segoe UI", system-ui, sans-serif; color:var(--ink); }
+  .page { width:2000px; height:1330px; padding:26px 34px; display:grid; gap:16px;
+          grid-template-rows:auto auto 1fr auto; }
+  header { display:flex; justify-content:space-between; align-items:flex-end; }
+  h1 { font-size:34px; margin:0; letter-spacing:-.3px; }
+  .sub { font-size:16px; color:var(--muted); margin-top:4px; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; max-width:900px; }
+  .chip { font-size:12.5px; padding:4px 10px; border-radius:999px; background:#eef5ff; color:#0b5cad;
+          border:1px solid #cfe3ff; white-space:nowrap; }
+  .flow { display:grid; grid-template-columns:repeat(8, 1fr); gap:10px; }
+  .step { position:relative; border:1.5px solid #cfe3ff; background:#f3f8ff; border-radius:12px; padding:9px 11px;
+          font-size:13px; line-height:1.35; min-height:74px; }
+  .step b { display:block; font-size:13.5px; margin-bottom:2px; }
+  .step .n { position:absolute; top:-10px; left:-8px; width:24px; height:24px; border-radius:50%; background:var(--neo);
+             color:#fff; font-size:13px; font-weight:700; display:grid; place-items:center; }
+  .step:not(:last-child)::after { content:"➜"; position:absolute; right:-14px; top:50%; transform:translateY(-50%);
+             color:var(--neo); font-size:15px; }
+  .main { display:grid; grid-template-columns:455px 520px 1fr; gap:14px; min-height:0; }
+  .stack { display:flex; flex-direction:column; gap:14px; min-height:0; }
+  .stack .card:last-child { flex:1; }
+  .card { border:1.5px solid var(--line); border-radius:14px; background:#fbfcfe; padding:12px 16px; min-height:0; }
+  .card h2 { font-size:18px; margin:0 0 8px; display:flex; align-items:center; gap:8px; }
+  .badge { width:24px; height:24px; border-radius:7px; background:var(--ink); color:#fff; font-size:13px;
+           display:grid; place-items:center; flex:none; }
+  ul { margin:0; padding-left:17px; font-size:13.6px; line-height:1.42; }
+  li { margin:1px 0; }
+  code { font-family:Consolas, "Cascadia Mono", monospace; font-size:12.6px; background:#eef2f7; padding:0 4px;
+         border-radius:4px; }
+  .tools { border-collapse:collapse; width:100%; font-size:13px; }
+  .tools td { border-top:1px solid var(--line); padding:6px 4px; vertical-align:top; line-height:1.33; }
+  .tools td:first-child { width:43%; }
+  .tools .t { font-family:Consolas, monospace; font-size:12.8px; font-weight:600; color:#0b5cad; }
+  .tools .neo { color:var(--neo); font-size:12px; display:block; margin-top:2px; }
+  .neo4j { border:2px solid var(--neo); background:#f4f9ff; display:flex; flex-direction:column; }
+  .neo4j h2 { color:var(--neo); }
+  .stats { display:flex; gap:8px; flex-wrap:wrap; margin:-2px 0 6px; }
+  .stat { font-size:12.5px; background:#fff; border:1px solid #cfe3ff; border-radius:8px; padding:3px 9px; }
+  .stat b { color:var(--neo); }
+  svg text { font-family:"Segoe UI", sans-serif; }
+  .idx { display:grid; grid-template-columns:1fr 1fr; gap:4px 18px; font-size:12.8px; line-height:1.35; margin-top:4px; }
+  .guard li::marker { content:"✔ "; color:var(--ok); }
+  .bottom { display:grid; grid-template-columns:1fr 520px; gap:14px; }
+  .pipe { display:grid; grid-template-columns:repeat(6, 1fr); gap:12px; margin-top:4px; }
+  .pstep { position:relative; background:var(--soft); border:1.5px solid var(--line); border-radius:12px; padding:8px 11px;
+           font-size:12.8px; line-height:1.38; }
+  .pstep b { display:block; font-size:13.5px; margin-bottom:3px; }
+  .pstep:not(:last-child)::after { content:"➜"; position:absolute; right:-14px; top:50%; transform:translateY(-50%);
+           color:var(--muted); }
+  .pstep.neo { border-color:var(--neo); background:#f4f9ff; }
+  .ext ul { font-size:13.4px; }
+  .legend { display:flex; gap:14px; font-size:12.5px; color:var(--muted); margin-top:2px; }
+  .dot { display:inline-block; width:11px; height:11px; border-radius:50%; margin-right:5px; vertical-align:-1px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <div>
+    <h1>Kavach — Technical Architecture</h1>
+    <div class="sub">Context-aware bank support agent · memory and relationships live in Neo4j · Neo4j × hackFront India Agent Memory Build Sprint, Pune</div>
+  </div>
+  <div class="chips">
+    <span class="chip">Neo4j AuraDB 5.27 + APOC</span><span class="chip">neo4j-graphrag 1.21</span>
+    <span class="chip">neo4j Python driver 6.3</span><span class="chip">LangChain 1.4 · create_agent (LangGraph)</span>
+    <span class="chip">OpenRouter: gpt-4.1-mini · gemini-embedding-001 (1024-d)</span>
+    <span class="chip">Streamlit 1.64 + neo4j-viz (NVL)</span><span class="chip">Streamlit Community Cloud</span>
+  </div>
+</header>
+
+<section class="flow">
+  <div class="step"><span class="n">1</span><b>Customer message</b>Streamlit chat, as the chosen customer; Memory ON/OFF switch</div>
+  <div class="step"><span class="n">2</span><b>Load memory</b><code>recall_customer</code> → profile, history + staff notes, promises, preferences → system prompt</div>
+  <div class="step"><span class="n">3</span><b>Agent plans</b>LangChain tool-calling loop decides which Neo4j tools to call</div>
+  <div class="step"><span class="n">4</span><b>Retrieve from graph</b>payments · clues · shared-clue traversal · money trail · GraphRAG advisories</div>
+  <div class="step"><span class="n">5</span><b>Act (one transaction)</b><code>open_fraud_case</code>: complaint, clues, card hotlist, dispute, refund promise</div>
+  <div class="step"><span class="n">6</span><b>Reply</b>grounded in retrieved facts, in the customer's language (Hindi / Marathi / English)</div>
+  <div class="step"><span class="n">7</span><b>Write memory</b><code>Interaction</code> —USED→ every node the answer relied on</div>
+  <div class="step"><span class="n">8</span><b>Explain</b>UI renders the subgraph (neo4j-viz), tool trace ("why") and actions taken</div>
+</section>
+
+<div class="main">
+
+ <div class="stack">
+  <div class="card">
+    <h2><span class="badge">A</span>Channels &amp; UI — <code>app.py</code></h2>
+    <ul>
+      <li><b>Users:</b> customer reporting a scam · fraud-desk agent · jury demo</li>
+      <li><b>Chat</b> as a chosen customer (<code>st.chat_input</code>); per-customer sessions</li>
+      <li><b>Memory ON / OFF:</b> OFF = same LLM, no Neo4j reads or writes (before/after demo)</li>
+      <li><b>Memory graph tab:</b> <code>CALL (c) { … UNION … }</code> subgraph → <code>Result.graph</code> → neo4j-viz (NVL)</li>
+      <li><b>"Why Kavach said this":</b> every tool call with its arguments and results</li>
+      <li><b>Actions tab:</b> complaint id, dispute id, refund-decision date, hotlisted cards, lien requests</li>
+      <li><b>Reset demo:</b> deletes only nodes written by Kavach (<code>source:'kavach'</code>)</li>
+      <li><b>Hosting:</b> Streamlit Community Cloud, auto-deploy from GitHub <code>main</code>; secrets in Streamlit Secrets; <code>KAVACH_NOW</code> pins the demo clock</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="badge">B</span>Agent runtime — LangChain 1.4</h2>
+    <ul>
+      <li><code>create_agent(model, tools, system_prompt)</code> on the LangGraph runtime; tool-calling loop, <code>recursion_limit=14</code></li>
+      <li><b>Model:</b> <code>ChatOpenAI</code> → OpenRouter (<code>openai/gpt-4.1-mini</code>, temperature 0.2)</li>
+      <li><b>Memory-first:</b> the customer's memory is read from Neo4j and injected into the system prompt every turn</li>
+      <li><b>Policy:</b> new report → payments + clues + graph search + advisories + open case; follow-up → answer from memory without re-asking</li>
+      <li><b>Tools are closures</b> bound to the customer id on the server; the LLM never chooses whose data it reads</li>
+      <li><b>Language:</b> preference detection → Preference node → replies in Hindi / Marathi / English</li>
+      <li><b>Fallback:</b> deterministic pipeline with the same tools if the agent errors</li>
+    </ul>
+  </div>
+ </div>
+
+ <div class="stack">
+  <div class="card">
+    <h2><span class="badge">C</span>Memory &amp; retrieval tools — <code>agent.py</code></h2>
+    <table class="tools">
+      <tr><td><span class="t">check_recent_payments</span></td>
+          <td>Debits in the last 3 days with session risk signals: remote-access app, new device, first payment to that beneficiary<span class="neo">Cypher traversal · COUNT {} subquery</span></td></tr>
+      <tr><td><span class="t">extract_scam_clues</span></td>
+          <td>Caller numbers, UPI IDs, Telegram handles, SMS sender IDs, apps from free text<span class="neo">pattern extraction → Clue nodes</span></td></tr>
+      <tr><td><span class="t">find_linked_complaints_<br>and_money_trail</span></td>
+          <td>Other customers' complaints sharing the clues; other payers of the same account; forwarding chain and cash-out; feeder accounts<span class="neo">multi-hop traversal · APOC <code>apoc.path.subgraphNodes</code> · variable-length paths</span></td></tr>
+      <tr><td><span class="t">search_bank_advisories</span></td>
+          <td>Advisories, SOPs, liability policy, internal fraud alerts<span class="neo">neo4j-graphrag <code>VectorCypherRetriever</code> (vector index + graph)</span></td></tr>
+      <tr><td><span class="t">open_fraud_case</span></td>
+          <td>Complaint + MENTIONS clues, REPORTS payments, IDENTIFIES accounts, hotlists cards, DSP dispute, Promise (10 working days)<span class="neo">single managed write transaction (<code>execute_write</code>) · MERGE</span></td></tr>
+      <tr><td><span class="t">save_customer_preference</span></td>
+          <td>Reply language, contact time<span class="neo">MERGE Preference</span></td></tr>
+      <tr><td><span class="t">log_interaction</span> (auto)</td>
+          <td>Stores every turn with USED links to the complaints, clues, docs and payments it relied on<span class="neo">provenance for the "why" panel</span></td></tr>
+    </table>
+  </div>
+
+  <div class="card guard">
+    <h2><span class="badge" style="background:var(--ok)">G</span>Guardrails</h2>
+    <ul>
+      <li>The LLM never writes Cypher: every write is a fixed, parameterised query in one transaction</li>
+      <li>Retrieval is scoped to nodes connected to this customer's case (not global similarity)</li>
+      <li>Replies use only retrieved facts; other customers' names are never revealed</li>
+      <li>Never asks for OTP, PIN, card number or password; advises 1930 / cybercrime.gov.in</li>
+      <li>Secrets only in <code>.env</code> / Streamlit Secrets, git-ignored; all data synthetic, phones in the invalid +91 5XXXX range</li>
+    </ul>
+  </div>
+ </div>
+
+  <div class="card neo4j">
+    <h2><span class="badge" style="background:var(--neo)">D</span>Neo4j AuraDB — one graph for bank data, text and agent memory</h2>
+    <div class="stats">
+      <span class="stat"><b>53,955</b> nodes</span><span class="stat"><b>94,800</b> relationships</span>
+      <span class="stat"><b>17</b> uniqueness constraints</span><span class="stat"><b>3</b> vector indexes (1024-d, cosine)</span>
+      <span class="stat"><b>1</b> fulltext index</span><span class="stat">Neo4j 5.27 Enterprise · APOC</span>
+    </div>
+    <svg id="schema" viewBox="0 0 880 560" width="100%" style="flex:1"></svg>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--bank)"></span>Bank data (structured)</span>
+      <span><span class="dot" style="background:var(--text)"></span>Text → graph (unstructured)</span>
+      <span><span class="dot" style="background:var(--clue)"></span>Clue (bridges text ↔ accounts)</span>
+      <span><span class="dot" style="background:var(--mem)"></span>Agent memory (written by Kavach)</span>
+    </div>
+    <div class="idx">
+      <div><b>Vector:</b> <code>complaint_embedding</code>, <code>call_embedding</code>, <code>kbchunk_embedding</code> — set via <code>db.create.setNodeVectorProperty</code></div>
+      <div><b>Fulltext:</b> <code>complaint_text</code> on Complaint | AgentNote | CallTranscript</div>
+      <div><b>Unique:</b> customer_id, account_number, txn_id, ext_id, complaint_id, Clue.key, … (17)</div>
+      <div><b>Range:</b> Clue.value, Clue.kind, Transaction.ts / utr, Account &amp; Counterparty upi_id, Customer.phone</div>
+      <div><b>Text → payments:</b> REFERS_TO when a UTR is quoted in text; REPORTS from a Kavach fraud case</div>
+      <div><b>Provenance:</b> Interaction —USED→ Complaint · Clue · KbDoc · Transaction</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="bottom">
+  <div class="card">
+    <h2><span class="badge">E</span>Offline data pipeline — synthetic but realistic, structured + unstructured</h2>
+    <div class="pipe">
+      <div class="pstep"><b>1 · Scenario answer key</b><code>make_spec.py</code> (seeded): 4 scam patterns, 25 victims, 58 fraud payments, 62 mule transfers, 90 ordinary complainants — never loaded</div>
+      <div class="pstep"><b>2 · 6 parallel Opus agents</b>shared generation guide + safety rules; structured generator, 4 complaint writers, knowledge-base writer</div>
+      <div class="pstep"><b>3 · Structured CSV (9 files)</b>2,000 customers · 2,302 accounts · 2,776 cards · 2,138 devices · 6,596 logins · 310 merchants · 544 counterparties · 36,709 transactions · 191 fraud-intel rows</div>
+      <div class="pstep"><b>4 · Unstructured</b>164 complaints · 30 call transcripts · 237 agent notes (English, Hinglish, Hindi, Marathi) · 15 knowledge-base docs → 70 chunks</div>
+      <div class="pstep"><b>5 · <code>load_graph.py</code></b>constraints &amp; indexes → batched <code>UNWIND … MERGE</code> → clue extraction → MENTIONS / IDENTIFIES / REFERS_TO → Gemini embeddings (1024-d)</div>
+      <div class="pstep neo"><b>6 · Neo4j AuraDB</b>one connected graph; the same scam's victims, accounts and money flow are linked across all sources</div>
+    </div>
+  </div>
+  <div class="card ext">
+    <h2><span class="badge">F</span>External services &amp; tooling</h2>
+    <ul>
+      <li><b>OpenRouter</b> (OpenAI-compatible): <code>openai/gpt-4.1-mini</code> agent LLM · <code>google/gemini-embedding-001</code> 1024-d embeddings</li>
+      <li><b>Neo4j Aura</b> Free instance · <b>Streamlit Community Cloud</b> · <b>GitHub</b> (source, auto-deploy)</li>
+      <li><b>Dev tooling:</b> Aura MCP + GraphAcademy MCP used by coding agents (Claude Code / VS Code) to inspect the schema and test Cypher</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<script>
+// Graph schema: nodes and relationships as loaded by load_graph.py and written by agent.py.
+const C = { bank: "#4c8eda", text: "#f08a4b", clue: "#d81b60", mem: "#e5a100", hub: "#018bff" };
+const N = {
+  Interaction:   [90, 40, "mem"],   Preference: [300, 40, "mem"],  Promise: [520, 40, "mem"],
+  CallTranscript:[770, 70, "text"], Customer:   [300, 150, "hub"], Complaint: [520, 150, "text"],
+  AgentNote:     [770, 175, "text"], Device:    [72, 150, "bank"], LoginSession: [72, 275, "bank"],
+  Account:       [300, 285, "bank"], Clue:      [520, 290, "clue"], KbChunk: [770, 300, "text"],
+  Card:          [72, 395, "bank"], Transaction:[300, 415, "bank"], Counterparty: [520, 425, "bank"],
+  KbDoc:         [770, 420, "text"], Merchant:  [300, 520, "bank"], CashOutPoint: [520, 525, "bank"],
+};
+const E = [ // from, to, label, curve (px), dashed
+  ["Customer","Preference","PREFERS"], ["Customer","Promise","HAS_PROMISE"], ["Customer","Interaction","HAD_INTERACTION"],
+  ["Promise","Complaint","FOR", 0, false, 0.35], ["Customer","Complaint","RAISED"],
+  ["Customer","CallTranscript","HAD_CALL", -18, false, 0.66],
+  ["CallTranscript","Complaint","ABOUT"], ["AgentNote","Complaint","ON"], ["Customer","Device","USES_DEVICE"],
+  ["Customer","LoginSession","LOGGED_IN"], ["LoginSession","Device","ON_DEVICE"], ["Customer","Account","OWNS"],
+  ["Account","Card","HAS_CARD", 0, false, 0.42], ["Account","Transaction","SENT"],
+  ["Transaction","LoginSession","IN_SESSION", 40, false, 0.25],
+  ["Transaction","Counterparty","TO"], ["Transaction","Merchant","TO"], ["Counterparty","CashOutPoint","CASHED_OUT"],
+  ["Complaint","Clue","MENTIONS"], ["CallTranscript","Clue","MENTIONS", 30, false, 0.72], ["AgentNote","Clue","MENTIONS"],
+  ["KbChunk","Clue","MENTIONS"], ["KbDoc","KbChunk","HAS_CHUNK"], ["Clue","Counterparty","IDENTIFIES"],
+  ["Complaint","Transaction","REPORTS", 0, false, 0.7], ["Interaction","Complaint","USED", -48, true],
+];
+const svg = document.getElementById("schema"), NS = "http://www.w3.org/2000/svg";
+const el = (tag, attrs, parent = svg) => { const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; };
+const defs = el("defs", {});
+const marker = el("marker", { id: "arrow", viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 7, markerHeight: 7,
+                              orient: "auto-start-reverse" }, defs);
+el("path", { d: "M0,0 L10,5 L0,10 z", fill: "#7b8aa3" }, marker);
+const W = 128, H = 30;
+const edgeLayer = el("g", {}), labelLayer = el("g", {}), nodeLayer = el("g", {});
+// Clip a line from centre a toward b at the pill border (approximate with the rectangle).
+function border([x, y], [tx, ty]) {
+  const dx = tx - x, dy = ty - y, sx = (W / 2 + 4) / Math.abs(dx || 1e-6), sy = (H / 2 + 4) / Math.abs(dy || 1e-6);
+  const s = Math.min(sx, sy); return [x + dx * s, y + dy * s];
+}
+for (const [a, b, label, curve = 0, dashed = false, at = 0.5] of E) {
+  const p = N[a], q = N[b];
+  const [x1, y1] = border(p, q), [x2, y2] = border(q, p);
+  const mx = (x1 + x2) / 2, my = (y1 + y2) / 2, len = Math.hypot(x2 - x1, y2 - y1) || 1;
+  const cx = mx - (y2 - y1) / len * curve, cy = my + (x2 - x1) / len * curve;
+  el("path", { d: `M${x1},${y1} Q${cx},${cy} ${x2},${y2}`, fill: "none", stroke: dashed ? "#e5a100" : "#9aa9bf",
+               "stroke-width": 1.6, "stroke-dasharray": dashed ? "5 4" : "", "marker-end": "url(#arrow)" }, edgeLayer);
+  const t = at, lx = (1 - t) * (1 - t) * x1 + 2 * (1 - t) * t * cx + t * t * x2,
+        ly = (1 - t) * (1 - t) * y1 + 2 * (1 - t) * t * cy + t * t * y2;
+  const txt = el("text", { x: lx, y: ly + 3.5, "font-size": 10.5, "text-anchor": "middle", fill: "#4a5568",
+                           "font-weight": 600 }, labelLayer);
+  txt.textContent = label;
+  const box = txt.getBBox();
+  el("rect", { x: box.x - 3, y: box.y - 1, width: box.width + 6, height: box.height + 2, rx: 3, fill: "#f4f9ff" },
+     labelLayer).before ? labelLayer.insertBefore(labelLayer.lastChild, txt) : 0;
+}
+// Self-loop: money moving between counterparty accounts.
+const [cxp, cyp] = N.Counterparty;
+el("path", { d: `M${cxp + 52},${cyp - 15} C${cxp + 120},${cyp - 60} ${cxp + 140},${cyp + 30} ${cxp + 66},${cyp + 8}`,
+             fill: "none", stroke: "#9aa9bf", "stroke-width": 1.6, "marker-end": "url(#arrow)" }, edgeLayer);
+const loop = el("text", { x: cxp + 128, y: cyp - 30, "font-size": 10.5, "text-anchor": "middle", fill: "#4a5568",
+                          "font-weight": 600 }, labelLayer);
+loop.textContent = "TRANSFERRED_TO (fraud-intel feed)";
+for (const [name, [x, y, kind]] of Object.entries(N)) {
+  const g = el("g", {}, nodeLayer), w = name === "Customer" ? W + 16 : W;
+  el("rect", { x: x - w / 2, y: y - H / 2, width: w, height: H, rx: 15, fill: C[kind], stroke: "#fff",
+               "stroke-width": 2 }, g);
+  const t = el("text", { x, y: y + 4.5, "font-size": 13, "text-anchor": "middle", fill: kind === "mem" ? "#3b2a00" : "#fff",
+                         "font-weight": 700 }, g);
+  t.textContent = name;
+}
+const sub = el("text", { x: N.Clue[0], y: N.Clue[1] + 28, "font-size": 10.5, "text-anchor": "middle", fill: "#d81b60",
+                         "font-weight": 600 }, nodeLayer);
+sub.textContent = ":Phone :UpiId :TelegramHandle :SmsSender :App";
+</script>
+</body>
+</html>
