@@ -92,8 +92,6 @@ CSS = """
 .kv-pills { display:flex; gap:.4rem; flex-wrap:wrap; justify-content:flex-end; }
 .kv-pill { display:inline-flex; align-items:center; gap:.4rem; padding:.28rem .7rem; border-radius:999px;
            font-size:.75rem; font-weight:600; white-space:nowrap; }
-.kv-pill i { width:7px; height:7px; border-radius:50%; background:currentColor; }
-.kv-on { background:#E8F7EE; color:#15803D; } .kv-off { background:#F1F5F9; color:#64748B; }
 .kv-due { background:#FFF4E0; color:#B45309; }
 
 /* conversation */
@@ -376,11 +374,11 @@ def step_detail(name, detail):
 
 # --- Chat rendering
 
-def chat_header(info, memory_on, fallback_name):
+def chat_header(info, fallback_name):
     name = info.get("name") or fallback_name
     bits = [b for b in (info.get("city"), f"{info['age']} yrs" if info.get("age") else None,
                         f"replies in {LANGS.get(info.get('lang'), 'English')}") if b]
-    pills = [f'<span class="kv-pill {"kv-on" if memory_on else "kv-off"}"><i></i>Memory {"ON" if memory_on else "OFF"}</span>']
+    pills = []
     if info.get("due"):
         pills.append(f'<span class="kv-pill kv-due">📌 Refund decision due {esc(nice_date(info["due"]))}</span>')
     initials = "".join(p[0] for p in name.split()[:2]).upper()
@@ -580,7 +578,7 @@ chat_col, side_col = st.columns([1.05, 1], gap="large")
 
 with chat_col:
     head = st.empty()
-    head.html(chat_header(header_info(cid, st.session_state.version.get(cid, 0)), memory_on, fallback_name))
+    head.html(chat_header(header_info(cid, st.session_state.version.get(cid, 0)), fallback_name))
     box = st.container(height=560, border=False, key="chat_scroll", autoscroll=True)
     prompt = st.chat_input(f"Message Kavach as {first}…", key="chat_input", submit_mode="disable")
     prompt = prompt or st.session_state.pop("pending", None)
@@ -591,7 +589,7 @@ with chat_col:
             show_message(m)
         if prompt:
             answer(cid, prompt, memory_on, chat)
-            head.html(chat_header(header_info(cid, st.session_state.version[cid]), memory_on, fallback_name))
+            head.html(chat_header(header_info(cid, st.session_state.version[cid]), fallback_name))
 
 version = st.session_state.version.get(cid, 0)
 last = st.session_state.traces.get(cid)
