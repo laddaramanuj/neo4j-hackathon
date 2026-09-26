@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kavach — Anita's journey</title>
+<style>
+:root{
+  --ink:#14213D; --neo:#018BFF; --bank:#4C8EDA; --txt:#F08A4B; --clue:#D81B60; --mem:#E5A100;
+  --muted:rgba(20,33,61,.74); --hair:rgba(20,33,61,.16);
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;background:#fff;}
+body{width:1920px;height:1080px;overflow:hidden;font-family:"Segoe UI",sans-serif;color:var(--ink);}
+.slide{position:relative;width:1920px;height:1080px;background:#fff;overflow:hidden;}
+.wires{position:absolute;left:0;top:0;z-index:1;}
+
+/* header */
+h1{position:absolute;left:60px;top:22px;margin:0;font-size:50px;font-weight:700;line-height:1.2;letter-spacing:-.01em;}
+h1 .accent{color:var(--neo);}
+.chain{position:absolute;left:62px;top:96px;font-size:26px;font-weight:600;line-height:1.2;}
+.chain .arr{color:var(--neo);font-weight:700;margin:0 8px;}
+.persona{position:absolute;right:62px;top:28px;display:flex;align-items:center;gap:16px;}
+.avatar{width:68px;height:68px;border-radius:50%;background:var(--ink);color:#fff;font-size:32px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none;}
+.persona .who{font-size:26px;font-weight:700;line-height:1.2;}
+.persona .sub{font-size:20px;color:var(--muted);line-height:1.3;}
+
+/* components (the chain) */
+.box{position:absolute;top:446px;height:180px;z-index:2;border:3px solid var(--ink);border-radius:20px;background:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 10px;}
+.box .tag{font-size:20px;font-weight:700;letter-spacing:.08em;color:var(--neo);line-height:1.2;}
+.box .name{font-size:28px;font-weight:700;line-height:1.18;margin-top:4px;}
+.box .detail{font-size:20px;color:var(--muted);line-height:1.3;margin-top:8px;}
+.box.neo{border:4px solid var(--neo);background:rgba(1,139,255,.07);}
+.chip{display:inline-block;font-size:20px;font-weight:600;line-height:1.25;padding:1px 9px;border-radius:8px;color:var(--ink);}
+.chip.m{background:rgba(229,161,0,.16);border:2px solid var(--mem);}
+.chip.t{background:rgba(1,139,255,.08);border:2px solid var(--neo);}
+.layers{display:flex;gap:14px;justify-content:center;margin-top:6px;font-size:20px;line-height:1.3;color:var(--ink);}
+.layers span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;}
+.layers i{width:14px;height:14px;border-radius:50%;display:inline-block;}
+
+/* step captions */
+.card{position:absolute;height:216px;z-index:2;background:#fff;border:2px solid var(--hair);border-left:8px solid var(--neo);border-radius:14px;
+  padding:14px 20px;display:flex;flex-direction:column;}
+.card.mem{border-left-color:var(--mem);background:#FFFBF2;}
+.card .lead{font-size:28px;font-weight:700;line-height:1.2;}
+.card .body{font-size:22px;line-height:1.32;margin-top:6px;}
+.card ul{margin:6px 0 0;padding:0;list-style:none;font-size:22px;line-height:1.32;}
+.card li{position:relative;padding-left:22px;}
+.card li::before{content:"";position:absolute;left:3px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--clue);}
+.card .tool{margin-top:auto;align-self:flex-start;font-size:20px;font-weight:600;color:var(--muted);background:rgba(20,33,61,.06);border-radius:8px;padding:1px 10px;line-height:1.35;}
+.card .meta{margin-top:auto;font-size:20px;color:var(--muted);line-height:1.3;}
+.quote{font-size:30px;font-weight:600;font-style:italic;margin-top:8px;line-height:1.25;}
+
+/* step badges on the path */
+.badge{position:absolute;z-index:4;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:var(--neo);color:#fff;
+  font-size:28px;font-weight:700;line-height:1;display:flex;align-items:center;justify-content:center;border:4px solid #fff;box-shadow:0 0 0 2px var(--neo);}
+.badge.mem{background:var(--mem);color:var(--ink);box-shadow:0 0 0 2px var(--mem);}
+
+/* bottom */
+.legend{position:absolute;left:62px;top:946px;font-size:20px;color:var(--muted);line-height:1.3;}
+.legend .row{display:flex;align-items:center;gap:10px;}
+.legend .row + .row{margin-top:14px;}
+.legend .sep{width:28px;}
+.mini{width:34px;height:34px;border-radius:50%;background:var(--neo);color:#fff;font-size:20px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex:none;}
+.mini.mem{background:var(--mem);color:var(--ink);}
+.inset{position:absolute;left:1100px;top:944px;width:758px;height:106px;border:2px dashed rgba(20,33,61,.45);border-radius:14px;background:rgba(20,33,61,.035);
+  display:flex;align-items:center;gap:16px;padding:0 20px;}
+.off .top{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:700;white-space:nowrap;}
+.off .sub{font-size:20px;color:var(--muted);margin-top:4px;white-space:nowrap;}
+.toggle{width:54px;height:30px;border-radius:15px;background:rgba(20,33,61,.34);position:relative;flex:none;}
+.toggle::after{content:"";position:absolute;left:4px;top:4px;width:22px;height:22px;border-radius:50%;background:#fff;}
+.inset .arrow{font-size:30px;font-weight:700;color:var(--ink);}
+.bubble{background:#fff;border:2px solid var(--hair);border-radius:14px;padding:10px 18px;font-size:23px;font-style:italic;white-space:nowrap;}
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <!-- wires: chain arrows + badge stems -->
+  <svg class="wires" width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="ah" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="3.6" markerHeight="3.6" orient="auto">
+        <path d="M0,0 L10,5 L0,10 z" fill="#14213D"/>
+      </marker>
+    </defs>
+    <g stroke="#14213D" stroke-width="6" fill="none" marker-end="url(#ah)">
+      <line x1="291" y1="536" x2="362" y2="536"/>
+      <line x1="641" y1="536" x2="712" y2="536"/>
+      <line x1="1061" y1="496" x2="1172" y2="496"/>
+      <line x1="1061" y1="576" x2="1172" y2="576"/>
+      <line x1="1521" y1="536" x2="1592" y2="536"/>
+    </g>
+    <g stroke-width="3" fill="none">
+      <line x1="332"  y1="366" x2="332"  y2="509" stroke="#018BFF"/>
+      <line x1="682"  y1="563" x2="682"  y2="706" stroke="#E5A100"/>
+      <line x1="1128" y1="366" x2="1128" y2="469" stroke="#018BFF"/>
+      <line x1="1262" y1="366" x2="1262" y2="419" stroke="#018BFF"/>
+      <line x1="1128" y1="603" x2="1128" y2="706" stroke="#018BFF"/>
+      <line x1="1562" y1="563" x2="1562" y2="706" stroke="#E5A100"/>
+      <line x1="175"  y1="653" x2="175"  y2="706" stroke="#E5A100"/>
+    </g>
+  </svg>
+
+  <!-- header -->
+  <h1>Kavach — how it works: <span class="accent">Anita's journey</span></h1>
+  <div class="chain">User<span class="arr">→</span>Agent<span class="arr">→</span>Memory / Retrieval<span class="arr">→</span>Neo4j<span class="arr">→</span>Response</div>
+  <div class="persona">
+    <div class="avatar">A</div>
+    <div>
+      <div class="who">Anita Deshpande, 61, Pune</div>
+      <div class="sub">Sahyadri Bank customer · prefers Hindi</div>
+    </div>
+  </div>
+
+  <!-- the 5 components -->
+  <div class="box" style="left:62px;width:226px;">
+    <div class="tag">USER</div>
+    <div class="name">Streamlit UI</div>
+    <div class="detail">Memory ON/OFF</div>
+  </div>
+  <div class="box" style="left:388px;width:250px;">
+    <div class="tag">AGENT</div>
+    <div class="name">LangChain agent</div>
+    <div class="detail">gpt-4.1-mini<br>decides which<br>tools to call</div>
+  </div>
+  <div class="box" style="left:738px;width:320px;">
+    <div class="tag">MEMORY / RETRIEVAL</div>
+    <div class="name">Memory &amp;<br>retrieval tools</div>
+    <div class="detail" style="margin-top:10px;"><span class="chip m">recall_customer</span> + <span class="chip t">7 tools</span></div>
+  </div>
+  <div class="box neo" style="left:1198px;width:320px;">
+    <div class="tag">NEO4J</div>
+    <div class="name">Neo4j graph</div>
+    <div class="detail" style="margin-top:4px;">AuraDB · 53,955 nodes</div>
+    <div class="layers">
+      <span><i style="background:#4C8EDA"></i>bank data</span>
+      <span><i style="background:#F08A4B"></i>text</span>
+      <span><i style="background:#E5A100"></i>memory</span>
+    </div>
+  </div>
+  <div class="box" style="left:1618px;width:240px;">
+    <div class="tag">RESPONSE</div>
+    <div class="name">Reply</div>
+    <div class="detail">Hindi · Marathi · English</div>
+  </div>
+
+  <!-- upper captions -->
+  <div class="card" style="left:62px;top:150px;width:484px;">
+    <div class="lead">Anita reports</div>
+    <div class="quote">“KYC call, AnyDesk,<br>₹40,000 gone”</div>
+    <div class="meta">typed in the Streamlit chat · Memory ON</div>
+  </div>
+  <div class="card" style="left:566px;top:150px;width:606px;">
+    <div class="lead">Finds 2 payments</div>
+    <div class="body"><b>₹25,000 + ₹15,000</b> this morning<br>to rkfashions7096@narmadapay<br>during an <b>AnyDesk</b> session</div>
+    <div class="tool">check_recent_payments</div>
+  </div>
+  <div class="card" style="left:1192px;top:150px;width:666px;">
+    <div class="lead">Graph: two scams, one gang</div>
+    <ul>
+      <li>Same UPI ID in <b>3 other complaints</b></li>
+      <li>Money forwarded to <b>2 accounts</b>, then cashed out</li>
+      <li><b>2 task-scam accounts</b> feed the same account</li>
+    </ul>
+    <div class="tool">find_linked_complaints_and_money_trail</div>
+  </div>
+
+  <!-- lower captions -->
+  <div class="card mem" style="left:62px;top:706px;width:380px;">
+    <div class="lead">“Koi update?”</div>
+    <div class="body">New conversation, answered<br>from memory — she never<br>repeats anything</div>
+    <div class="tool">recall_customer</div>
+  </div>
+  <div class="card mem" style="left:462px;top:706px;width:440px;">
+    <div class="lead">Memory loaded first</div>
+    <div class="body">Her “KYC expired” SMS question<br>from 6 days ago · prefers <b>Hindi</b></div>
+    <div class="tool">recall_customer</div>
+  </div>
+  <div class="card" style="left:922px;top:706px;width:516px;">
+    <div class="lead">Acts in one transaction</div>
+    <div class="body">Card blocked · dispute raised<br>Freeze requested · refund decision by <b>12 Oct</b></div>
+    <div class="tool">open_fraud_case</div>
+  </div>
+  <div class="card mem" style="left:1458px;top:706px;width:400px;">
+    <div class="lead">Replies in Hindi</div>
+    <div class="body">…and remembers the turn,<br>linked to every fact it used</div>
+    <div class="tool">log_interaction</div>
+  </div>
+
+  <!-- numbered badges on the path -->
+  <div class="badge" style="left:332px;top:536px;">1</div>
+  <div class="badge mem" style="left:682px;top:536px;">2</div>
+  <div class="badge" style="left:1128px;top:496px;">3</div>
+  <div class="badge" style="left:1262px;top:446px;">4</div>
+  <div class="badge" style="left:1128px;top:576px;">5</div>
+  <div class="badge mem" style="left:1562px;top:536px;">6</div>
+  <div class="badge mem" style="left:175px;top:626px;">7</div>
+
+  <!-- legend -->
+  <div class="legend">
+    <div class="row"><span class="mini">1</span>Anita's demo, in order<span class="sep"></span><span class="mini mem">2</span>memory step (read or write)</div>
+    <div class="row">Neo4j AuraDB · 53,955 nodes · 94,800 relationships · Sahyadri Bank and all data are fictional</div>
+  </div>
+
+  <!-- before / after inset -->
+  <div class="inset">
+    <div class="off">
+      <div class="top"><span class="toggle"></span>Memory OFF</div>
+      <div class="sub">before / after · same LLM</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="bubble">“I have no access to your records.”</div>
+  </div>
+
+</div>
+</body>
+</html>

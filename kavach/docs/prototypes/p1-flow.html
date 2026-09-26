@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>Kavach P1 Flow</title>
+<style>
+  :root{
+    --ink:#14213D; --ink2:#34405A; --muted:#566074;
+    --neo:#018BFF; --neo-tint:#E6F3FF;
+    --bank:#4C8EDA; --text:#F08A4B; --clue:#D81B60; --mem:#E5A100;
+    --ink-tint:#EDF0F5; --mem-tint:#FFF3D1;
+    --line:#D5DDE8; --ret:#8792A5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1920px;height:1080px;overflow:hidden;background:#FFFFFF}
+  body{position:relative;font-family:"Segoe UI",sans-serif;color:var(--ink)}
+
+  /* ---------- header ---------- */
+  .header{position:absolute;left:48px;right:48px;top:40px;display:flex;justify-content:space-between;align-items:flex-end}
+  .title{display:flex;align-items:center;gap:18px}
+  .title svg{width:58px;height:58px;flex:none}
+  h1{font-size:60px;font-weight:700;line-height:1.1;letter-spacing:-0.01em}
+  .sub{font-size:26px;color:var(--ink2);margin-top:8px}
+  .event{font-size:20px;color:var(--muted);text-align:right;line-height:1.45;padding-bottom:3px}
+
+  /* ---------- chain ---------- */
+  .chain{position:absolute;left:48px;top:204px;width:1824px;height:330px;display:flex}
+  .card{width:254px;height:330px;flex:none;background:#fff;border:3px solid var(--line);border-radius:28px;
+        padding:22px 14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+        box-shadow:0 8px 22px rgba(20,33,61,.07)}
+  .card.neo{border:4px solid var(--neo);background:#F2F8FF}
+  .icon{width:104px;height:104px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+  .icon svg{width:60px;height:60px}
+  .i-ink{background:var(--ink-tint);color:var(--ink)}
+  .i-neo{background:var(--neo-tint);color:var(--neo)}
+  .i-mem{background:var(--mem-tint);color:var(--mem)}
+  .i-graph{background:#fff;border:2px solid #CFE6FF}
+  .card h2{font-size:30px;font-weight:700;line-height:1.18;height:72px;margin-top:16px;
+           display:flex;align-items:center;justify-content:center}
+  .card p{font-size:22px;line-height:1.36;color:var(--ink2);margin-top:10px;white-space:nowrap}
+  .arrow{width:60px;flex:none;display:flex;align-items:center;justify-content:center}
+  .arrow svg{width:48px;height:52px}
+
+  /* ---------- return arrow ---------- */
+  .ret{position:absolute;left:0;top:0;width:1920px;height:1080px;pointer-events:none}
+  .retlabel{position:absolute;left:960px;top:563px;transform:translateX(-50%);background:#fff;padding:0 18px;
+            font-size:22px;line-height:34px;color:var(--ink2);white-space:nowrap}
+
+  /* ---------- why it works ---------- */
+  .why{position:absolute;left:48px;right:48px;top:630px;display:flex;align-items:center;gap:20px;
+       font-size:28px;font-weight:700;color:var(--neo);letter-spacing:.06em;text-transform:uppercase}
+  .why::after{content:"";flex:1;height:2px;background:var(--line)}
+  .callouts{position:absolute;left:48px;right:48px;top:684px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  .callout{min-height:256px;border:3px solid;border-radius:24px;padding:28px 26px 28px;display:grid;grid-template-columns:68px 1fr;gap:20px;align-items:start}
+  .c-mem{background:#FFF8E6;border-color:#F2D47C}
+  .c-graph{background:#FDEFF4;border-color:#F1B2C8}
+  .c-tx{background:#EEF7FF;border-color:#A6D4FF}
+  .cicon{width:68px;height:68px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .cicon svg{width:40px;height:40px}
+  .c-mem .cicon{background:var(--mem)}
+  .c-graph .cicon{background:var(--clue)}
+  .c-tx .cicon{background:var(--neo)}
+  .callout h3{font-size:30px;font-weight:700;line-height:1.2}
+  .callout p{font-size:24px;line-height:1.4;color:var(--ink2);margin-top:10px}
+
+  /* ---------- footer ---------- */
+  .footer{position:absolute;left:48px;right:48px;bottom:38px;border-top:2px solid var(--line);padding-top:16px;
+          display:flex;justify-content:space-between;align-items:center;font-size:20px;line-height:28px;color:var(--muted)}
+  .footer b{color:var(--ink);font-weight:700;margin-right:10px}
+  .footer .dot{margin:0 10px;color:#A3ACBC}
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <div class="title">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 4 L55 12.5 V30 C55 45 45 55.5 32 60 C19 55.5 9 45 9 30 V12.5 Z" fill="#018BFF"/>
+          <path d="M32 18 C33.3 26 36.8 29.6 45 31 C36.8 32.4 33.3 36 32 44 C30.7 36 27.2 32.4 19 31 C27.2 29.6 30.7 26 32 18 Z" fill="#fff"/>
+        </svg>
+        <h1>Kavach — how it works</h1>
+      </div>
+      <div class="sub">A bank customer-support agent that remembers fraud victims and uncovers scam rings</div>
+    </div>
+    <div class="event">
+      Neo4j × hackFront India · Agent Memory Build Sprint, Pune<br>
+      Problem Statement 1 · Context-Aware Customer Support Agent
+    </div>
+  </div>
+
+  <!-- The chain -->
+  <div class="chain">
+
+    <div class="card">
+      <div class="icon i-ink">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round">
+          <circle cx="32" cy="21" r="11"/>
+          <path d="M11 56c0-11.5 9.4-19.5 21-19.5s21 8 21 19.5"/>
+        </svg>
+      </div>
+      <h2><span>User</span></h2>
+      <p>A bank customer<br>types a message</p>
+    </div>
+
+    <div class="arrow"><svg viewBox="0 0 48 52"><path d="M3 17 H24 V4 L45 26 L24 48 V35 H3 Z" fill="#018BFF" stroke="#018BFF" stroke-width="4" stroke-linejoin="round"/></svg></div>
+
+    <div class="card">
+      <div class="icon i-neo">
+        <svg viewBox="0 0 64 64">
+          <rect x="5" y="9" width="54" height="46" rx="8" fill="none" stroke="currentColor" stroke-width="5"/>
+          <line x1="6" y1="22" x2="58" y2="22" stroke="currentColor" stroke-width="4"/>
+          <circle cx="13" cy="15.5" r="2.4" fill="currentColor"/>
+          <circle cx="20" cy="15.5" r="2.4" fill="currentColor"/>
+          <circle cx="27" cy="15.5" r="2.4" fill="currentColor"/>
+          <rect x="13" y="29" width="25" height="8" rx="4" fill="currentColor"/>
+          <rect x="26" y="41" width="25" height="8" rx="4" fill="currentColor" opacity=".45"/>
+        </svg>
+      </div>
+      <h2><span>Streamlit app</span></h2>
+      <p>Chat + graph view<br>Memory ON / OFF</p>
+    </div>
+
+    <div class="arrow"><svg viewBox="0 0 48 52"><path d="M3 17 H24 V4 L45 26 L24 48 V35 H3 Z" fill="#018BFF" stroke="#018BFF" stroke-width="4" stroke-linejoin="round"/></svg></div>
+
+    <div class="card">
+      <div class="icon i-neo">
+        <svg viewBox="0 0 64 64">
+          <path d="M32 5 L54 13 V30 C54 44.5 44.5 54.5 32 59 C19.5 54.5 10 44.5 10 30 V13 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M32 19 C33.2 26.5 36.5 29.8 44 31 C36.5 32.2 33.2 35.5 32 43 C30.8 35.5 27.5 32.2 20 31 C27.5 29.8 30.8 26.5 32 19 Z" fill="currentColor"/>
+        </svg>
+      </div>
+      <h2><span>Kavach agent</span></h2>
+      <p>LangChain + LLM<br>chooses the tools</p>
+    </div>
+
+    <div class="arrow"><svg viewBox="0 0 48 52"><path d="M3 17 H24 V4 L45 26 L24 48 V35 H3 Z" fill="#018BFF" stroke="#018BFF" stroke-width="4" stroke-linejoin="round"/></svg></div>
+
+    <div class="card">
+      <div class="icon i-mem">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="27" cy="27" r="17" stroke-width="5"/>
+          <line x1="40" y1="40" x2="56" y2="56" stroke-width="7"/>
+          <path d="M27 17.5 V27 L33.5 31" stroke-width="4.5"/>
+        </svg>
+      </div>
+      <h2><span>Memory &amp;<br>retrieval tools</span></h2>
+      <p>Loads memory first,<br>then the right tools</p>
+    </div>
+
+    <div class="arrow"><svg viewBox="0 0 48 52"><path d="M3 17 H24 V4 L45 26 L24 48 V35 H3 Z" fill="#018BFF" stroke="#018BFF" stroke-width="4" stroke-linejoin="round"/></svg></div>
+
+    <div class="card neo">
+      <div class="icon i-graph">
+        <svg viewBox="0 0 64 64">
+          <g stroke="#8E9AAE" stroke-width="3.5">
+            <line x1="32" y1="32" x2="12" y2="14"/><line x1="32" y1="32" x2="52" y2="13"/>
+            <line x1="32" y1="32" x2="53" y2="46"/><line x1="32" y1="32" x2="13" y2="50"/>
+            <line x1="12" y1="14" x2="13" y2="50"/>
+          </g>
+          <circle cx="32" cy="32" r="8.5" fill="#018BFF"/>
+          <circle cx="12" cy="14" r="7" fill="#4C8EDA"/>
+          <circle cx="52" cy="13" r="7" fill="#F08A4B"/>
+          <circle cx="53" cy="46" r="7" fill="#E5A100"/>
+          <circle cx="13" cy="50" r="7" fill="#D81B60"/>
+        </svg>
+      </div>
+      <h2><span>Neo4j graph</span></h2>
+      <p>Accounts, complaints<br>&amp; memory, all linked</p>
+    </div>
+
+    <div class="arrow"><svg viewBox="0 0 48 52"><path d="M3 17 H24 V4 L45 26 L24 48 V35 H3 Z" fill="#018BFF" stroke="#018BFF" stroke-width="4" stroke-linejoin="round"/></svg></div>
+
+    <div class="card">
+      <div class="icon i-ink">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 11 H53 a5 5 0 0 1 5 5 V39 a5 5 0 0 1 -5 5 H31 L19 54 V44 H11 a5 5 0 0 1 -5 -5 V16 a5 5 0 0 1 5 -5 Z" stroke-width="5"/>
+          <line x1="17" y1="23" x2="47" y2="23" stroke-width="4.5"/>
+          <line x1="17" y1="32" x2="38" y2="32" stroke-width="4.5"/>
+        </svg>
+      </div>
+      <h2><span>Response</span></h2>
+      <p>Customer's language,<br>retrieved facts only</p>
+    </div>
+  </div>
+
+  <!-- Thin return arrow: Response back to the User -->
+  <svg class="ret" viewBox="0 0 1920 1080" aria-hidden="true">
+    <circle cx="1745" cy="541" r="5" fill="#8792A5"/>
+    <path d="M1745 541 V566 Q1745 580 1731 580 H189 Q175 580 175 566 V556" fill="none" stroke="#8792A5" stroke-width="3" stroke-linecap="round"/>
+    <path d="M175 539 L165 557 L185 557 Z" fill="#8792A5"/>
+  </svg>
+  <div class="retlabel">Reply goes back to the customer</div>
+
+  <!-- Why it works -->
+  <div class="why">Why it works</div>
+  <div class="callouts">
+    <div class="callout c-mem">
+      <div class="cicon">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 24 A15 15 0 1 1 13.4 34.6"/>
+          <path d="M3.5 20 L9 27 L14.5 20" />
+          <path d="M24 15.5 V24 L30 28"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Memory loaded<br>every turn</h3>
+        <p>Profile, past complaints, promises and reply language load before every answer. Anita never repeats her story.</p>
+      </div>
+    </div>
+
+    <div class="callout c-graph">
+      <div class="cicon">
+        <svg viewBox="0 0 48 48">
+          <g stroke="#fff" stroke-width="3.5"><line x1="10" y1="12" x2="25" y2="24"/><line x1="10" y1="36" x2="25" y2="24"/><line x1="25" y1="24" x2="40" y2="24"/></g>
+          <circle cx="10" cy="12" r="5.5" fill="#fff"/><circle cx="10" cy="36" r="5.5" fill="#fff"/>
+          <circle cx="25" cy="24" r="6.5" fill="#fff"/><circle cx="40" cy="24" r="5.5" fill="#fff"/>
+        </svg>
+      </div>
+      <div>
+        <h3>The graph connects victims<br>and follows the money</h3>
+        <p>The UPI ID Anita paid is in 3 other customers' complaints. The money went to 2 accounts, then cash-out.</p>
+      </div>
+    </div>
+
+    <div class="callout c-tx">
+      <div class="cicon">
+        <svg viewBox="0 0 48 48">
+          <path d="M15.5 21 V15.5 a8.5 8.5 0 0 1 17 0 V21" fill="none" stroke="#fff" stroke-width="4.5"/>
+          <rect x="9.5" y="20.5" width="29" height="21" rx="4" fill="#fff"/>
+          <circle cx="24" cy="29.5" r="3.2" fill="#018BFF"/>
+          <rect x="22.4" y="30" width="3.2" height="6.5" rx="1.6" fill="#018BFF"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Every write is one<br>safe transaction</h3>
+        <p>Card block, dispute, freeze request and refund promise are saved together, or not at all. The LLM never writes Cypher.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div><b>Stack</b>Neo4j AuraDB + APOC<span class="dot">·</span>neo4j-graphrag<span class="dot">·</span>LangChain<span class="dot">·</span>OpenRouter<span class="dot">·</span>Streamlit Cloud</div>
+    <div>Sahyadri Bank and all data are fictional</div>
+  </div>
+
+</body>
+</html>

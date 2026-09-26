@@ -36,6 +36,8 @@ Without memory the agent says "please visit your branch". With memory it says: y
 ## Architecture
 ![Kavach architecture](docs/architecture.png)
 
+More views: [detailed technical architecture](docs/architecture-technical.png) · [all five architecture slides](docs/prototypes/) (flow, layers, Anita's journey, Neo4j hub, graph thinking).
+
 ## 3-minute demo
 1. **Problem** (0:00–0:30).
 2. **Teach** (0:30–1:30): Anita reports the scam; her clues and complaint appear in the graph.

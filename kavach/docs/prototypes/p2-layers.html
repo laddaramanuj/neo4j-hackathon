@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, height=1080">
+<title>Kavach — how it works</title>
+<style>
+  :root{
+    --ink:#14213D; --ink2:#4B5670; --neo:#018BFF;
+    --bank:#4C8EDA; --txt:#F08A4B; --clue:#D81B60; --mem:#E5A100;
+    --line:#D3DBE6; --band:#F3F6FA;
+    --bankT:#EAF1FB; --txtT:#FDF1E9; --memT:#FCF4E0; --neoT:#E6F3FF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1920px;height:1080px;overflow:hidden;background:#fff}
+  body{font-family:"Segoe UI",sans-serif;color:var(--ink)}
+  .slide{position:relative;width:1920px;height:1080px;background:#fff;overflow:hidden}
+
+  /* ---------- header ---------- */
+  .hdr{position:absolute;left:36px;right:36px;top:18px;height:100px;display:flex;align-items:center;justify-content:space-between}
+  .hdr h1{font-size:48px;font-weight:700;line-height:1.08;letter-spacing:-.5px}
+  .hdr p{font-size:22px;color:var(--ink2);margin-top:6px;line-height:1.3}
+  .chain{display:flex;align-items:center;gap:8px}
+  .cp{font-size:24px;font-weight:600;line-height:1.25;padding:7px 18px;border:2px solid var(--ink);border-radius:999px;white-space:nowrap;background:#fff}
+  .arr{flex:none;display:block}
+  .arr .s{stroke:currentColor;stroke-width:3.5;stroke-linecap:round;fill:none}
+  .arr .h{fill:currentColor}
+  .chain .arr{color:var(--neo)}
+
+  /* ---------- bands ---------- */
+  .band{position:absolute;left:36px;width:1728px;background:var(--band);border:1.5px solid var(--line);border-radius:16px;display:flex}
+  .band.full{width:1848px}
+  .lab{flex:none;width:338px;padding:10px 16px 10px 24px;display:flex;flex-direction:column;justify-content:center}
+  .lab h2{font-size:28px;font-weight:700;line-height:1.15;white-space:nowrap}
+  .lab h2 .n{color:var(--neo);margin-right:12px}
+  .lab .sub{font-size:20px;color:var(--ink2);line-height:1.3;margin-top:4px}
+  .body{flex:1;min-width:0;display:flex;align-items:center;padding:10px 16px 10px 0}
+
+  code{font-family:inherit;font-weight:600;color:var(--ink);background:#E9EEF5;border-radius:6px;padding:0 6px}
+
+  /* 1 experience + 2 intelligence cards */
+  .card{background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:9px 14px 10px;min-width:0;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+  .b1 .body{gap:12px}
+  .b1 .card{flex:1 1 0}
+  .card h3{font-size:22px;font-weight:700;line-height:1.2;white-space:nowrap;display:flex;align-items:center;gap:8px}
+  .card h3 svg{flex:none}
+  .card p{font-size:20px;line-height:1.28;color:var(--ink2);margin-top:3px}
+  .b2 .arr{color:var(--ink2);margin:0 10px}
+
+  /* 3 tools */
+  .b3 .body{flex-direction:column;align-items:stretch;justify-content:center;gap:10px}
+  .row{display:flex;align-items:stretch;gap:10px}
+  .tag{flex:none;width:140px;border-radius:10px;display:flex;flex-direction:column;justify-content:center;align-items:center;font-size:20px;font-weight:700;line-height:1.15;text-align:center}
+  .tag span{font-weight:400}
+  .tag.read{background:var(--neoT);border:2px solid var(--neo)}
+  .tag.write{background:var(--memT);border:2px solid var(--mem)}
+  .chip{background:#fff;border:2px solid var(--neo);border-radius:10px;padding:5px 14px 6px;font-size:18px;line-height:1.3;white-space:nowrap}
+  .chip.w{border-color:var(--mem)}
+  .chip b{display:block;font-weight:600}
+  .chip span{display:block;color:var(--ink2)}
+
+  /* 4 knowledge graph */
+  .b4 .body{flex-direction:column;align-items:stretch;justify-content:center;gap:10px}
+  .sb{display:flex;align-items:center;border-radius:12px;padding:8px 14px 8px 0;border-left:10px solid}
+  .sb.bank{background:var(--bankT);border-color:var(--bank)}
+  .sb.text{background:var(--txtT);border-color:var(--txt)}
+  .sb.mem{background:var(--memT);border-color:var(--mem)}
+  .sl{flex:none;width:200px;padding-left:16px}
+  .sl b{display:block;font-size:22px;line-height:1.2}
+  .sl span{display:block;font-size:20px;line-height:1.3;color:var(--ink2)}
+  .pills{display:flex;flex-direction:column;gap:8px}
+  .pr{display:flex;align-items:center;gap:8px;flex-wrap:nowrap}
+  .pill{font-size:18px;font-weight:600;line-height:1.3;padding:4px 14px;border-radius:999px;white-space:nowrap;color:var(--ink)}
+  .pill.bk{background:var(--bank)}
+  .pill.tx{background:var(--txt)}
+  .pill.cl{background:var(--clue);color:#fff}
+  .pill.me{background:var(--mem)}
+  .nt{font-size:20px;line-height:1.3;white-space:nowrap;color:var(--ink)}
+  .nt.dim{color:var(--ink2)}
+  .ha{font-size:20px;color:var(--ink2);font-weight:600}
+  .sp{width:18px;flex:none}
+  .kn{font-size:22px;line-height:1.15;margin-top:8px;white-space:nowrap}
+  .kn b{font-size:34px;font-weight:700;margin-right:6px}
+
+  /* 5 data sources */
+  .b5 .body{gap:0}
+  .src{position:relative;border-radius:12px;padding:9px 16px 10px;border:2px solid;flex:1 1 auto}
+  .src h3{font-size:22px;font-weight:700;line-height:1.2}
+  .src p{font-size:20px;line-height:1.3;white-space:nowrap;margin-top:3px}
+  .src.s{background:var(--bankT);border-color:var(--bank)}
+  .src.u{background:var(--txtT);border-color:var(--txt)}
+  .src.l{background:#fff;border-color:var(--ink)}
+  .op{flex:none;font-size:30px;font-weight:700;color:var(--ink2);margin:0 12px}
+  .b5 .arr{color:var(--ink2);margin:0 12px}
+  .up{position:absolute;bottom:100%;left:calc(50% - 14px)}
+
+  .flow{position:absolute;left:1776px;top:132px}
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <!-- ===== header ===== -->
+  <header class="hdr">
+    <div class="ttl">
+      <h1>Kavach — how it works</h1>
+      <p>Bank customer-support agent that remembers fraud victims and uncovers scam rings</p>
+    </div>
+    <div class="chain">
+      <span class="cp">User</span>
+      <svg class="arr" width="30" height="18" viewBox="0 0 30 18"><path class="s" d="M2 9H19"/><path class="h" d="M16 2.5L28.5 9L16 15.5Z"/></svg>
+      <span class="cp">Agent</span>
+      <svg class="arr" width="30" height="18" viewBox="0 0 30 18"><path class="s" d="M2 9H19"/><path class="h" d="M16 2.5L28.5 9L16 15.5Z"/></svg>
+      <span class="cp">Memory / Retrieval</span>
+      <svg class="arr" width="30" height="18" viewBox="0 0 30 18"><path class="s" d="M2 9H19"/><path class="h" d="M16 2.5L28.5 9L16 15.5Z"/></svg>
+      <span class="cp">Neo4j</span>
+      <svg class="arr" width="30" height="18" viewBox="0 0 30 18"><path class="s" d="M2 9H19"/><path class="h" d="M16 2.5L28.5 9L16 15.5Z"/></svg>
+      <span class="cp">Response</span>
+    </div>
+  </header>
+
+  <!-- ===== 1 Experience ===== -->
+  <section class="band b1" style="top:132px;height:132px">
+    <div class="lab">
+      <h2><span class="n">1</span>Experience</h2>
+      <div class="sub">Streamlit UI</div>
+    </div>
+    <div class="body">
+      <div class="card">
+        <h3><svg width="28" height="28" viewBox="0 0 28 28"><path d="M5 4h18a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H12l-6 5v-5H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3z" fill="none" stroke="#018BFF" stroke-width="2.4" stroke-linejoin="round"/></svg>Chat</h3>
+        <p>reply in Hindi, Marathi or English</p>
+      </div>
+      <div class="card">
+        <h3><svg width="28" height="28" viewBox="0 0 28 28"><rect x="1.5" y="7" width="25" height="14" rx="7" fill="none" stroke="#018BFF" stroke-width="2.4"/><circle cx="19.5" cy="14" r="4.2" fill="#018BFF"/></svg>Memory ON / OFF</h3>
+        <p>sidebar switch · OFF = same LLM, no records</p>
+      </div>
+      <div class="card">
+        <h3><svg width="28" height="28" viewBox="0 0 28 28"><path d="M6 21L14 7L22 19Z" fill="none" stroke="#14213D" stroke-width="1.8"/><circle cx="6" cy="21" r="4.3" fill="#4C8EDA"/><circle cx="14" cy="7" r="4.3" fill="#F08A4B"/><circle cx="22" cy="19" r="4.3" fill="#E5A100"/></svg>Live graph</h3>
+        <p>customer’s part of the graph · neo4j-viz</p>
+      </div>
+      <div class="card">
+        <h3><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="11.5" fill="none" stroke="#018BFF" stroke-width="2.4"/><path d="M10.6 11a3.5 3.5 0 1 1 5 3.2c-1 .5-1.6 1.2-1.6 2.3v.6" fill="none" stroke="#018BFF" stroke-width="2.4" stroke-linecap="round"/><circle cx="14" cy="20.6" r="1.5" fill="#018BFF"/></svg>“Why” panel</h3>
+        <p>“Why Kavach said this” tool trace</p>
+      </div>
+      <div class="card">
+        <h3><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="11.5" fill="none" stroke="#018BFF" stroke-width="2.4"/><path d="M8.5 14.5l3.8 3.8L19.8 10" fill="none" stroke="#018BFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Actions taken</h3>
+        <p>card block · dispute · freeze · refund promise</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2 Intelligence ===== -->
+  <section class="band b2" style="top:276px;height:136px">
+    <div class="lab">
+      <h2><span class="n">2</span>Intelligence</h2>
+      <div class="sub">the Agent</div>
+    </div>
+    <div class="body">
+      <div class="card" style="flex:0 0 590px">
+        <h3>Memory loaded into the prompt, every turn</h3>
+        <p><code>recall_customer</code> loads profile · past complaints + staff notes · promises · preferences · past interactions</p>
+      </div>
+      <svg class="arr" width="30" height="18" viewBox="0 0 30 18"><path class="s" d="M2 9H19"/><path class="h" d="M16 2.5L28.5 9L16 15.5Z"/></svg>
+      <div class="card" style="flex:1 1 0">
+        <h3>LangChain agent</h3>
+        <p><code>create_agent</code> · tool calling · decides which tools to call</p>
+      </div>
+      <svg class="arr" width="30" height="18" viewBox="0 0 30 18"><path class="s" d="M9 9H21"/><path class="h" d="M10 2.5L1.5 9L10 15.5Z"/><path class="h" d="M20 2.5L28.5 9L20 15.5Z"/></svg>
+      <div class="card" style="flex:1 1 0">
+        <h3>LLM via OpenRouter</h3>
+        <p><code>openai/gpt-4.1-mini</code> · uses only retrieved facts</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3 Memory & retrieval ===== -->
+  <section class="band b3" style="top:424px;height:172px">
+    <div class="lab">
+      <h2><span class="n">3</span>Memory &amp; retrieval</h2>
+      <div class="sub">7 tools<br>LLM never writes Cypher</div>
+    </div>
+    <div class="body">
+      <div class="row">
+        <div class="tag read">READ<span>tools</span></div>
+        <div class="chip"><b>check_recent_payments</b><span>last 3 days + risk signals</span></div>
+        <div class="chip"><b>extract_scam_clues</b><span>clues from the message</span></div>
+        <div class="chip"><b>find_linked_complaints_and_money_trail</b><span>multi-hop Cypher + APOC money trail</span></div>
+        <div class="chip"><b>search_bank_advisories</b><span>GraphRAG · vector search + graph</span></div>
+      </div>
+      <div class="row">
+        <div class="tag write">WRITE<span>tools</span></div>
+        <div class="chip w"><b>open_fraud_case</b><span>ONE transaction: case · card block · dispute · freeze · promise</span></div>
+        <div class="chip w"><b>save_customer_preference</b><span>e.g. reply language</span></div>
+        <div class="chip w"><b>log_interaction (automatic)</b><span>every turn · USED links = the “why”</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4 Knowledge graph ===== -->
+  <section class="band b4" style="top:608px;height:286px">
+    <div class="lab">
+      <h2><span class="n">4</span>Knowledge graph</h2>
+      <div class="sub">Neo4j AuraDB 5.27 + APOC</div>
+      <div class="kn"><b>53,955</b>nodes</div>
+      <div class="kn"><b>94,800</b>relationships</div>
+      <div class="sub" style="margin-top:8px">3 vector + 1 fulltext index<br>17 uniqueness constraints</div>
+    </div>
+    <div class="body">
+      <div class="sb bank">
+        <div class="sl"><b>Bank data</b><span>structured</span></div>
+        <div class="pr">
+          <span class="pill bk">Customer</span><span class="pill bk">Account</span><span class="pill bk">Card</span><span class="pill bk">Device</span><span class="pill bk">LoginSession</span><span class="pill bk">Transaction</span><span class="pill bk">Merchant</span><span class="pill bk">Counterparty</span><span class="pill bk">CashOutPoint</span>
+        </div>
+      </div>
+      <div class="sb text">
+        <div class="sl"><b>Text → graph</b><span>unstructured</span></div>
+        <div class="pills">
+          <div class="pr">
+            <span class="pill tx">Complaint</span><span class="pill tx">CallTranscript</span><span class="pill tx">AgentNote</span><span class="pill tx">KbDoc</span><span class="ha">→</span><span class="pill tx">KbChunk</span>
+          </div>
+          <div class="pr">
+            <span class="pill cl">Clue</span><span class="nt">phone number · UPI ID · Telegram handle · SMS sender · app</span><span class="nt dim">— links text to accounts</span>
+          </div>
+        </div>
+      </div>
+      <div class="sb mem">
+        <div class="sl"><b>Agent memory</b><span>written by Kavach</span></div>
+        <div class="pr">
+          <span class="pill me">Interaction</span><span class="nt">USED → nodes each answer relied on</span><span class="sp"></span>
+          <span class="pill me">Promise</span><span class="nt">refund due dates</span><span class="sp"></span>
+          <span class="pill me">Preference</span><span class="nt">reply language</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5 Data sources ===== -->
+  <section class="band b5 full" style="top:922px;height:136px">
+    <div class="lab">
+      <h2><span class="n">5</span>Data sources</h2>
+      <div class="sub">synthetic data,<br>generated by 6 AI agents</div>
+    </div>
+    <div class="body">
+      <div class="src s">
+        <h3>Structured · CSV</h3>
+        <p>2,000 customers · 2,302 accounts<br>36,709 transactions · 6,596 login sessions</p>
+      </div>
+      <span class="op">+</span>
+      <div class="src u">
+        <h3>Unstructured text</h3>
+        <p>164 complaints · 30 call transcripts · 15 bank docs<br>237 staff notes in English, Hinglish, Hindi, Marathi</p>
+      </div>
+      <svg class="arr" width="30" height="18" viewBox="0 0 30 18"><path class="s" d="M2 9H19"/><path class="h" d="M16 2.5L28.5 9L16 15.5Z"/></svg>
+      <div class="src l">
+        <svg class="up" width="28" height="50" viewBox="0 0 28 50"><path d="M14 50V14" stroke="#018BFF" stroke-width="4"/><path d="M2 16L14 1L26 16Z" fill="#018BFF"/></svg>
+        <h3>load_graph.py → Neo4j</h3>
+        <p>constraints &amp; indexes → batched MERGE →<br>clue extraction → links → embeddings</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== right edge: request down, answer up ===== -->
+  <svg class="flow" width="108" height="762" viewBox="0 0 108 762">
+    <polygon points="4,0 44,0 44,722 48,722 24,762 0,722 4,722" fill="#018BFF"/>
+    <polygon points="84,0 108,40 104,40 104,762 64,762 64,40 60,40" fill="#14213D"/>
+    <text transform="translate(24 381) rotate(90)" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" letter-spacing=".5">request flows down</text>
+    <text transform="translate(84 381) rotate(-90)" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" letter-spacing=".5">answer flows up</text>
+  </svg>
+
+</div>
+</body>
+</html>

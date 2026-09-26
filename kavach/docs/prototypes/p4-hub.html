@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kavach Architecture Hub</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #ffffff; }
+  body { width: 1920px; height: 1080px; overflow: hidden; }
+  svg { display: block; }
+  text { font-family: "Segoe UI", sans-serif; fill: #14213D; }
+  .h1  { font-size: 44px; font-weight: 700; }
+  .tag { font-size: 40px; font-weight: 700; fill: #018BFF; }
+  .ct  { font-size: 28px; font-weight: 700; }
+  .cb  { font-size: 22px; }
+  .cm  { font-size: 20px; fill: #55607A; }
+  .cv  { font-size: 22px; font-weight: 600; }
+  .al  { font-size: 20px; font-weight: 600; }
+  .alb { font-size: 21px; font-weight: 700; fill: #018BFF; }
+  .st  { font-size: 28px; font-weight: 700; text-anchor: middle; }
+  .pl  { font-size: 20px; font-weight: 600; text-anchor: middle; }
+  .card { fill: #ffffff; stroke: #D3DAE6; stroke-width: 2; }
+  .pill { fill: #ffffff; }
+  .nb  { stroke: #018BFF; stroke-width: 4; fill: none; }
+  .gr  { stroke: #5B6478; stroke-width: 3; fill: none; }
+</style>
+</head>
+<body>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#14213D" flood-opacity="0.10"/>
+    </filter>
+    <marker id="mb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#018BFF"/>
+    </marker>
+    <marker id="mg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#5B6478"/>
+    </marker>
+    <marker id="mk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#14213D"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Title ===== -->
+  <text x="36" y="66" class="h1">Kavach — how it works</text>
+  <text x="1884" y="66" class="tag" text-anchor="end">Neo4j is the memory</text>
+
+  <!-- ===== Central graph: Neo4j AuraDB ===== -->
+  <g stroke="#ffffff" stroke-width="6" stroke-linejoin="round">
+    <!-- Agent memory (top) -->
+    <path fill="#E5A100" d="M674.21 355 A330 330 0 0 1 1245.79 355 L1072.58 455 A130 130 0 0 0 847.42 455 Z"/>
+    <!-- Text -> graph (lower right) -->
+    <path fill="#F08A4B" d="M1245.79 355 A330 330 0 0 1 960 850 L960 650 A130 130 0 0 0 1072.58 455 Z"/>
+    <!-- Bank data (lower left) -->
+    <path fill="#4C8EDA" d="M960 850 A330 330 0 0 1 674.21 355 L847.42 455 A130 130 0 0 0 960 650 Z"/>
+  </g>
+  <circle cx="960" cy="520" r="130" fill="#ffffff" stroke="#018BFF" stroke-width="6"/>
+
+  <!-- core -->
+  <text x="960" y="476" text-anchor="middle" font-size="30" font-weight="700">Neo4j AuraDB</text>
+  <text x="960" y="510" text-anchor="middle" font-size="28" font-weight="600" style="fill:#018BFF">one graph</text>
+  <line x1="905" y1="526" x2="1015" y2="526" stroke="#D3DAE6" stroke-width="2"/>
+  <text x="960" y="552" text-anchor="middle"><tspan font-size="24" font-weight="700">53,955</tspan><tspan font-size="21"> nodes</tspan></text>
+  <text x="960" y="583" text-anchor="middle"><tspan font-size="24" font-weight="700">94,800</tspan><tspan font-size="21"> relationships</tspan></text>
+
+  <!-- Agent memory segment -->
+  <text x="960" y="250" class="st">Agent memory</text>
+  <text x="960" y="284" class="cb" text-anchor="middle">written by Kavach</text>
+  <rect class="pill" x="758"  y="306" width="132" height="36" rx="18"/>
+  <text x="824"  y="331" class="pl">Interaction</text>
+  <rect class="pill" x="906"  y="306" width="108" height="36" rx="18"/>
+  <text x="960"  y="331" class="pl">Promise</text>
+  <rect class="pill" x="1030" y="306" width="132" height="36" rx="18"/>
+  <text x="1096" y="331" class="pl">Preference</text>
+
+  <!-- Bank data segment -->
+  <text x="734" y="486" class="st">Bank data</text>
+  <rect class="pill" x="670" y="508" width="120" height="36" rx="18"/>
+  <text x="730" y="533" class="pl">Customer</text>
+  <rect class="pill" x="681" y="550" width="108" height="36" rx="18"/>
+  <text x="735" y="575" class="pl">Account</text>
+  <rect class="pill" x="682" y="592" width="136" height="36" rx="18"/>
+  <text x="750" y="617" class="pl">Transaction</text>
+  <rect class="pill" x="705" y="634" width="150" height="36" rx="18"/>
+  <text x="780" y="659" class="pl">Counterparty</text>
+  <rect class="pill" x="748" y="676" width="156" height="36" rx="18"/>
+  <text x="826" y="701" class="pl">CashOutPoint</text>
+
+  <!-- Text -> graph segment -->
+  <text x="1184" y="486" class="st">Text → graph</text>
+  <rect class="pill" x="1128" y="508" width="124" height="36" rx="18"/>
+  <text x="1190" y="533" class="pl">Complaint</text>
+  <rect class="pill" x="1108" y="550" width="156" height="36" rx="18"/>
+  <text x="1186" y="575" class="pl">CallTranscript</text>
+  <rect class="pill" x="1107" y="592" width="130" height="36" rx="18"/>
+  <text x="1172" y="617" class="pl">AgentNote</text>
+  <rect class="pill" x="1038" y="634" width="204" height="36" rx="18"/>
+  <text x="1140" y="659" class="pl">KbDoc → KbChunk</text>
+
+  <!-- Clue: links text to accounts (straddles the two segments) -->
+  <rect x="807" y="732" width="306" height="36" rx="18" fill="#D81B60" stroke="#ffffff" stroke-width="3"/>
+  <text x="960" y="757" class="pl" style="fill:#ffffff; font-weight:700">Clue — links text to accounts</text>
+
+  <!-- ===== Satellite cards ===== -->
+  <!-- Streamlit UI -->
+  <rect class="card" filter="url(#sh)" x="36" y="100" width="400" height="250" rx="18"/>
+  <text x="60" y="146" class="ct">Streamlit UI</text>
+  <text x="60" y="190" class="cb">Customer chat</text>
+  <text x="60" y="222" class="cb">Memory ON / OFF switch</text>
+  <text x="60" y="254" class="cb">Customer’s graph view</text>
+  <text x="60" y="286" class="cb">“Why Kavach said this” trace</text>
+
+  <!-- Guardrails -->
+  <rect class="card" filter="url(#sh)" x="36" y="380" width="400" height="220" rx="18"/>
+  <text x="60" y="426" class="ct">Guardrails</text>
+  <text x="60" y="468" class="cb">LLM never writes Cypher</text>
+  <text x="60" y="500" class="cb">Tools bound to the customer</text>
+  <text x="60" y="532" class="cb">Never asks for OTP / PIN</text>
+
+  <!-- Data pipeline -->
+  <rect class="card" filter="url(#sh)" x="36" y="630" width="400" height="300" rx="18"/>
+  <text x="60" y="676" class="ct">Data pipeline</text>
+  <text x="60" y="718" class="cb">Synthetic data from 6 AI agents</text>
+  <text x="60" y="750" class="cb">CSV + JSONL + Markdown docs</text>
+  <text x="60" y="782" class="cb" font-weight="600">→ load_graph.py</text>
+  <text x="60" y="814" class="cb">constraints &amp; indexes →</text>
+  <text x="60" y="846" class="cb">batched MERGE → clue extraction</text>
+  <text x="60" y="878" class="cb">→ links → embeddings</text>
+
+  <!-- LangChain agent + tools -->
+  <rect class="card" filter="url(#sh)" x="1484" y="100" width="400" height="310" rx="18"/>
+  <text x="1508" y="146" class="ct">LangChain agent + tools</text>
+  <text x="1508" y="190" class="cb">create_agent · tool calling</text>
+  <text x="1508" y="222" class="cb">Memory first: recall_customer</text>
+  <text x="1508" y="254" class="cb">7 tools query the graph</text>
+  <text x="1508" y="286" class="cb">Replies only from retrieved facts</text>
+  <text x="1508" y="318" class="cb">in Hindi / Marathi / English</text>
+
+  <!-- OpenRouter -->
+  <rect class="card" filter="url(#sh)" x="1484" y="670" width="400" height="260" rx="18"/>
+  <text x="1508" y="716" class="ct">OpenRouter</text>
+  <text x="1508" y="758" class="cm">LLM</text>
+  <text x="1508" y="788" class="cv">openai/gpt-4.1-mini</text>
+  <text x="1508" y="830" class="cm">Embeddings</text>
+  <text x="1508" y="860" class="cv">Gemini · 1024-d</text>
+
+  <!-- ===== Arrows ===== -->
+  <!-- UI <-> agent -->
+  <line class="gr" x1="442" y1="140" x2="1478" y2="140" marker-start="url(#mg)" marker-end="url(#mg)"/>
+  <text x="960" y="128" class="al" text-anchor="middle">question / reply + tool trace</text>
+
+  <!-- Neo4j -> Streamlit -->
+  <line class="nb" x1="716" y1="290" x2="442" y2="290" marker-end="url(#mb)"/>
+  <text x="579" y="276" class="al" text-anchor="middle">subgraph via neo4j-viz</text>
+
+  <!-- Guardrails -> Neo4j -->
+  <line class="nb" x1="442" y1="505" x2="624" y2="505" stroke-dasharray="10 7" marker-end="url(#mb)"/>
+  <text x="533" y="491" class="al" text-anchor="middle">fixed queries only</text>
+
+  <!-- Pipeline -> Neo4j -->
+  <line class="nb" x1="442" y1="760" x2="727" y2="760" marker-end="url(#mb)"/>
+  <text x="585" y="746" class="al" text-anchor="middle">batched MERGE</text>
+
+  <!-- Neo4j -> agent (reads) -->
+  <line class="nb" x1="1213" y1="300" x2="1478" y2="300" marker-end="url(#mb)"/>
+  <text x="1236" y="206" class="alb">reads</text>
+  <text x="1236" y="232" class="al">Cypher traversals</text>
+  <text x="1236" y="257" class="al">APOC money trail</text>
+  <text x="1236" y="282" class="al">GraphRAG vector search</text>
+
+  <!-- agent -> Neo4j (writes) -->
+  <line class="nb" x1="1478" y1="380" x2="1265" y2="380" marker-end="url(#mb)"/>
+  <text x="1300" y="408" class="alb">writes</text>
+  <text x="1300" y="433" class="al">ONE transaction</text>
+
+  <!-- agent <-> OpenRouter -->
+  <line class="gr" x1="1684" y1="416" x2="1684" y2="664" marker-start="url(#mg)" marker-end="url(#mg)"/>
+  <text x="1700" y="548" class="al">LLM calls</text>
+
+  <!-- OpenRouter -> Neo4j -->
+  <line class="nb" x1="1478" y1="745" x2="1208" y2="745" marker-end="url(#mb)"/>
+  <text x="1236" y="776" class="al">1024-d embeddings</text>
+  <text x="1236" y="801" class="al">→ 3 vector indexes</text>
+
+  <!-- ===== Request chain strip ===== -->
+  <rect x="36"   y="960" width="324" height="90" rx="16" fill="#ffffff" stroke="#14213D" stroke-width="2.5"/>
+  <text x="198"  y="999"  class="st">User</text>
+  <text x="198"  y="1032" class="cb" text-anchor="middle">types in Streamlit chat</text>
+
+  <rect x="416"  y="960" width="324" height="90" rx="16" fill="#ffffff" stroke="#14213D" stroke-width="2.5"/>
+  <text x="578"  y="999"  class="st">Agent</text>
+  <text x="578"  y="1032" class="cb" text-anchor="middle">LangChain picks the tools</text>
+
+  <rect x="796"  y="960" width="324" height="90" rx="16" fill="#E5A100"/>
+  <text x="958"  y="999"  class="st">Memory / Retrieval</text>
+  <text x="958"  y="1032" class="cb" text-anchor="middle">memory first, then tools</text>
+
+  <rect x="1176" y="960" width="324" height="90" rx="16" fill="#018BFF"/>
+  <text x="1338" y="999"  class="st" style="fill:#ffffff">Neo4j</text>
+  <text x="1338" y="1032" class="cb" text-anchor="middle" style="fill:#ffffff; font-weight:600">Cypher · APOC · GraphRAG</text>
+
+  <rect x="1556" y="960" width="324" height="90" rx="16" fill="#ffffff" stroke="#14213D" stroke-width="2.5"/>
+  <text x="1718" y="999"  class="st">Response</text>
+  <text x="1718" y="1032" class="cb" text-anchor="middle">in the customer’s language</text>
+
+  <line x1="366"  y1="1005" x2="406"  y2="1005" stroke="#14213D" stroke-width="4" marker-end="url(#mk)"/>
+  <line x1="746"  y1="1005" x2="786"  y2="1005" stroke="#14213D" stroke-width="4" marker-end="url(#mk)"/>
+  <line x1="1126" y1="1005" x2="1166" y2="1005" stroke="#14213D" stroke-width="4" marker-end="url(#mk)"/>
+  <line x1="1506" y1="1005" x2="1546" y2="1005" stroke="#14213D" stroke-width="4" marker-end="url(#mk)"/>
+</svg>
+</body>
+</html>
