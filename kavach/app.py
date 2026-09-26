@@ -68,7 +68,7 @@ def graph_html(cid):
                               size=34 if is_me else (22 if label in ("Customer", "Counterparty") else 16)))
         rels = [Relationship(source=r.start_node.element_id, target=r.end_node.element_id, caption=r.type)
                 for r in g.relationships]
-        return VisualizationGraph(nodes=nodes, relationships=rels).render(height="560px").data, len(nodes)
+        return VisualizationGraph(nodes=nodes, relationships=rels).render(height="560px", theme="light").data, len(nodes)
     except Exception:  # fall back to pyvis if the NVL widget API differs
         from pyvis.network import Network
         net = Network(height="560px", width="100%", directed=True, bgcolor="#ffffff")
@@ -112,20 +112,22 @@ chat_col, info_col = st.columns([1, 1.05], gap="large")
 with chat_col:
     st.subheader(f"Chat · {names.get(cid, cid)}")
     st.caption("🟢 Memory ON — Kavach reads and writes Neo4j" if memory_on else "⚪ Memory OFF — no history, no graph")
-    for m in chat:
-        with st.chat_message(m["role"], avatar="🛡️" if m["role"] == "assistant" else "🙂"):
-            st.markdown(m["content"])
+    history = st.container()  # messages render above the input box
     prompt = st.chat_input("Type as the customer…")
-    if prompt:
-        chat.append({"role": "user", "content": prompt})
-        with st.chat_message("user", avatar="🙂"):
-            st.markdown(prompt)
-        with st.chat_message("assistant", avatar="🛡️"):
-            with st.spinner("Checking memory and the graph…"):
-                result = handle_turn(cid, prompt, memory_on)
-            st.markdown(result["reply"])
-        chat.append({"role": "assistant", "content": result["reply"]})
-        st.session_state.traces[cid] = result
+    with history:
+        for m in chat:
+            with st.chat_message(m["role"], avatar="🛡️" if m["role"] == "assistant" else "🙂"):
+                st.markdown(m["content"])
+        if prompt:
+            chat.append({"role": "user", "content": prompt})
+            with st.chat_message("user", avatar="🙂"):
+                st.markdown(prompt)
+            with st.chat_message("assistant", avatar="🛡️"):
+                with st.spinner("Checking memory and the graph…"):
+                    result = handle_turn(cid, prompt, memory_on)
+                st.markdown(result["reply"])
+            chat.append({"role": "assistant", "content": result["reply"]})
+            st.session_state.traces[cid] = result
 
 with info_col:
     tab_graph, tab_why, tab_actions = st.tabs(["🕸️ Memory graph", "🧠 Why Kavach said this", "✅ Actions"])
