@@ -65,8 +65,10 @@ def svg_img(svg, cls=""):
 CSS = """
 <style>
 :root { --ink:#0F172A; --muted:#64748B; --line:#E6E9EF; --soft:#F5F7FA; --blue:#018BFF; }
-[data-testid="stMainBlockContainer"] { padding-top:1.4rem; padding-bottom:.8rem; max-width:1560px; }
-[data-testid="stHeader"] { background:transparent; }
+[data-testid="stMainBlockContainer"] { padding-top:3.75rem; padding-bottom:.8rem; max-width:1560px; }
+/* the header is invisible: let clicks pass through it except on its own buttons */
+[data-testid="stHeader"] { background:transparent; pointer-events:none; }
+[data-testid="stHeader"] button, [data-testid="stHeader"] a { pointer-events:auto; }
 [data-testid="stDecoration"], [data-testid="stAppDeployButton"] { display:none; }
 
 /* sidebar */
@@ -96,7 +98,7 @@ CSS = """
 
 /* conversation */
 [data-testid="stLayoutWrapper"]:has(> .st-key-chat_scroll) { flex:0 0 auto !important;
-    height:max(22rem, calc(100vh - 12.8rem)) !important; }
+    height:max(22rem, calc(100vh - 15.2rem)) !important; }
 .st-key-chat_scroll { height:100% !important; }
 .kv-user { display:flex; justify-content:flex-end; margin:.6rem 0 .9rem; }
 .kv-user div { background:#EEF2F7; color:var(--ink); padding:.7rem 1.05rem; border-radius:1.4rem 1.4rem .4rem 1.4rem;
