@@ -2,5 +2,14 @@
 base = "light"
 primaryColor = "#018BFF"
 backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F3F6FA"
-textColor = "#14213D"
+secondaryBackgroundColor = "#F4F6FA"
+textColor = "#0F172A"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap, sans-serif"
+baseRadius = "0.75rem"
+borderColor = "#E6E9EF"
+showWidgetBorder = true
+showSidebarBorder = true
+
+[theme.sidebar]
+backgroundColor = "#F7F8FA"
+secondaryBackgroundColor = "#FFFFFF"

@@ -290,14 +290,15 @@ NO_MEMORY = """You are a bank's customer-support chatbot. You have no access to 
 bank systems. Reply briefly in English."""
 
 
-def handle_turn(cid, message, memory_on=True):
+def handle_turn(cid, message, memory_on=True, on_step=None):
     """Run one customer message through Kavach. Returns the reply plus a trace
-    of every tool call, so the UI can show why it answered."""
+    of every tool call, so the UI can show why it answered. on_step(name, detail)
+    is called as each step starts, so the UI can show live progress."""
     if not memory_on:
         reply = chat(NO_MEMORY, f"Customer message: {message}")
         return {"reply": reply, "trace": [{"tool": "none", "note": "memory OFF - no Neo4j lookups"}], "actions": None}
     try:
-        return handle_turn_langchain(cid, message)
+        return handle_turn_langchain(cid, message, on_step)
     except Exception as error:  # keep the demo alive: fall back to the fixed pipeline
         result = handle_turn_pipeline(cid, message)
         result["trace"].insert(0, {"tool": "fallback", "note": f"LangChain agent failed ({error}); used pipeline"})
@@ -403,17 +404,32 @@ def build_tools(cid, message, state):
             search_bank_advisories, open_fraud_case, save_customer_preference]
 
 
-def handle_turn_langchain(cid, message):
+def handle_turn_langchain(cid, message, on_step=None):
+    def step(name, detail=None):
+        if on_step:
+            try:
+                on_step(name, detail)
+            except Exception:  # progress display must never break the turn
+                pass
+
     for lang, pattern in LANGUAGE_WORDS.items():
         if pattern.search(message):
             save_preference(cid, "reply_language", lang)
     memory = recall_customer(cid)
+    step("recall_customer", memory)
     state = {"memory": memory}
     language = LANGUAGE_NAMES.get((memory.get("customer") or {}).get("preferred_language"), "simple Indian English")
     system = AGENT_SYSTEM.format(language=language, memory=json.dumps(
         {"today": now_ist().strftime("%Y-%m-%d %H:%M IST"), **memory}, ensure_ascii=False, default=str)[:9000])
     agent = create_agent(lc_model, tools=build_tools(cid, message, state), system_prompt=system)
-    out = agent.invoke({"messages": [{"role": "user", "content": message}]}, config={"recursion_limit": 14})
+    out, seen = None, 0
+    for out in agent.stream({"messages": [{"role": "user", "content": message}]},
+                            config={"recursion_limit": 14}, stream_mode="values"):
+        for m in out["messages"][seen:]:
+            if isinstance(m, AIMessage):
+                for tc in m.tool_calls:
+                    step(tc["name"], tc["args"])
+        seen = len(out["messages"])
 
     trace = [{"tool": "recall_customer (memory loaded into the prompt)", "result": memory}]
     calls = {}
@@ -438,8 +454,9 @@ def handle_turn_langchain(cid, message):
             "txns": [p["txn_id"] for p in state.get("suspicious", [])]}
     summary = (f"Opened {actions['complaint_id']}, dispute {actions['dispute_id']}, refund decision due "
                f"{actions['refund_decision_due']}" if actions else "Answered using stored memory")
+    step("log_interaction")
     log_interaction(cid, message, reply, summary, used)
-    return {"reply": reply, "trace": trace, "actions": actions}
+    return {"reply": reply, "trace": trace, "actions": actions, "ring": state.get("ring")}
 
 
 def handle_turn_pipeline(cid, message):
@@ -502,7 +519,7 @@ def handle_turn_pipeline(cid, message):
     summary = (f"Opened {actions['complaint_id']}, dispute {actions['dispute_id']}, refund decision due "
                f"{actions['refund_decision_due']}" if actions else "Answered using stored history")
     log_interaction(cid, message, reply, summary, used)
-    return {"reply": reply, "trace": trace, "actions": actions}
+    return {"reply": reply, "trace": trace, "actions": actions, "ring": ring or None}
 
 
 def chat(system, user):
