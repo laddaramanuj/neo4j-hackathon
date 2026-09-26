@@ -1,0 +1,311 @@
+merchant_id,merchant_name,mcc,category,city,upi_id
+MER13180,Fresh Basket Mart,5411,Grocery & Kirana,Pune,freshbasketmar812@sahyadri
+MER33411,Gokul Dairy & Kirana,5411,Grocery & Kirana,Pune,gokuldairykira570@wgcbupi
+MER99099,Mahalaxmi Super Mart,5411,Grocery & Kirana,Pune,mahalaxmisuper496@sahyadri
+MER64115,Ambika Grocery Centre,5411,Grocery & Kirana,Pune,ambikagroceryc701@sahyadri
+MER82071,New Bharat Kirana,5411,Grocery & Kirana,Pune,newbharatkiran154@wgcbupi
+MER30326,Mauli Kirana,5411,Grocery & Kirana,Pune,maulikirana161@sahyadri
+MER34994,Jai Bhavani Kirana,5411,Grocery & Kirana,Pune,jaibhavanikira84@gangaupi
+MER15312,Daily Needs Mart,5411,Grocery & Kirana,Pune,dailyneedsmart575@sahyadri
+MER70607,Janata Kirana Bhandar,5411,Grocery & Kirana,Pune,janatakiranabh833@konkanpay
+MER45537,Shree Ganesh Kirana Stores,5411,Grocery & Kirana,Pune,shreeganeshkir949@ivbupi
+MER66229,Patel Provision Stores,5411,Grocery & Kirana,Pune,patelprovision674@sahyadri
+MER24298,Swami Samarth Stores,5411,Grocery & Kirana,Pune,swamisamarthst131@gangaupi
+MER23480,Krishna Dairy Farm,5411,Grocery & Kirana,Pune,krishnadairyfa121@sahyadri
+MER87496,Laxmi Kirana & General,5411,Grocery & Kirana,Pune,laxmikiranagen929@konkanpay
+MER14228,Care Plus Pharmacy,5912,Pharmacy,Pune,carepluspharma361@sahyadri
+MER66267,Seva Medicals,5912,Pharmacy,Pune,sevamedicals657@narmadapay
+MER63801,Dhanvantari Pharmacy,5912,Pharmacy,Pune,dhanvantaripha478@wgcbupi
+MER43493,Life Line Medicos,5912,Pharmacy,Pune,lifelinemedico320@sahyadri
+MER65713,Sanjivani Medical & General,5912,Pharmacy,Pune,sanjivanimedic980@ivbupi
+MER81970,Shri Datta Medicals,5912,Pharmacy,Pune,shridattamedic949@sahyadri
+MER11095,Om Fuel Point,5541,Fuel Station,Pune,omfuelpoint837@sahyadri
+MER49302,Ganesh Fuel Station,5541,Fuel Station,Pune,ganeshfuelstat250@narmadapay
+MER32396,Sai Auto Fuels,5541,Fuel Station,Pune,saiautofuels189@konkanpay
+MER73135,City Fuel Centre,5541,Fuel Station,Pune,cityfuelcentre684@sahyadri
+MER33575,Annapurna Pure Veg,5812,Restaurant,Pune,annapurnapurev398@sahyadri
+MER50852,Chai Tapri Adda,5812,Restaurant,Pune,chaitapriadda20@sahyadri
+MER74992,Biryani Junction,5812,Restaurant,Pune,biryanijunctio792@ivbupi
+MER84090,Udupi Krishna Bhavan,5812,Restaurant,Pune,udupikrishnabh974@sahyadri
+MER53791,Spice Route Family Restaurant,5812,Restaurant,Pune,spiceroutefami24@konkanpay
+MER12625,Hotel Swad Thali,5812,Restaurant,Pune,hotelswadthali362@sahyadri
+MER73850,Mumbai Sandwich Corner,5812,Restaurant,Pune,mumbaisandwich59@wgcbupi
+MER58323,Vada Pav Express,5812,Restaurant,Pune,vadapavexpress929@gangaupi
+MER51825,Bright Future Coaching Classes,8299,Education,Pune,brightfutureco982@ivbupi
+MER60702,Excel Academy,8299,Education,Pune,excelacademy807@gangaupi
+MER85001,FitZone Gym,7997,Gym & Fitness,Pune,fitzonegym886@ivbupi
+MER68676,Muscle Factory Gym,7997,Gym & Fitness,Pune,musclefactoryg862@sahyadri
+MER82777,Mirror Image Salon,7230,Salon & Spa,Pune,mirrorimagesal850@narmadapay
+MER70759,Style Point Unisex Salon,7230,Salon & Spa,Pune,stylepointunis627@sahyadri
+MER82877,Trendz Fashion Hub,5651,Apparel,Pune,trendzfashionh418@wgcbupi
+MER10095,Fashion Point,5651,Apparel,Pune,fashionpoint129@sahyadri
+MER21126,Sai Mobile Gallery,5732,Electronics,Pune,saimobilegalle73@ivbupi
+MER59242,Galaxy Computers,5732,Electronics,Pune,galaxycomputer271@ivbupi
+MER65271,City Dental Care,8011,Healthcare,Pune,citydentalcare182@sahyadri
+MER35684,Aarogya Polyclinic,8011,Healthcare,Pune,aarogyapolycli623@narmadapay
+MER79364,Mahalaxmi Super Mart,5411,Grocery & Kirana,Mumbai,mahalaxmisuper12@sahyadri
+MER61204,Shree Ganesh Kirana Stores,5411,Grocery & Kirana,Mumbai,shreeganeshkir618@sahyadri
+MER16492,Om Sai General Stores,5411,Grocery & Kirana,Mumbai,omsaigeneralst927@wgcbupi
+MER65925,Patel Provision Stores,5411,Grocery & Kirana,Mumbai,patelprovision885@sahyadri
+MER24239,Swami Samarth Stores,5411,Grocery & Kirana,Mumbai,swamisamarthst611@sahyadri
+MER74179,Gokul Dairy & Kirana,5411,Grocery & Kirana,Mumbai,gokuldairykira615@sahyadri
+MER43972,Sai Krupa Provision,5411,Grocery & Kirana,Mumbai,saikrupaprovis730@gangaupi
+MER75722,Seva Medicals,5912,Pharmacy,Mumbai,sevamedicals638@sahyadri
+MER70808,Apna Chemist,5912,Pharmacy,Mumbai,apnachemist4@sahyadri
+MER12123,Shri Datta Medicals,5912,Pharmacy,Mumbai,shridattamedic322@sahyadri
+MER97428,Ganesh Fuel Station,5541,Fuel Station,Mumbai,ganeshfuelstat778@konkanpay
+MER22715,Om Fuel Point,5541,Fuel Station,Mumbai,omfuelpoint422@gangaupi
+MER67258,Punjabi Tadka Dhaba,5812,Restaurant,Mumbai,punjabitadkadh306@konkanpay
+MER93669,Misal Corner,5812,Restaurant,Mumbai,misalcorner639@sahyadri
+MER38228,Vada Pav Express,5812,Restaurant,Mumbai,vadapavexpress948@sahyadri
+MER56350,Hotel Shreyas Veg,5812,Restaurant,Mumbai,hotelshreyasve939@sahyadri
+MER89471,Saraswati Vidya Mandir,8299,Education,Mumbai,saraswatividya89@narmadapay
+MER72836,Muscle Factory Gym,7997,Gym & Fitness,Mumbai,musclefactoryg741@sahyadri
+MER65298,Classic Men's Salon,7230,Salon & Spa,Mumbai,classicmenssal769@sahyadri
+MER18333,Trendz Fashion Hub,5651,Apparel,Mumbai,trendzfashionh948@sahyadri
+MER79553,Galaxy Computers,5732,Electronics,Mumbai,galaxycomputer466@narmadapay
+MER56440,Shree Clinic & Diagnostics,8011,Healthcare,Mumbai,shreeclinicdia595@wgcbupi
+MER54057,Royal Fruits & Vegetables,5411,Grocery & Kirana,Thane,royalfruitsveg898@konkanpay
+MER22255,Shree Ganesh Kirana Stores,5411,Grocery & Kirana,Thane,shreeganeshkir973@ivbupi
+MER38135,Fresh Basket Mart,5411,Grocery & Kirana,Thane,freshbasketmar986@ivbupi
+MER71640,Hari Om Provisions,5411,Grocery & Kirana,Thane,hariomprovisio889@konkanpay
+MER29272,Krishna Dairy Farm,5411,Grocery & Kirana,Thane,krishnadairyfa800@ivbupi
+MER47020,Jai Bhavani Kirana,5411,Grocery & Kirana,Thane,jaibhavanikira368@sahyadri
+MER10117,Annapurna Supermarket,5411,Grocery & Kirana,Thane,annapurnasuper209@sahyadri
+MER40717,Sanjivani Medical & General,5912,Pharmacy,Thane,sanjivanimedic655@konkanpay
+MER93340,Dhanvantari Pharmacy,5912,Pharmacy,Thane,dhanvantaripha318@sahyadri
+MER24292,Shri Datta Medicals,5912,Pharmacy,Thane,shridattamedic752@konkanpay
+MER73549,Sai Auto Fuels,5541,Fuel Station,Thane,saiautofuels861@narmadapay
+MER27682,Motorway Fuel Point,5541,Fuel Station,Thane,motorwayfuelpo580@konkanpay
+MER94194,Momos Hub,5812,Restaurant,Thane,momoshub685@sahyadri
+MER62559,Tandoor Nights,5812,Restaurant,Thane,tandoornights937@sahyadri
+MER61119,Cafe Monsoon,5812,Restaurant,Thane,cafemonsoon427@sahyadri
+MER37052,Mumbai Sandwich Corner,5812,Restaurant,Thane,mumbaisandwich877@wgcbupi
+MER90512,Gyan Deep Tutorials,8299,Education,Thane,gyandeeptutori98@ivbupi
+MER69213,Pulse Fitness Club,7997,Gym & Fitness,Thane,pulsefitnesscl584@gangaupi
+MER46270,Glamour Beauty Parlour,7230,Salon & Spa,Thane,glamourbeautyp118@narmadapay
+MER91126,Vastralaya Textiles,5651,Apparel,Thane,vastralayatext156@gangaupi
+MER29601,Galaxy Computers,5732,Electronics,Thane,galaxycomputer527@wgcbupi
+MER90238,City Dental Care,8011,Healthcare,Thane,citydentalcare808@wgcbupi
+MER27693,New Bharat Kirana,5411,Grocery & Kirana,Nashik,newbharatkiran169@gangaupi
+MER86990,Krishna Dairy Farm,5411,Grocery & Kirana,Nashik,krishnadairyfa285@ivbupi
+MER11411,Royal Fruits & Vegetables,5411,Grocery & Kirana,Nashik,royalfruitsveg299@sahyadri
+MER52678,Daily Needs Mart,5411,Grocery & Kirana,Nashik,dailyneedsmart528@konkanpay
+MER99536,Laxmi Kirana & General,5411,Grocery & Kirana,Nashik,laxmikiranagen143@ivbupi
+MER35188,Fresh Basket Mart,5411,Grocery & Kirana,Nashik,freshbasketmar207@sahyadri
+MER50325,Sai Krupa Provision,5411,Grocery & Kirana,Nashik,saikrupaprovis770@narmadapay
+MER98533,Sanjivani Medical & General,5912,Pharmacy,Nashik,sanjivanimedic718@sahyadri
+MER90001,Apna Chemist,5912,Pharmacy,Nashik,apnachemist123@gangaupi
+MER21469,Shri Datta Medicals,5912,Pharmacy,Nashik,shridattamedic60@sahyadri
+MER94277,Ganesh Fuel Station,5541,Fuel Station,Nashik,ganeshfuelstat615@konkanpay
+MER42414,Janata Fuel Pump,5541,Fuel Station,Nashik,janatafuelpump117@narmadapay
+MER61435,Misal Corner,5812,Restaurant,Nashik,misalcorner134@sahyadri
+MER96444,Udupi Krishna Bhavan,5812,Restaurant,Nashik,udupikrishnabh783@sahyadri
+MER30116,Hotel Swad Thali,5812,Restaurant,Nashik,hotelswadthali163@gangaupi
+MER37655,Punjabi Tadka Dhaba,5812,Restaurant,Nashik,punjabitadkadh99@konkanpay
+MER43578,Bright Future Coaching Classes,8299,Education,Nashik,brightfutureco790@wgcbupi
+MER99484,Muscle Factory Gym,7997,Gym & Fitness,Nashik,musclefactoryg977@gangaupi
+MER74099,Style Point Unisex Salon,7230,Salon & Spa,Nashik,stylepointunis686@wgcbupi
+MER22143,Vastralaya Textiles,5651,Apparel,Nashik,vastralayatext980@gangaupi
+MER97713,Metro Mobiles & Accessories,5732,Electronics,Nashik,metromobilesac904@gangaupi
+MER58743,Family Health Clinic,8011,Healthcare,Nashik,familyhealthcl534@wgcbupi
+MER22183,Swami Samarth Stores,5411,Grocery & Kirana,Nagpur,swamisamarthst534@konkanpay
+MER73011,Krishna Dairy Farm,5411,Grocery & Kirana,Nagpur,krishnadairyfa549@narmadapay
+MER57780,Balaji Provision Stores,5411,Grocery & Kirana,Nagpur,balajiprovisio503@sahyadri
+MER40238,Shree Ganesh Kirana Stores,5411,Grocery & Kirana,Nagpur,shreeganeshkir883@sahyadri
+MER92997,Gokul Dairy & Kirana,5411,Grocery & Kirana,Nagpur,gokuldairykira224@narmadapay
+MER92024,Jai Bhavani Kirana,5411,Grocery & Kirana,Nagpur,jaibhavanikira550@narmadapay
+MER68921,Mahalaxmi Super Mart,5411,Grocery & Kirana,Nagpur,mahalaxmisuper954@konkanpay
+MER34337,Seva Medicals,5912,Pharmacy,Nagpur,sevamedicals463@narmadapay
+MER28670,Wellness Chemist,5912,Pharmacy,Nagpur,wellnesschemis968@sahyadri
+MER31725,Life Line Medicos,5912,Pharmacy,Nagpur,lifelinemedico745@ivbupi
+MER13825,Motorway Fuel Point,5541,Fuel Station,Nagpur,motorwayfuelpo720@ivbupi
+MER40333,Janata Fuel Pump,5541,Fuel Station,Nagpur,janatafuelpump20@narmadapay
+MER32816,Annapurna Pure Veg,5812,Restaurant,Nagpur,annapurnapurev91@sahyadri
+MER21855,Udupi Krishna Bhavan,5812,Restaurant,Nagpur,udupikrishnabh174@konkanpay
+MER38381,Vada Pav Express,5812,Restaurant,Nagpur,vadapavexpress987@wgcbupi
+MER61922,Hotel Shreyas Veg,5812,Restaurant,Nagpur,hotelshreyasve594@wgcbupi
+MER16900,Saraswati Vidya Mandir,8299,Education,Nagpur,saraswatividya406@gangaupi
+MER51776,Pulse Fitness Club,7997,Gym & Fitness,Nagpur,pulsefitnesscl181@konkanpay
+MER99938,Glamour Beauty Parlour,7230,Salon & Spa,Nagpur,glamourbeautyp827@konkanpay
+MER26292,Kalyani Saree Kendra,5651,Apparel,Nagpur,kalyanisareeke112@narmadapay
+MER10100,Star Electronics,5732,Electronics,Nagpur,starelectronic429@ivbupi
+MER24048,Aarogya Polyclinic,8011,Healthcare,Nagpur,aarogyapolycli186@sahyadri
+MER90231,Mauli Kirana,5411,Grocery & Kirana,Bengaluru,maulikirana49@gangaupi
+MER54541,Gokul Dairy & Kirana,5411,Grocery & Kirana,Bengaluru,gokuldairykira278@sahyadri
+MER27321,Om Sai General Stores,5411,Grocery & Kirana,Bengaluru,omsaigeneralst185@ivbupi
+MER53891,New Bharat Kirana,5411,Grocery & Kirana,Bengaluru,newbharatkiran415@sahyadri
+MER56220,Ambika Grocery Centre,5411,Grocery & Kirana,Bengaluru,ambikagroceryc475@ivbupi
+MER24842,Mahalaxmi Super Mart,5411,Grocery & Kirana,Bengaluru,mahalaxmisuper622@narmadapay
+MER71283,Shree Ganesh Kirana Stores,5411,Grocery & Kirana,Bengaluru,shreeganeshkir497@ivbupi
+MER41891,Apna Chemist,5912,Pharmacy,Bengaluru,apnachemist770@sahyadri
+MER24245,Arogya Medicose,5912,Pharmacy,Bengaluru,arogyamedicose978@sahyadri
+MER54330,Sanjivani Medical & General,5912,Pharmacy,Bengaluru,sanjivanimedic81@konkanpay
+MER37524,Motorway Fuel Point,5541,Fuel Station,Bengaluru,motorwayfuelpo852@wgcbupi
+MER97226,Highway Fuel Station,5541,Fuel Station,Bengaluru,highwayfuelsta201@wgcbupi
+MER95392,Vada Pav Express,5812,Restaurant,Bengaluru,vadapavexpress703@ivbupi
+MER30699,Spice Route Family Restaurant,5812,Restaurant,Bengaluru,spiceroutefami654@konkanpay
+MER84478,Mumbai Sandwich Corner,5812,Restaurant,Bengaluru,mumbaisandwich360@narmadapay
+MER47275,Hotel Swad Thali,5812,Restaurant,Bengaluru,hotelswadthali168@wgcbupi
+MER99521,Saraswati Vidya Mandir,8299,Education,Bengaluru,saraswatividya317@ivbupi
+MER81123,Iron Temple Fitness,7997,Gym & Fitness,Bengaluru,irontemplefitn347@konkanpay
+MER23350,Mirror Image Salon,7230,Salon & Spa,Bengaluru,mirrorimagesal730@wgcbupi
+MER33849,Om Collection,5651,Apparel,Bengaluru,omcollection98@sahyadri
+MER53114,Metro Mobiles & Accessories,5732,Electronics,Bengaluru,metromobilesac753@gangaupi
+MER46845,Nirmal Eye Care,8011,Healthcare,Bengaluru,nirmaleyecare392@sahyadri
+MER41585,Krishna Dairy Farm,5411,Grocery & Kirana,Hyderabad,krishnadairyfa959@gangaupi
+MER71520,Annapurna Supermarket,5411,Grocery & Kirana,Hyderabad,annapurnasuper99@sahyadri
+MER54668,Mauli Kirana,5411,Grocery & Kirana,Hyderabad,maulikirana589@gangaupi
+MER25290,Sai Krupa Provision,5411,Grocery & Kirana,Hyderabad,saikrupaprovis794@sahyadri
+MER88756,Swami Samarth Stores,5411,Grocery & Kirana,Hyderabad,swamisamarthst707@wgcbupi
+MER45873,Royal Fruits & Vegetables,5411,Grocery & Kirana,Hyderabad,royalfruitsveg461@ivbupi
+MER42163,Daily Needs Mart,5411,Grocery & Kirana,Hyderabad,dailyneedsmart365@konkanpay
+MER33333,Wellness Chemist,5912,Pharmacy,Hyderabad,wellnesschemis950@narmadapay
+MER61774,Arogya Medicose,5912,Pharmacy,Hyderabad,arogyamedicose358@sahyadri
+MER25346,Dhanvantari Pharmacy,5912,Pharmacy,Hyderabad,dhanvantaripha236@narmadapay
+MER77625,Om Fuel Point,5541,Fuel Station,Hyderabad,omfuelpoint775@sahyadri
+MER99923,Janata Fuel Pump,5541,Fuel Station,Hyderabad,janatafuelpump92@sahyadri
+MER42593,Annapurna Pure Veg,5812,Restaurant,Hyderabad,annapurnapurev1@konkanpay
+MER66770,Spice Route Family Restaurant,5812,Restaurant,Hyderabad,spiceroutefami139@sahyadri
+MER25183,Vada Pav Express,5812,Restaurant,Hyderabad,vadapavexpress145@ivbupi
+MER12647,Momos Hub,5812,Restaurant,Hyderabad,momoshub853@sahyadri
+MER50329,Bright Future Coaching Classes,8299,Education,Hyderabad,brightfutureco1@sahyadri
+MER96797,FitZone Gym,7997,Gym & Fitness,Hyderabad,fitzonegym855@gangaupi
+MER10362,Style Point Unisex Salon,7230,Salon & Spa,Hyderabad,stylepointunis535@konkanpay
+MER95843,Kalyani Saree Kendra,5651,Apparel,Hyderabad,kalyanisareeke632@narmadapay
+MER55840,Digital World Electronics,5732,Electronics,Hyderabad,digitalworldel723@wgcbupi
+MER47084,Shree Clinic & Diagnostics,8011,Healthcare,Hyderabad,shreeclinicdia426@wgcbupi
+MER50147,Jai Bhavani Kirana,5411,Grocery & Kirana,Delhi,jaibhavanikira218@konkanpay
+MER13606,Krishna Dairy Farm,5411,Grocery & Kirana,Delhi,krishnadairyfa400@konkanpay
+MER86722,Mauli Kirana,5411,Grocery & Kirana,Delhi,maulikirana766@sahyadri
+MER49859,Ambika Grocery Centre,5411,Grocery & Kirana,Delhi,ambikagroceryc713@wgcbupi
+MER42218,Fresh Basket Mart,5411,Grocery & Kirana,Delhi,freshbasketmar481@wgcbupi
+MER20608,Sai Krupa Provision,5411,Grocery & Kirana,Delhi,saikrupaprovis113@sahyadri
+MER20226,Mahalaxmi Super Mart,5411,Grocery & Kirana,Delhi,mahalaxmisuper27@narmadapay
+MER90369,Dhanvantari Pharmacy,5912,Pharmacy,Delhi,dhanvantaripha641@wgcbupi
+MER80498,Shri Datta Medicals,5912,Pharmacy,Delhi,shridattamedic423@sahyadri
+MER95732,Seva Medicals,5912,Pharmacy,Delhi,sevamedicals784@sahyadri
+MER92426,City Fuel Centre,5541,Fuel Station,Delhi,cityfuelcentre398@sahyadri
+MER53379,Sahyog Fuels,5541,Fuel Station,Delhi,sahyogfuels470@ivbupi
+MER93351,Chai Tapri Adda,5812,Restaurant,Delhi,chaitapriadda623@sahyadri
+MER81350,Punjabi Tadka Dhaba,5812,Restaurant,Delhi,punjabitadkadh94@sahyadri
+MER96345,Biryani Junction,5812,Restaurant,Delhi,biryanijunctio825@wgcbupi
+MER45333,Hotel Shreyas Veg,5812,Restaurant,Delhi,hotelshreyasve308@sahyadri
+MER65627,Little Stars Play School,8299,Education,Delhi,littlestarspla69@sahyadri
+MER22212,FitZone Gym,7997,Gym & Fitness,Delhi,fitzonegym82@wgcbupi
+MER74963,Mirror Image Salon,7230,Salon & Spa,Delhi,mirrorimagesal584@sahyadri
+MER28748,Fashion Point,5651,Apparel,Delhi,fashionpoint686@sahyadri
+MER94009,Star Electronics,5732,Electronics,Delhi,starelectronic401@sahyadri
+MER59058,Nirmal Eye Care,8011,Healthcare,Delhi,nirmaleyecare510@sahyadri
+MER62716,Om Sai General Stores,5411,Grocery & Kirana,Jaipur,omsaigeneralst472@sahyadri
+MER95486,Swami Samarth Stores,5411,Grocery & Kirana,Jaipur,swamisamarthst506@wgcbupi
+MER78279,Hari Om Provisions,5411,Grocery & Kirana,Jaipur,hariomprovisio5@sahyadri
+MER50706,Fresh Basket Mart,5411,Grocery & Kirana,Jaipur,freshbasketmar768@konkanpay
+MER51011,Janata Kirana Bhandar,5411,Grocery & Kirana,Jaipur,janatakiranabh361@ivbupi
+MER48444,Shree Ganesh Kirana Stores,5411,Grocery & Kirana,Jaipur,shreeganeshkir430@narmadapay
+MER22831,Jai Bhavani Kirana,5411,Grocery & Kirana,Jaipur,jaibhavanikira292@sahyadri
+MER97647,Sanjivani Medical & General,5912,Pharmacy,Jaipur,sanjivanimedic789@sahyadri
+MER87516,Wellness Chemist,5912,Pharmacy,Jaipur,wellnesschemis25@wgcbupi
+MER33038,Jeevan Medical Stores,5912,Pharmacy,Jaipur,jeevanmedicals269@konkanpay
+MER47625,Sai Auto Fuels,5541,Fuel Station,Jaipur,saiautofuels32@sahyadri
+MER69956,Motorway Fuel Point,5541,Fuel Station,Jaipur,motorwayfuelpo388@ivbupi
+MER57815,Vada Pav Express,5812,Restaurant,Jaipur,vadapavexpress915@narmadapay
+MER66596,Tandoor Nights,5812,Restaurant,Jaipur,tandoornights602@sahyadri
+MER89500,Cafe Monsoon,5812,Restaurant,Jaipur,cafemonsoon413@sahyadri
+MER41895,Misal Corner,5812,Restaurant,Jaipur,misalcorner676@narmadapay
+MER59574,Bright Future Coaching Classes,8299,Education,Jaipur,brightfutureco181@wgcbupi
+MER74723,FitZone Gym,7997,Gym & Fitness,Jaipur,fitzonegym930@ivbupi
+MER37965,Classic Men's Salon,7230,Salon & Spa,Jaipur,classicmenssal548@sahyadri
+MER60234,Vastralaya Textiles,5651,Apparel,Jaipur,vastralayatext909@sahyadri
+MER81752,Sai Mobile Gallery,5732,Electronics,Jaipur,saimobilegalle641@sahyadri
+MER96648,Family Health Clinic,8011,Healthcare,Jaipur,familyhealthcl89@sahyadri
+MER15628,Ambika Grocery Centre,5411,Grocery & Kirana,Lucknow,ambikagroceryc307@sahyadri
+MER79296,Krishna Dairy Farm,5411,Grocery & Kirana,Lucknow,krishnadairyfa429@konkanpay
+MER47809,Fresh Basket Mart,5411,Grocery & Kirana,Lucknow,freshbasketmar648@wgcbupi
+MER74173,Laxmi Kirana & General,5411,Grocery & Kirana,Lucknow,laxmikiranagen785@wgcbupi
+MER70441,Gokul Dairy & Kirana,5411,Grocery & Kirana,Lucknow,gokuldairykira722@sahyadri
+MER79165,Balaji Provision Stores,5411,Grocery & Kirana,Lucknow,balajiprovisio232@konkanpay
+MER17255,Shree Ganesh Kirana Stores,5411,Grocery & Kirana,Lucknow,shreeganeshkir412@gangaupi
+MER47954,Shri Datta Medicals,5912,Pharmacy,Lucknow,shridattamedic128@gangaupi
+MER88774,Seva Medicals,5912,Pharmacy,Lucknow,sevamedicals294@narmadapay
+MER77027,Arogya Medicose,5912,Pharmacy,Lucknow,arogyamedicose806@sahyadri
+MER38960,Om Fuel Point,5541,Fuel Station,Lucknow,omfuelpoint868@konkanpay
+MER96729,Motorway Fuel Point,5541,Fuel Station,Lucknow,motorwayfuelpo406@narmadapay
+MER79837,Cafe Monsoon,5812,Restaurant,Lucknow,cafemonsoon997@konkanpay
+MER27923,Misal Corner,5812,Restaurant,Lucknow,misalcorner917@gangaupi
+MER84307,Momos Hub,5812,Restaurant,Lucknow,momoshub218@narmadapay
+MER52709,Hotel Swad Thali,5812,Restaurant,Lucknow,hotelswadthali447@sahyadri
+MER77512,Excel Academy,8299,Education,Lucknow,excelacademy924@ivbupi
+MER59546,Pulse Fitness Club,7997,Gym & Fitness,Lucknow,pulsefitnesscl280@sahyadri
+MER90675,Mirror Image Salon,7230,Salon & Spa,Lucknow,mirrorimagesal917@konkanpay
+MER93571,Om Collection,5651,Apparel,Lucknow,omcollection221@konkanpay
+MER50630,Sai Mobile Gallery,5732,Electronics,Lucknow,saimobilegalle682@ivbupi
+MER49891,Aarogya Polyclinic,8011,Healthcare,Lucknow,aarogyapolycli259@narmadapay
+MER98066,Daily Needs Mart,5411,Grocery & Kirana,Indore,dailyneedsmart840@ivbupi
+MER78923,Annapurna Supermarket,5411,Grocery & Kirana,Indore,annapurnasuper336@wgcbupi
+MER64629,Om Sai General Stores,5411,Grocery & Kirana,Indore,omsaigeneralst101@wgcbupi
+MER19847,Ambika Grocery Centre,5411,Grocery & Kirana,Indore,ambikagroceryc638@ivbupi
+MER60134,Balaji Provision Stores,5411,Grocery & Kirana,Indore,balajiprovisio436@konkanpay
+MER72136,Jai Bhavani Kirana,5411,Grocery & Kirana,Indore,jaibhavanikira60@wgcbupi
+MER65118,Janata Kirana Bhandar,5411,Grocery & Kirana,Indore,janatakiranabh684@ivbupi
+MER75768,Jeevan Medical Stores,5912,Pharmacy,Indore,jeevanmedicals388@konkanpay
+MER46593,Dhanvantari Pharmacy,5912,Pharmacy,Indore,dhanvantaripha858@gangaupi
+MER94998,Life Line Medicos,5912,Pharmacy,Indore,lifelinemedico114@ivbupi
+MER86288,Sahyog Fuels,5541,Fuel Station,Indore,sahyogfuels774@wgcbupi
+MER48542,Highway Fuel Station,5541,Fuel Station,Indore,highwayfuelsta122@gangaupi
+MER86978,Hotel Swad Thali,5812,Restaurant,Indore,hotelswadthali685@sahyadri
+MER32682,Chai Tapri Adda,5812,Restaurant,Indore,chaitapriadda276@konkanpay
+MER53970,Vada Pav Express,5812,Restaurant,Indore,vadapavexpress830@wgcbupi
+MER26184,Biryani Junction,5812,Restaurant,Indore,biryanijunctio735@sahyadri
+MER13401,Gyan Deep Tutorials,8299,Education,Indore,gyandeeptutori234@narmadapay
+MER11162,FitZone Gym,7997,Gym & Fitness,Indore,fitzonegym790@sahyadri
+MER75497,Classic Men's Salon,7230,Salon & Spa,Indore,classicmenssal978@sahyadri
+MER68853,Trendz Fashion Hub,5651,Apparel,Indore,trendzfashionh104@konkanpay
+MER25952,Sai Mobile Gallery,5732,Electronics,Indore,saimobilegalle685@wgcbupi
+MER16105,Nirmal Eye Care,8011,Healthcare,Indore,nirmaleyecare539@wgcbupi
+MER35398,Royal Fruits & Vegetables,5411,Grocery & Kirana,Ahmedabad,royalfruitsveg565@sahyadri
+MER33593,Janata Kirana Bhandar,5411,Grocery & Kirana,Ahmedabad,janatakiranabh360@sahyadri
+MER79840,Mahalaxmi Super Mart,5411,Grocery & Kirana,Ahmedabad,mahalaxmisuper834@narmadapay
+MER91453,Laxmi Kirana & General,5411,Grocery & Kirana,Ahmedabad,laxmikiranagen768@konkanpay
+MER94711,Swami Samarth Stores,5411,Grocery & Kirana,Ahmedabad,swamisamarthst368@sahyadri
+MER71404,Daily Needs Mart,5411,Grocery & Kirana,Ahmedabad,dailyneedsmart580@gangaupi
+MER72340,Annapurna Supermarket,5411,Grocery & Kirana,Ahmedabad,annapurnasuper660@sahyadri
+MER40955,Apna Chemist,5912,Pharmacy,Ahmedabad,apnachemist563@narmadapay
+MER98355,Wellness Chemist,5912,Pharmacy,Ahmedabad,wellnesschemis982@konkanpay
+MER77197,Life Line Medicos,5912,Pharmacy,Ahmedabad,lifelinemedico928@wgcbupi
+MER84975,Sahyog Fuels,5541,Fuel Station,Ahmedabad,sahyogfuels617@gangaupi
+MER75606,Janata Fuel Pump,5541,Fuel Station,Ahmedabad,janatafuelpump914@ivbupi
+MER11789,Biryani Junction,5812,Restaurant,Ahmedabad,biryanijunctio367@konkanpay
+MER13038,Hotel Swad Thali,5812,Restaurant,Ahmedabad,hotelswadthali421@wgcbupi
+MER95492,Punjabi Tadka Dhaba,5812,Restaurant,Ahmedabad,punjabitadkadh93@sahyadri
+MER59460,Tandoor Nights,5812,Restaurant,Ahmedabad,tandoornights929@sahyadri
+MER98850,Gyan Deep Tutorials,8299,Education,Ahmedabad,gyandeeptutori521@gangaupi
+MER52602,Pulse Fitness Club,7997,Gym & Fitness,Ahmedabad,pulsefitnesscl603@sahyadri
+MER17988,Classic Men's Salon,7230,Salon & Spa,Ahmedabad,classicmenssal642@wgcbupi
+MER97319,Vastralaya Textiles,5651,Apparel,Ahmedabad,vastralayatext489@ivbupi
+MER13441,Sai Mobile Gallery,5732,Electronics,Ahmedabad,saimobilegalle705@ivbupi
+MER60295,Nirmal Eye Care,8011,Healthcare,Ahmedabad,nirmaleyecare791@wgcbupi
+MER41837,QuickCart,5399,E-commerce,Bengaluru,quickcart273@konkanpay
+MER36924,QuickCart Fresh,5411,Online Grocery,Bengaluru,quickcartfresh994@sahyadri
+MER29084,FoodDash,5814,Food Delivery,Bengaluru,fooddash365@gangaupi
+MER31612,ShopMitra Online,5399,E-commerce,Mumbai,shopmitraonlin934@sahyadri
+MER79211,Vastra Online Fashion,5651,E-commerce,Mumbai,vastraonlinefa764@konkanpay
+MER39533,Rangmanch Cinemas,7832,Entertainment,Mumbai,rangmanchcinem953@ivbupi
+MER21098,Safar Tours & Travels,4722,Travel,Pune,safartourstrav699@konkanpay
+MER34444,Sahaj Rail & Bus Tickets,4112,Travel,Delhi,sahajrailbusti266@sahyadri
+MER53302,Vayu Mobile Prepaid,4814,Telecom - Mobile,Mumbai,vayumobileprep541@narmadapay
+MER77514,Tarang Telecom Prepaid,4814,Telecom - Mobile,Delhi,tarangtelecomp310@narmadapay
+MER32427,Vayu Mobile Postpaid,4814,Telecom - Mobile,Mumbai,vayumobilepost527@wgcbupi
+MER77560,Tarang Telecom Postpaid,4814,Telecom - Mobile,Delhi,tarangtelecomp139@sahyadri
+MER66483,Nexa Fibernet Broadband,4899,Telecom - Broadband,Pune,nexafibernetbr55@narmadapay
+MER30924,Sampark Broadband,4899,Telecom - Broadband,Hyderabad,samparkbroadba950@sahyadri
+MER25354,Akash DTH Services,4899,DTH / Cable,Mumbai,akashdthservic904@ivbupi
+MER78154,Metro Piped Gas Ltd,4900,Utility - Gas,Mumbai,metropipedgasl125@sahyadri
+MER40540,Deccan Power Distribution Ltd,4900,Utility - Electricity,Pune,deccanpowerdis204@gangaupi
+MER73859,Namma Vidyut Supply Co,4900,Utility - Electricity,Bengaluru,nammavidyutsup16@sahyadri
+MER11401,Golconda Power Distribution Ltd,4900,Utility - Electricity,Hyderabad,golcondapowerd230@narmadapay
+MER51823,Capital City Power Ltd,4900,Utility - Electricity,Delhi,capitalcitypow501@sahyadri
+MER80876,Marudhar Vidyut Vitaran Ltd,4900,Utility - Electricity,Jaipur,marudharvidyut653@narmadapay
+MER32104,Awadh Power Distribution Ltd,4900,Utility - Electricity,Lucknow,awadhpowerdist728@gangaupi
+MER26811,Malwa Vidyut Vitaran Ltd,4900,Utility - Electricity,Indore,malwavidyutvit718@wgcbupi
+MER97673,Sabarmati Power Supply Ltd,4900,Utility - Electricity,Ahmedabad,sabarmatipower569@wgcbupi

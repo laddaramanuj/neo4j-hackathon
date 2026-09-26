@@ -202,3 +202,10 @@ neo4j-mcp/
 
 # Claude Code personal settings
 .claude/settings.local.json
+
+# Secrets - never commit (Streamlit Cloud gets them via its Secrets settings)
+.env
+**/.streamlit/secrets.toml
+
+# Reference clone of the workshop code (its own git repo)
+workshop-agent-memory/

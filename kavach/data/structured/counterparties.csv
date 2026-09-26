@@ -1,0 +1,545 @@
+ext_id,holder_name,holder_type,bank,ifsc,account_number,upi_id,account_opened_on,first_seen_in_our_data
+EXT22735,Rekha Shah,individual,Western Ghats Co-operative Bank,WGCB0671816,7878560203754,rekhashah9540@wgcbupi,2012-08-06,2015-12-03
+EXT40722,Lata Banerjee,individual,Ganga Gramin Bank,GGBN0678787,79424081983,latabanerjee2692@gangaupi,2013-08-15,2026-07-04
+EXT44867,Sneha Agarwal,individual,Konkan Mercantile Bank,KMBL0903591,81457744000,snehaagarwal2463@konkanpay,2010-01-13,2011-02-14
+EXT47683,Madhuri Rao,individual,Western Ghats Co-operative Bank,WGCB0648879,833941173512,madhurirao1216@wgcbupi,2008-10-09,2026-07-09
+EXT17201,Lakshmi Das,individual,Western Ghats Co-operative Bank,WGCB0934748,495849851971,lakshmidas3136@wgcbupi,2022-10-29,2023-07-20
+EXT44588,Ashok Joshi,individual,Konkan Mercantile Bank,KMBL0912937,88126970310819,ashokjoshi4245@konkanpay,2020-05-08,2021-12-01
+EXT33932,Priya Verma,individual,Indus Valley Bank,IVBK0756594,709966670656,priyaverma8704@ivbupi,2019-08-15,2020-06-07
+EXT37931,Archana Thakur,individual,Konkan Mercantile Bank,KMBL0442122,777230466407,archanathakur4489@konkanpay,2020-05-11,2024-07-31
+EXT67622,Lotus Mutual Fund,company,Indus Valley Bank,IVBK0751175,22163637262,,2010-11-12,2024-09-18
+EXT74136,Unity Mutual Fund,company,Konkan Mercantile Bank,KMBL0584838,605944873096891,,1996-04-20,2000-07-27
+EXT23448,Yogesh Iyer,individual,Indus Valley Bank,IVBK0580348,70446546543,yogeshiyer5074@ivbupi,2013-08-09,2014-03-17
+EXT22915,Vandana Pandey,individual,Konkan Mercantile Bank,KMBL0965622,0200318673666,vandanapandey9907@konkanpay,2017-01-24,2020-10-01
+EXT55006,Crescent Software Services LLP,company,Indus Valley Bank,IVBK0245756,4444117992684714,,2012-11-24,2013-02-02
+EXT48284,Revati Verma,individual,Konkan Mercantile Bank,KMBL0165422,3239601574061089,revativerma4379@konkanpay,2009-04-14,2020-08-24
+EXT15822,New India Traders Services,proprietorship,Ganga Gramin Bank,GGBN0522390,1670423781399332,newindiatrader5443@gangaupi,2025-06-08,2026-08-04
+EXT83543,Joseph Nair,individual,Indus Valley Bank,IVBK0818677,815018788177,josephnair1204@ivbupi,2011-02-16,2026-07-02
+EXT29485,Greenfield Logistics Pvt Ltd,company,Narmada Small Finance Bank,NSFB0163248,223016561946,,1994-10-11,2012-01-30
+EXT29875,Dinesh Joshi,individual,Ganga Gramin Bank,GGBN0864842,503722263733993,dineshjoshi1667@gangaupi,2014-04-20,2022-08-24
+EXT53421,Chinmay Salunkhe,individual,Narmada Small Finance Bank,NSFB0133190,90579073244,chinmaysalunkh4703@narmadapay,2026-03-08,2026-08-12
+EXT35153,Neha Kulkarni,individual,Ganga Gramin Bank,GGBN0466254,730029337215,nehakulkarni4184@gangaupi,2017-02-08,2019-06-30
+EXT41290,Keerthi Banerjee,individual,Indus Valley Bank,IVBK0515180,6661458839784822,keerthibanerje6815@ivbupi,2015-05-03,2023-03-31
+EXT33278,Shweta Pandey,individual,Indus Valley Bank,IVBK0794491,73404240972555,shwetapandey9725@ivbupi,2011-02-27,2012-05-17
+EXT33144,Anjali Chavan,individual,Ganga Gramin Bank,GGBN0204627,376349702278,anjalichavan1641@gangaupi,2022-06-21,2024-10-31
+EXT14410,Deccan Retail Pvt Ltd,company,Konkan Mercantile Bank,KMBL0390608,3173462319582856,,2001-10-08,2023-03-05
+EXT11594,Sayali Mishra,individual,Ganga Gramin Bank,GGBN0059348,64148375851862,sayalimishra6691@gangaupi,2014-11-13,2018-03-17
+EXT71304,Keerthi Salunkhe,individual,Indus Valley Bank,IVBK0852966,1071584542952108,keerthisalunkh7190@ivbupi,2016-01-09,2019-06-09
+EXT18439,Maruti Enterprises Services,proprietorship,Western Ghats Co-operative Bank,WGCB0657897,16991452146,marutienterpri6103@wgcbupi,2018-05-06,2026-07-01
+EXT36787,Sayali Shinde,individual,Indus Valley Bank,IVBK0166780,6928437540569,sayalishinde6373@ivbupi,2021-02-06,2026-07-07
+EXT46951,Venkat Mehta,individual,Ganga Gramin Bank,GGBN0115726,32968575583,venkatmehta1880@gangaupi,2023-11-22,2025-06-03
+EXT94628,Gurpreet Sawant,individual,Konkan Mercantile Bank,KMBL0831656,21001173165916,gurpreetsawant8693@konkanpay,2013-07-31,2022-05-22
+EXT78276,Om Tailors,company,Indus Valley Bank,IVBK0638167,57578713725,,2023-05-08,2025-05-19
+EXT20430,Rupali Gokhale,individual,Indus Valley Bank,IVBK0284835,63256240468425,rupaligokhale5110@ivbupi,2022-05-09,2024-06-26
+EXT58601,Rajesh Bhosale,individual,Narmada Small Finance Bank,NSFB0351406,886465802751122,rajeshbhosale8573@narmadapay,2015-03-24,2026-07-09
+EXT33250,Sunrise Enterprises & Co,proprietorship,Konkan Mercantile Bank,KMBL0712314,32405753168133,sunriseenterpr2118@konkanpay,2022-06-07,2026-07-02
+EXT45694,Priya Deshpande,individual,Konkan Mercantile Bank,KMBL0427319,504292400390,priyadeshpande4176@konkanpay,2020-11-18,2025-04-05
+EXT48685,Vinayak Shah,individual,Indus Valley Bank,IVBK0044655,2400747144314,vinayakshah87@ivbupi,2014-04-26,2025-08-08
+EXT27255,Vandana Deshpande,individual,Narmada Small Finance Bank,NSFB0793751,151969029393415,vandanadeshpan1649@narmadapay,2020-11-03,2024-06-25
+EXT34065,Vidarbha Retail Pvt Ltd,company,Konkan Mercantile Bank,KMBL0116953,899243395671676,,1991-02-15,2013-05-02
+EXT70967,Meena Desai,individual,Ganga Gramin Bank,GGBN0222259,622012037451,meenadesai7805@gangaupi,2023-12-04,2026-02-15
+EXT82531,Rupali Mehta,individual,Indus Valley Bank,IVBK0465038,2577311867510533,rupalimehta3016@ivbupi,2014-05-09,2021-02-22
+EXT59708,Apex Pharma Pvt Ltd,company,Narmada Small Finance Bank,NSFB0054855,820416842964701,,2008-05-06,2020-06-11
+EXT24691,Farah Thakur,individual,Konkan Mercantile Bank,KMBL0934027,98074414872,farahthakur5997@konkanpay,2013-07-03,2015-12-31
+EXT44876,Aravali Constructions Pvt Ltd,company,Ganga Gramin Bank,GGBN0407797,739027420661,,1991-11-25,2004-01-26
+EXT68272,Keerthi Naik Classes,individual,Konkan Mercantile Bank,KMBL0032244,0993298461281036,keerthinaikcla2105@konkanpay,2019-09-07,2021-04-14
+EXT69461,Konkan Retail Pvt Ltd,company,Ganga Gramin Bank,GGBN0122723,304386594965,,2009-01-13,2015-08-29
+EXT53826,Madhuri Joshi,individual,Narmada Small Finance Bank,NSFB0471208,547141474266,madhurijoshi5788@narmadapay,2023-12-28,2026-05-24
+EXT95961,Abhijit Banerjee,individual,Indus Valley Bank,IVBK0616800,1750470812313,abhijitbanerje8777@ivbupi,2014-05-23,2026-05-08
+EXT11495,Chinmay Nair,individual,Indus Valley Bank,IVBK0260776,34482959378505,chinmaynair5886@ivbupi,2011-01-16,2026-07-09
+EXT87976,Aarti Deshpande,individual,Indus Valley Bank,IVBK0518856,5901518256742483,aartideshpande3372@ivbupi,2014-08-24,2023-02-16
+EXT14271,Pragati Consumer Finance Ltd,company,Indus Valley Bank,IVBK0935279,8699858852620,,2011-01-28,2020-10-17
+EXT25855,Pooja Kale,individual,Narmada Small Finance Bank,NSFB0025773,815527945382,poojakale5695@narmadapay,2017-10-01,2020-01-03
+EXT79187,Krishna Tiles & Sanitary,company,Narmada Small Finance Bank,NSFB0043254,844771343706458,krishnatilessa5431@narmadapay,2019-11-03,2023-09-29
+EXT62463,Geeta Gupta,individual,Narmada Small Finance Bank,NSFB0865468,24727886826,geetagupta2865@narmadapay,2018-05-31,2021-09-29
+EXT22280,Godavari Logistics Pvt Ltd,company,Konkan Mercantile Bank,KMBL0176066,05884591246496,,2003-02-22,2006-06-17
+EXT77197,Deepa Bhosale,individual,Narmada Small Finance Bank,NSFB0490921,18422501831,deepabhosale471@narmadapay,2019-10-01,2026-07-05
+EXT90880,Komal Desai,individual,Narmada Small Finance Bank,NSFB0329481,9747069086809524,komaldesai1610@narmadapay,2014-07-24,2016-05-11
+EXT98376,Anthony Joshi,individual,Konkan Mercantile Bank,KMBL0919149,488607032507,anthonyjoshi8588@konkanpay,2009-10-25,2012-10-19
+EXT55854,Aditya Shah,individual,Indus Valley Bank,IVBK0644523,773231126770422,adityashah3693@ivbupi,2012-11-09,2026-07-01
+EXT35369,Sanjay Rao,individual,Narmada Small Finance Bank,NSFB0689526,90172447437,sanjayrao4407@narmadapay,2019-06-01,2021-07-09
+EXT86194,Aniket Kulkarni,individual,Western Ghats Co-operative Bank,WGCB0809541,006010555481,aniketkulkarni8885@wgcbupi,2013-03-11,2026-07-01
+EXT50358,Anjali Dixit,individual,Konkan Mercantile Bank,KMBL0967604,78922201901461,anjalidixit6308@konkanpay,2012-01-08,2026-07-10
+EXT93639,Archana Thakur,individual,Indus Valley Bank,IVBK0320439,60960320779,archanathakur7456@ivbupi,2019-01-18,2022-08-04
+EXT24471,Sanjay Desai,individual,Indus Valley Bank,IVBK0231370,364839096096,sanjaydesai8164@ivbupi,2012-11-21,2017-07-20
+EXT37082,Ajay Kamat,individual,Ganga Gramin Bank,GGBN0929392,8509515153214960,ajaykamat8913@gangaupi,2018-02-18,2020-01-31
+EXT25341,Vijay Shinde,individual,Konkan Mercantile Bank,KMBL0742059,79041481090,vijayshinde4510@konkanpay,2010-07-27,2016-07-16
+EXT46417,Sunil Gaikwad,individual,Indus Valley Bank,IVBK0197174,87337375059,sunilgaikwad9000@ivbupi,2016-09-13,2024-04-12
+EXT22622,Meena Mehta,individual,Konkan Mercantile Bank,KMBL0871220,312412471724,meenamehta7110@konkanpay,2015-12-11,2021-02-13
+EXT88020,Ishita Singh,individual,Konkan Mercantile Bank,KMBL0718325,3098350062071647,ishitasingh9015@konkanpay,2020-03-26,2021-01-08
+EXT87693,Shweta Shinde,individual,Western Ghats Co-operative Bank,WGCB0721538,64650118415,shwetashinde5433@wgcbupi,2021-01-20,2022-11-17
+EXT96592,Parag Menon,individual,Konkan Mercantile Bank,KMBL0228191,6989620260817,paragmenon9880@konkanpay,2012-12-25,2026-07-01
+EXT70442,Kunal Singh,individual,Western Ghats Co-operative Bank,WGCB0486085,520834179964,kunalsingh5245@wgcbupi,2016-06-06,2026-08-20
+EXT45798,Srinivas Gokhale,individual,Konkan Mercantile Bank,KMBL0329703,48201385116,srinivasgokhal4864@konkanpay,2014-02-13,2020-12-24
+EXT85090,Siddharth Agarwal,individual,Konkan Mercantile Bank,KMBL0335224,351846839139,siddharthagarw7257@konkanpay,2014-04-16,2021-02-17
+EXT83440,Shweta Kale,individual,Konkan Mercantile Bank,KMBL0458311,93866232076452,shwetakale917@konkanpay,2021-09-17,2024-07-16
+EXT68485,Deccan Mills Staff Pension Trust,company,Konkan Mercantile Bank,KMBL0669217,368362691998,,1985-04-13,2009-11-26
+EXT50271,Vandana Desai,individual,Ganga Gramin Bank,GGBN0044042,2379712006489380,vandanadesai8580@gangaupi,2023-02-06,2026-07-24
+EXT93233,Divya Thakur,individual,Indus Valley Bank,IVBK0252246,01645492991770,divyathakur2522@ivbupi,2021-05-16,2021-10-24
+EXT50392,Konkan Engg Works Ltd,company,Indus Valley Bank,IVBK0486292,106596593412,,1993-09-24,2026-06-30
+EXT33239,Sachin Sawant,individual,Konkan Mercantile Bank,KMBL0430385,27117486396487,sachinsawant4829@konkanpay,2020-03-19,2024-03-02
+EXT67113,Jain Cloth Emporium,company,Western Ghats Co-operative Bank,WGCB0880552,524943964446980,jainclothempor7618@wgcbupi,2020-12-06,2026-06-29
+EXT18266,Priya Pandey,individual,Narmada Small Finance Bank,NSFB0244284,322968461313,priyapandey1877@narmadapay,2018-06-22,2019-03-22
+EXT51220,Golden Traders,proprietorship,Indus Valley Bank,IVBK0617080,45317780086,goldentraders2705@ivbupi,2018-10-02,2026-07-01
+EXT78468,Komal Wagh,individual,Konkan Mercantile Bank,KMBL0082956,3563172950156,komalwagh7997@konkanpay,2007-05-19,2019-11-24
+EXT31898,Anthony Rao,individual,Narmada Small Finance Bank,NSFB0032223,648322244867,anthonyrao822@narmadapay,2010-07-12,2014-11-20
+EXT90811,Girish Verma,individual,Indus Valley Bank,IVBK0338224,196987978870,girishverma3084@ivbupi,2016-04-25,2024-10-24
+EXT97386,Gurdeep Bhosale,individual,Konkan Mercantile Bank,KMBL0349559,82491802007057,gurdeepbhosale9306@konkanpay,2025-04-12,2026-07-28
+EXT19958,Vaishali Singh,individual,Western Ghats Co-operative Bank,WGCB0933036,52855305631265,vaishalisingh1153@wgcbupi,2022-10-23,2024-01-28
+EXT70921,Divya Shinde,individual,Indus Valley Bank,IVBK0296118,9641860583006862,divyashinde9434@ivbupi,2009-03-31,2013-03-29
+EXT78947,Zenith Packaging Ltd,company,Konkan Mercantile Bank,KMBL0827536,014150065953,,2018-06-27,2026-02-14
+EXT58147,Sayali Agarwal,individual,Indus Valley Bank,IVBK0398084,674353102130,sayaliagarwal3699@ivbupi,2023-05-08,2026-04-18
+EXT46919,Joseph Tiwari,individual,Ganga Gramin Bank,GGBN0959943,4063926899676100,josephtiwari1010@gangaupi,2009-08-17,2014-08-25
+EXT34935,Sanmati Foods Pvt Ltd,company,Western Ghats Co-operative Bank,WGCB0539450,664393482503,,2013-10-16,2023-06-16
+EXT62036,Vandana Tiwari,individual,Western Ghats Co-operative Bank,WGCB0481780,30508830677,vandanatiwari6774@wgcbupi,2023-03-18,2023-05-25
+EXT89568,Pooja Deshpande,individual,Konkan Mercantile Bank,KMBL0051083,0534254572571198,poojadeshpande9300@konkanpay,2019-11-20,2020-08-29
+EXT16612,Harleen More,individual,Narmada Small Finance Bank,NSFB0064507,059648814512,harleenmore5054@narmadapay,2014-06-18,2025-03-15
+EXT90461,Priya Jadhav,individual,Narmada Small Finance Bank,NSFB0367520,82139413962207,priyajadhav2922@narmadapay,2023-08-15,2026-03-13
+EXT74423,Mangesh Chavan,individual,Narmada Small Finance Bank,NSFB0709502,875179063284,mangeshchavan5934@narmadapay,2014-07-17,2021-03-14
+EXT85631,Anita Sheikh,individual,Narmada Small Finance Bank,NSFB0395356,107654685530521,anitasheikh5581@narmadapay,2012-12-15,2025-01-26
+EXT70571,Abhijit Wagh,individual,Narmada Small Finance Bank,NSFB0440913,489238835729,abhijitwagh3164@narmadapay,2020-07-05,2024-12-25
+EXT49589,Manisha Yadav,individual,Indus Valley Bank,IVBK0308177,769591700712,manishayadav5806@ivbupi,2016-05-25,2020-08-27
+EXT26177,Priya Gokhale,individual,Ganga Gramin Bank,GGBN0195152,7373134399086425,priyagokhale3406@gangaupi,2011-03-06,2024-05-17
+EXT22604,Usha Gaikwad,individual,Konkan Mercantile Bank,KMBL0420439,3445136481464090,ushagaikwad9055@konkanpay,2014-08-08,2026-07-04
+EXT99008,Lakshmi Thakur,individual,Konkan Mercantile Bank,KMBL0593290,57284621210,lakshmithakur351@konkanpay,2010-02-05,2026-05-19
+EXT95335,Indrayani Electricals Pvt Ltd,company,Ganga Gramin Bank,GGBN0364161,25396075128349,,2000-05-12,2026-06-30
+EXT21657,Chintamani Supplies,proprietorship,Konkan Mercantile Bank,KMBL0307828,944682947525,chintamanisupp9737@konkanpay,2024-05-25,2026-01-02
+EXT76252,Excel Trading Co,proprietorship,Konkan Mercantile Bank,KMBL0394380,89812080163548,exceltradingco7500@konkanpay,2020-09-16,2026-09-06
+EXT63185,Rupali Pillai,individual,Ganga Gramin Bank,GGBN0285436,887653197944589,rupalipillai4566@gangaupi,2023-08-01,2023-12-28
+EXT76780,Faisal Kale,individual,Konkan Mercantile Bank,KMBL0467129,22254392824,faisalkale5137@konkanpay,2017-10-15,2025-11-09
+EXT87191,Mahesh Mishra,individual,Western Ghats Co-operative Bank,WGCB0403480,353932500265,maheshmishra8860@wgcbupi,2023-11-26,2025-03-02
+EXT80588,Joseph Kale,individual,Ganga Gramin Bank,GGBN0109558,339430224015,josephkale6732@gangaupi,2016-06-03,2019-05-22
+EXT44699,Swati Apte,individual,Western Ghats Co-operative Bank,WGCB0330552,068594124007,swatiapte4208@wgcbupi,2013-10-24,2014-09-17
+EXT46761,Ishita Bhatt,individual,Narmada Small Finance Bank,NSFB0052471,8251886195906268,ishitabhatt3695@narmadapay,2017-04-05,2021-08-13
+EXT46855,Aditya Singh,individual,Western Ghats Co-operative Bank,WGCB0929569,69971108780271,adityasingh2553@wgcbupi,2020-06-12,2025-09-19
+EXT17489,Aditya Shinde,individual,Konkan Mercantile Bank,KMBL0517474,5823028940943558,adityashinde8943@konkanpay,2020-07-16,2026-07-05
+EXT48943,Kiran Steel Traders,company,Konkan Mercantile Bank,KMBL0027438,462969835111448,kiransteeltrad459@konkanpay,2021-03-09,2025-01-19
+EXT67813,Siddharth Mane,individual,Western Ghats Co-operative Bank,WGCB0277141,14313859726,siddharthmane9474@wgcbupi,2020-04-19,2025-05-03
+EXT44486,Star Mobile Point & Co,proprietorship,Ganga Gramin Bank,GGBN0907927,64035763142,starmobilepoin5990@gangaupi,2019-01-07,2026-07-24
+EXT33717,Deepa Kulkarni,individual,Konkan Mercantile Bank,KMBL0182374,226796728702,deepakulkarni7602@konkanpay,2014-08-23,2021-07-10
+EXT82106,Nisha Mane,individual,Konkan Mercantile Bank,KMBL0637123,584663952753,nishamane4228@konkanpay,2021-03-10,2026-07-04
+EXT11244,Archana Naidu,individual,Konkan Mercantile Bank,KMBL0323721,496597220095,archananaidu8680@konkanpay,2010-03-11,2026-07-01
+EXT76462,Pallavi Joshi,individual,Konkan Mercantile Bank,KMBL0730688,764253232032,pallavijoshi6537@konkanpay,2015-05-09,2019-01-13
+EXT31749,Madhuri Bhosale,individual,Konkan Mercantile Bank,KMBL0551009,916133048841980,madhuribhosale2478@konkanpay,2023-12-11,2026-02-15
+EXT47753,Sanjay Mehta,individual,Western Ghats Co-operative Bank,WGCB0182465,073314194727,sanjaymehta964@wgcbupi,2012-10-15,2013-09-15
+EXT52615,Sana Deshmukh,individual,Western Ghats Co-operative Bank,WGCB0606414,749428907179912,sanadeshmukh7552@wgcbupi,2020-03-23,2021-07-31
+EXT71789,Srinivas Saxena,individual,Indus Valley Bank,IVBK0390787,886952980157,srinivassaxena4013@ivbupi,2018-08-23,2021-07-18
+EXT39774,Sagar Patil,individual,Konkan Mercantile Bank,KMBL0494906,15695742930954,sagarpatil5284@konkanpay,2018-07-11,2026-08-19
+EXT93197,Swami Travels,proprietorship,Indus Valley Bank,IVBK0004544,975532562394,swamitravels1190@ivbupi,2006-04-06,2023-12-02
+EXT90335,Farah More,individual,Indus Valley Bank,IVBK0804327,7943446496305,farahmore3028@ivbupi,2020-04-08,2026-02-16
+EXT36237,Rohini Deshpande,individual,Ganga Gramin Bank,GGBN0729385,3611032036997,rohinideshpand6264@gangaupi,2019-04-30,2020-01-02
+EXT46733,Venkat Shah,individual,Western Ghats Co-operative Bank,WGCB0571068,5675889069614,venkatshah5885@wgcbupi,2018-01-14,2026-07-01
+EXT62191,Aravali Agro Industries Ltd,company,Konkan Mercantile Bank,KMBL0651455,293858809611532,,1988-12-09,2001-10-05
+EXT52354,Archana Nair,individual,Konkan Mercantile Bank,KMBL0060501,664311516386,archananair3499@konkanpay,2017-02-08,2022-07-08
+EXT22156,Deepak Naidu,individual,Indus Valley Bank,IVBK0410734,595040303051,deepaknaidu4861@ivbupi,2018-03-09,2021-12-08
+EXT96976,Hemant Menon,individual,Indus Valley Bank,IVBK0302818,25822467257,hemantmenon5542@ivbupi,2018-07-26,2025-02-11
+EXT66161,Amit Reddy,individual,Ganga Gramin Bank,GGBN0612162,634184046623,amitreddy1500@gangaupi,2019-04-14,2021-08-27
+EXT17049,Vertex Foods Pvt Ltd,company,Konkan Mercantile Bank,KMBL0918843,1939956807049097,,1998-03-07,2022-04-15
+EXT70891,Srinivas Kadam,individual,Narmada Small Finance Bank,NSFB0695235,575341481283188,srinivaskadam7188@narmadapay,2009-01-23,2023-12-11
+EXT70678,Tulja Bhavani Caterers,proprietorship,Indus Valley Bank,IVBK0281340,0268679029245723,,2022-07-07,2023-10-25
+EXT95351,Vertex Retail Pvt Ltd,company,Ganga Gramin Bank,GGBN0049015,353251505126999,,1998-06-21,1999-03-27
+EXT80945,Divya Mehta,individual,Ganga Gramin Bank,GGBN0521439,233544827785,divyamehta6388@gangaupi,2020-12-16,2026-01-21
+EXT56714,Gurdeep Nair,individual,Ganga Gramin Bank,GGBN0567128,59495484329,gurdeepnair5492@gangaupi,2022-05-10,2025-09-06
+EXT38860,Komal Verma,individual,Konkan Mercantile Bank,KMBL0650449,61000789404494,komalverma1501@konkanpay,2012-09-23,2018-06-04
+EXT77123,Jyoti Kale,individual,Ganga Gramin Bank,GGBN0237097,9909865380438,jyotikale9638@gangaupi,2013-10-24,2024-06-06
+EXT26708,Srinivas Chavan,individual,Indus Valley Bank,IVBK0893404,3174257042435,srinivaschavan4420@ivbupi,2012-03-13,2018-09-26
+EXT63748,Greenfield Agro Industries Ltd,company,Ganga Gramin Bank,GGBN0379198,081363991812514,,1988-03-09,2017-01-10
+EXT55547,Dinesh Gaikwad,individual,Konkan Mercantile Bank,KMBL0924284,97157173266,dineshgaikwad1964@konkanpay,2008-04-18,2012-01-10
+EXT88780,Geeta Naidu,individual,Western Ghats Co-operative Bank,WGCB0837286,3864743601083,geetanaidu6517@wgcbupi,2010-09-06,2012-10-29
+EXT20802,Maharashtra Teachers Pension Trust,company,Konkan Mercantile Bank,KMBL0697633,1240684333290813,,1993-12-09,2026-07-01
+EXT91406,Revati Apte,individual,Konkan Mercantile Bank,KMBL0785560,05505014809,revatiapte6934@konkanpay,2016-08-28,2018-12-18
+EXT71170,Sneha Shinde,individual,Indus Valley Bank,IVBK0398833,782373658480,snehashinde8283@ivbupi,2014-10-17,2026-07-04
+EXT29841,Harpreet Saxena,individual,Western Ghats Co-operative Bank,WGCB0391593,91303780881292,harpreetsaxena6814@wgcbupi,2014-07-02,2018-02-17
+EXT57067,Crescent Fintech Solutions Pvt Ltd,company,Konkan Mercantile Bank,KMBL0162643,0358413993982,,1998-02-24,2026-06-30
+EXT73474,Asha Kulkarni,individual,Konkan Mercantile Bank,KMBL0897843,8709711811992146,ashakulkarni4620@konkanpay,2019-01-20,2019-12-10
+EXT12211,Prakash Das,individual,Konkan Mercantile Bank,KMBL0067741,0848746894824241,prakashdas5484@konkanpay,2008-01-09,2020-07-17
+EXT81337,Sana Deshmukh,individual,Western Ghats Co-operative Bank,WGCB0075034,842296820442,sanadeshmukh5688@wgcbupi,2021-12-29,2026-07-05
+EXT19717,Arun Kulkarni,individual,Konkan Mercantile Bank,KMBL0611047,24152178425096,arunkulkarni3739@konkanpay,2013-06-04,2021-01-06
+EXT35061,Shalini Saxena,individual,Western Ghats Co-operative Bank,WGCB0374017,643112787498044,shalinisaxena1943@wgcbupi,2020-12-05,2026-07-01
+EXT66862,Shweta Nair,individual,Western Ghats Co-operative Bank,WGCB0255923,6182025273668,shwetanair3923@wgcbupi,2019-02-14,2024-05-29
+EXT76365,Mangesh Mishra,individual,Konkan Mercantile Bank,KMBL0280155,495811276301,mangeshmishra9293@konkanpay,2013-09-12,2020-06-03
+EXT23429,Star Mobile Point & Co,proprietorship,Narmada Small Finance Bank,NSFB0167198,5315254293350784,starmobilepoin3804@narmadapay,2018-08-31,2026-06-30
+EXT83195,Ramesh Bhosale,individual,Ganga Gramin Bank,GGBN0119245,97032580947,rameshbhosale446@gangaupi,2023-03-16,2026-06-30
+EXT76370,Retired Employees Pension Fund,company,Ganga Gramin Bank,GGBN0468123,5238942357139279,,1985-03-21,2026-07-01
+EXT26568,Mauli Transport Co,company,Narmada Small Finance Bank,NSFB0025198,977255891923741,maulitransport3718@narmadapay,2014-06-20,2017-08-06
+EXT84868,Keerthi Reddy,individual,Western Ghats Co-operative Bank,WGCB0093925,462750690868650,keerthireddy4540@wgcbupi,2023-08-31,2025-02-13
+EXT29398,Srinivas Desai,individual,Indus Valley Bank,IVBK0778631,0369140437715,srinivasdesai5805@ivbupi,2011-06-16,2019-01-12
+EXT59234,Tejaswini Singh,individual,Ganga Gramin Bank,GGBN0258847,36069823831,tejaswinisingh1799@gangaupi,2018-06-29,2026-07-02
+EXT53872,Nandini Mehta,individual,Konkan Mercantile Bank,KMBL0500189,7404712190226,nandinimehta9389@konkanpay,2007-11-18,2020-09-21
+EXT61517,Suresh Singh,individual,Indus Valley Bank,IVBK0097602,462105992161869,sureshsingh1750@ivbupi,2010-01-27,2011-05-17
+EXT23879,Yashwant Agencies,proprietorship,Konkan Mercantile Bank,KMBL0885316,212767751585,yashwantagenci3201@konkanpay,2013-01-19,2016-02-25
+EXT17045,Om Sai Enterprises,company,Indus Valley Bank,IVBK0496954,286491774324,omsaienterpris9086@ivbupi,2014-10-04,2020-05-10
+EXT67259,Imran Yadav,individual,Narmada Small Finance Bank,NSFB0617147,68337233830,imranyadav850@narmadapay,2013-08-13,2018-12-03
+EXT67223,Shalini Thakur,individual,Indus Valley Bank,IVBK0959858,963802149426,shalinithakur2533@ivbupi,2018-01-23,2022-09-09
+EXT66095,Aditya Choudhary,individual,Ganga Gramin Bank,GGBN0683944,60371893688492,adityachoudhar1979@gangaupi,2021-02-04,2025-03-04
+EXT84610,Neha Desai,individual,Ganga Gramin Bank,GGBN0678599,6034365191403,nehadesai4211@gangaupi,2009-05-06,2010-03-30
+EXT98076,Parag Salunkhe,individual,Indus Valley Bank,IVBK0909682,15831882741091,paragsalunkhe7088@ivbupi,2019-11-10,2022-03-27
+EXT88249,Shree Sai Traders,proprietorship,Narmada Small Finance Bank,NSFB0313429,171118281526985,shreesaitrader9968@narmadapay,2026-08-11,2026-09-14
+EXT57104,Neha Agarwal,individual,Konkan Mercantile Bank,KMBL0469054,673730092757,nehaagarwal4130@konkanpay,2015-06-29,2026-07-08
+EXT43160,Akshay Singh,individual,Indus Valley Bank,IVBK0625521,62233256558918,akshaysingh2418@ivbupi,2017-10-18,2023-02-03
+EXT18657,Kunal Singh,individual,Ganga Gramin Bank,GGBN0706115,19321339741,kunalsingh1394@gangaupi,2020-04-15,2025-04-02
+EXT33309,Girish Bhatt,individual,Western Ghats Co-operative Bank,WGCB0149683,821834149358,girishbhatt4962@wgcbupi,2019-06-29,2022-01-18
+EXT28758,Smita Das,individual,Indus Valley Bank,IVBK0545921,830632932970,smitadas771@ivbupi,2012-09-08,2026-07-04
+EXT15938,Rupali Mishra,individual,Indus Valley Bank,IVBK0166644,795485716345,rupalimishra3559@ivbupi,2021-10-15,2024-10-21
+EXT19059,Apex Engg Works Ltd,company,Narmada Small Finance Bank,NSFB0561884,268930192019,,2000-04-28,2024-04-29
+EXT50564,Asha Sawant,individual,Ganga Gramin Bank,GGBN0655893,083368048338,ashasawant6718@gangaupi,2013-06-28,2020-12-20
+EXT95378,Priya Saxena,individual,Konkan Mercantile Bank,KMBL0061480,9610701295783,priyasaxena6645@konkanpay,2018-02-15,2022-10-23
+EXT23134,Star Mobile Point & Co,proprietorship,Konkan Mercantile Bank,KMBL0079382,95199479241006,starmobilepoin1714@konkanpay,2020-10-19,2026-07-07
+EXT63647,Smita Gaikwad,individual,Indus Valley Bank,IVBK0854173,51784751332355,smitagaikwad2159@ivbupi,2014-09-14,2015-03-17
+EXT94703,Sarita Desai,individual,Indus Valley Bank,IVBK0388940,2732730810954773,saritadesai7605@ivbupi,2021-08-12,2024-11-16
+EXT36167,Vandana Thakur,individual,Indus Valley Bank,IVBK0601604,5724939577511,vandanathakur9414@ivbupi,2014-10-02,2024-10-21
+EXT24809,Navkar Distributors,proprietorship,Konkan Mercantile Bank,KMBL0208681,75138154045809,,2012-11-08,2023-06-06
+EXT58164,Sagar Patil,individual,Indus Valley Bank,IVBK0539856,7227612330922309,sagarpatil3036@ivbupi,2019-12-18,2026-04-06
+EXT89383,Chinmay Das,individual,Ganga Gramin Bank,GGBN0801869,503927261225,chinmaydas3158@gangaupi,2014-03-23,2016-09-13
+EXT20218,Nilgiri Packaging Ltd,company,Konkan Mercantile Bank,KMBL0817034,7570434083546753,,1999-12-28,2026-06-30
+EXT70927,Ananya More,individual,Western Ghats Co-operative Bank,WGCB0468794,5414213334267312,ananyamore5981@wgcbupi,2018-10-11,2026-07-12
+EXT10025,Harish Singh,individual,Konkan Mercantile Bank,KMBL0816206,3881392343903,harishsingh6906@konkanpay,2021-09-08,2024-04-07
+EXT51311,Harpreet Khan,individual,Narmada Small Finance Bank,NSFB0360737,796565350792,harpreetkhan5928@narmadapay,2018-09-27,2026-07-04
+EXT45582,Vighnaharta Agencies,company,Konkan Mercantile Bank,KMBL0003562,1471659247375,vighnahartaage8200@konkanpay,2017-10-22,2024-04-02
+EXT44421,Sunrise Fintech Solutions Pvt Ltd,company,Indus Valley Bank,IVBK0059116,703185071105,,2014-02-18,2024-08-25
+EXT53058,Anthony Khan,individual,Ganga Gramin Bank,GGBN0168654,5973726384913,anthonykhan7320@gangaupi,2021-08-03,2023-10-31
+EXT65928,Deepak Gaikwad,individual,Narmada Small Finance Bank,NSFB0219153,01377711607005,deepakgaikwad8645@narmadapay,2009-10-05,2022-03-13
+EXT62976,Madhuri Joshi,individual,Ganga Gramin Bank,GGBN0461212,729455737399580,madhurijoshi908@gangaupi,2011-11-04,2022-04-13
+EXT51293,Bharat Online Services & Co,proprietorship,Konkan Mercantile Bank,KMBL0382537,097570771420769,bharatonlinese2732@konkanpay,2024-02-25,2026-07-06
+EXT42473,Seema Apte,individual,Konkan Mercantile Bank,KMBL0151239,92755292682960,seemaapte6041@konkanpay,2023-10-08,2025-10-05
+EXT92935,Suvidha Auto Components Ltd,company,Western Ghats Co-operative Bank,WGCB0897945,1081143398774641,,1989-02-01,1992-12-24
+EXT87409,Aravali Engg Works Ltd,company,Ganga Gramin Bank,GGBN0881168,96756439361,,2000-03-21,2010-01-27
+EXT79750,Navbharat Home Loans Ltd,company,Narmada Small Finance Bank,NSFB0286814,76752710242955,,1996-08-08,2020-07-29
+EXT34203,Panchganga Agro Industries Ltd,company,Ganga Gramin Bank,GGBN0939254,9219923265793,,1996-03-12,2019-06-02
+EXT19800,Mangalmurti Traders,company,Indus Valley Bank,IVBK0228209,487897969136,,2005-05-02,2014-07-19
+EXT79860,Silverline Polymers Ltd,company,Ganga Gramin Bank,GGBN0206656,30798774254,,1996-09-17,2022-01-12
+EXT67742,Archana Dixit,individual,Ganga Gramin Bank,GGBN0406301,14713891641772,archanadixit6309@gangaupi,2018-06-22,2020-12-04
+EXT60816,Nisha Kulkarni,individual,Konkan Mercantile Bank,KMBL0411537,369792071909,nishakulkarni3023@konkanpay,2023-09-22,2024-11-10
+EXT30848,Kunal Chavan,individual,Konkan Mercantile Bank,KMBL0987914,9997651340373,kunalchavan6675@konkanpay,2014-10-05,2024-10-23
+EXT39412,Venkat Kulkarni,individual,Konkan Mercantile Bank,KMBL0884792,1452068963519,venkatkulkarni3976@konkanpay,2020-07-03,2026-05-30
+EXT62669,Ekvira Enterprises,proprietorship,Narmada Small Finance Bank,NSFB0354526,450546096259577,ekviraenterpri6184@narmadapay,2017-12-21,2018-12-04
+EXT78425,Anthony Bhatt,individual,Konkan Mercantile Bank,KMBL0471758,90656482333448,anthonybhatt5340@konkanpay,2019-08-19,2020-04-25
+EXT71564,Panchganga Logistics Pvt Ltd,company,Konkan Mercantile Bank,KMBL0876801,049146895863935,,1989-11-07,1991-06-12
+EXT91157,Sarita Yadav,individual,Konkan Mercantile Bank,KMBL0713937,6555269733473642,saritayadav3063@konkanpay,2022-06-12,2025-01-26
+EXT47748,Excel Trading Co & Co,proprietorship,Konkan Mercantile Bank,KMBL0950764,0934887657788381,exceltradingco1598@konkanpay,2019-09-23,2026-07-07
+EXT29047,Vandana Apte,individual,Indus Valley Bank,IVBK0641004,531891351727,vandanaapte7466@ivbupi,2017-09-06,2024-07-05
+EXT83684,Bhavana Gaikwad,individual,Konkan Mercantile Bank,KMBL0765085,4523028941930,bhavanagaikwad8680@konkanpay,2015-07-25,2023-06-12
+EXT77671,Ananya Mishra,individual,Indus Valley Bank,IVBK0868140,905584428925,ananyamishra9420@ivbupi,2015-04-01,2022-08-06
+EXT51977,Divya Gokhale,individual,Ganga Gramin Bank,GGBN0062841,59553270632958,divyagokhale4210@gangaupi,2021-03-16,2022-05-11
+EXT32175,Sunrise Enterprises & Co,proprietorship,Ganga Gramin Bank,GGBN0138988,488715793107,sunriseenterpr2147@gangaupi,2024-11-08,2026-07-07
+EXT81304,Anil Rao,individual,Konkan Mercantile Bank,KMBL0163742,826318003703610,anilrao3040@konkanpay,2012-11-01,2018-12-17
+EXT48233,Priya Kale,individual,Indus Valley Bank,IVBK0295973,94722177125,priyakale4886@ivbupi,2018-05-01,2020-03-18
+EXT77822,Sana Kale,individual,Indus Valley Bank,IVBK0676888,339064721192,sanakale7687@ivbupi,2021-10-23,2022-07-10
+EXT12907,Excel Trading Co & Co,proprietorship,Ganga Gramin Bank,GGBN0358023,541524877936,exceltradingco4162@gangaupi,2026-01-13,2026-07-01
+EXT68827,Lakshmi Choudhary,individual,Konkan Mercantile Bank,KMBL0972403,8233816421748766,lakshmichoudha559@konkanpay,2012-09-15,2025-04-27
+EXT22271,Asha Reddy,individual,Western Ghats Co-operative Bank,WGCB0380298,36482951118,ashareddy8777@wgcbupi,2015-07-14,2023-01-07
+EXT48244,Abhijit Kulkarni,individual,Konkan Mercantile Bank,KMBL0464348,143495146233,abhijitkulkarn2498@konkanpay,2011-12-13,2025-01-06
+EXT62452,Kesari Housing Finance Ltd,company,Konkan Mercantile Bank,KMBL0694283,245089715811658,,1996-01-24,2010-05-09
+EXT45599,Greenfield Pharma Pvt Ltd,company,Narmada Small Finance Bank,NSFB0432157,2239208590512523,,2017-01-10,2020-09-27
+EXT98780,Siddhivinayak Hardware,proprietorship,Indus Valley Bank,IVBK0008241,873676459894,,2012-06-03,2017-11-20
+EXT20458,Deepak Agarwal,individual,Indus Valley Bank,IVBK0123775,453755520532,deepakagarwal4757@ivbupi,2014-03-29,2026-07-05
+EXT99671,Indrayani Textiles Pvt Ltd,company,Ganga Gramin Bank,GGBN0675026,063235024875,,1988-10-14,2026-07-07
+EXT86764,Lata Das,individual,Indus Valley Bank,IVBK0161479,727399005840,latadas2103@ivbupi,2011-04-03,2016-11-09
+EXT67935,Sahyog Micro Finance Ltd,company,Ganga Gramin Bank,GGBN0952966,54336199767,,2011-04-01,2012-03-31
+EXT81804,Girish Jadhav,individual,Konkan Mercantile Bank,KMBL0528425,12748031046685,girishjadhav8250@konkanpay,2009-08-06,2026-07-08
+EXT22208,Abhijit Mehta,individual,Western Ghats Co-operative Bank,WGCB0465690,88967097179724,abhijitmehta1117@wgcbupi,2010-06-13,2026-07-04
+EXT86272,Sayali Yadav,individual,Ganga Gramin Bank,GGBN0198943,63096317607522,sayaliyadav9893@gangaupi,2012-11-01,2023-09-08
+EXT56822,Parvati Paper Products,proprietorship,Konkan Mercantile Bank,KMBL0247051,658328294944,parvatipaperpr2334@konkanpay,2021-12-27,2025-01-03
+EXT97584,Sandeep Rathod,individual,Konkan Mercantile Bank,KMBL0607179,251450473885,sandeeprathod5725@konkanpay,2026-07-06,2026-09-05
+EXT95399,Kavita Naik,individual,Konkan Mercantile Bank,KMBL0290432,3699837790590,kavitanaik189@konkanpay,2023-12-12,2025-04-05
+EXT51187,Ananya Reddy,individual,Indus Valley Bank,IVBK0368278,4370002472399540,ananyareddy9212@ivbupi,2015-03-24,2024-01-11
+EXT70132,Satpura Packaging Ltd,company,Ganga Gramin Bank,GGBN0009130,1397670422125,,1993-03-08,2026-06-30
+EXT19216,Sunrise Polymers Ltd,company,Western Ghats Co-operative Bank,WGCB0857400,099992470032,,1995-09-14,2026-06-30
+EXT47789,Shreeji Plastics,proprietorship,Ganga Gramin Bank,GGBN0352934,4674555233518,,2012-04-08,2026-06-28
+EXT73900,Parag Mehta,individual,Western Ghats Co-operative Bank,WGCB0465372,0656511511051689,paragmehta5625@wgcbupi,2024-08-23,2026-07-06
+EXT47299,Ananya Deshmukh,individual,Konkan Mercantile Bank,KMBL0834439,74677797189,ananyadeshmukh3862@konkanpay,2019-05-14,2025-02-10
+EXT88108,Gajanan Fabricators,company,Konkan Mercantile Bank,KMBL0843295,75018995777,gajananfabrica2070@konkanpay,2015-08-17,2026-06-28
+EXT11917,Lata Jadhav,individual,Western Ghats Co-operative Bank,WGCB0543300,7683563549431,latajadhav2201@wgcbupi,2013-12-06,2020-02-17
+EXT91852,Rohit Kadam,individual,Western Ghats Co-operative Bank,WGCB0120143,5060393186717620,rohitkadam4428@wgcbupi,2022-11-30,2024-09-13
+EXT87384,Geeta Kadam,individual,Indus Valley Bank,IVBK0474324,635769214405,geetakadam4246@ivbupi,2013-08-17,2024-12-13
+EXT53626,Akshay Shinde,individual,Ganga Gramin Bank,GGBN0745808,9342709414579,akshayshinde4756@gangaupi,2016-09-25,2019-10-14
+EXT67220,Lata Bhosale,individual,Konkan Mercantile Bank,KMBL0372174,0552772049544,latabhosale5232@konkanpay,2008-12-12,2012-04-11
+EXT43019,Kaveri Agro Industries Ltd,company,Ganga Gramin Bank,GGBN0986180,57091474765,,2004-04-08,2008-01-11
+EXT96032,Mahesh Nair,individual,Narmada Small Finance Bank,NSFB0535278,3319130371321,maheshnair7271@narmadapay,2008-05-30,2026-06-06
+EXT95434,Suvidha Pharma Pvt Ltd,company,Konkan Mercantile Bank,KMBL0343236,5178320207545,,2003-05-07,2019-06-27
+EXT67921,Dattaguru Enterprises,company,Ganga Gramin Bank,GGBN0564623,2986183236574,dattaguruenter6209@gangaupi,2023-02-26,2023-05-28
+EXT88414,Imran Singh,individual,Konkan Mercantile Bank,KMBL0863272,554057063371,imransingh6322@konkanpay,2018-02-14,2019-07-01
+EXT93029,Kuber Wholesale,proprietorship,Konkan Mercantile Bank,KMBL0742576,203625530392,kuberwholesale2867@konkanpay,2020-08-16,2023-12-21
+EXT23161,Manisha Khan,individual,Konkan Mercantile Bank,KMBL0418108,289745049661,manishakhan2671@konkanpay,2011-05-31,2026-07-02
+EXT60648,Deepak Yadav,individual,Indus Valley Bank,IVBK0307626,15324332897,deepakyadav5179@ivbupi,2015-03-31,2017-12-17
+EXT66531,Sunita Shah,individual,Konkan Mercantile Bank,KMBL0139413,5271823886140,sunitashah4453@konkanpay,2015-09-25,2017-02-20
+EXT78019,Abhijit Banerjee,individual,Konkan Mercantile Bank,KMBL0994360,440808279308,abhijitbanerje1627@konkanpay,2019-12-25,2025-08-12
+EXT62144,Yogesh Thakur,individual,Konkan Mercantile Bank,KMBL0653069,281658337673956,yogeshthakur7429@konkanpay,2021-07-10,2024-05-24
+EXT18324,Rohini Dixit,individual,Indus Valley Bank,IVBK0027653,59725471042,rohinidixit1840@ivbupi,2017-04-11,2025-03-23
+EXT87268,Priya Gaikwad,individual,Western Ghats Co-operative Bank,WGCB0598913,597206912396,priyagaikwad3104@wgcbupi,2012-07-03,2017-01-02
+EXT33537,QC Refund Helpdesk,proprietorship,Indus Valley Bank,IVBK0487897,691360287862986,qcrefundhelpde1659@ivbupi,2026-06-24,2026-08-29
+EXT11704,Asha Jadhav,individual,Konkan Mercantile Bank,KMBL0051931,664673885364,ashajadhav2225@konkanpay,2022-04-13,2023-05-03
+EXT74509,Laxmi Enterprises & Co,proprietorship,Konkan Mercantile Bank,KMBL0547802,11642460797897,laxmienterpris2422@konkanpay,2023-07-18,2026-07-16
+EXT80496,Revati Khan,individual,Indus Valley Bank,IVBK0098972,71031941122139,revatikhan9702@ivbupi,2017-03-08,2026-07-04
+EXT85615,Bluestone Foods Pvt Ltd,company,Indus Valley Bank,IVBK0452457,007045058426420,,2012-07-17,2018-12-03
+EXT11116,Jai Malhar Transport,company,Ganga Gramin Bank,GGBN0846638,532351364483,,2014-11-30,2017-06-04
+EXT90455,Orbit Hospitals Pvt Ltd,company,Konkan Mercantile Bank,KMBL0725131,43732625325327,,2008-07-09,2026-07-07
+EXT57042,Mangesh Pandey,individual,Ganga Gramin Bank,GGBN0689133,236231381132,mangeshpandey857@gangaupi,2012-02-16,2016-03-19
+EXT24620,Anil Kamat,individual,Indus Valley Bank,IVBK0658887,3682494121960786,anilkamat4637@ivbupi,2017-06-29,2023-11-01
+EXT59067,Sana Bhatt,individual,Konkan Mercantile Bank,KMBL0760857,3750474468886,sanabhatt9341@konkanpay,2021-11-23,2026-07-03
+EXT34418,Bhavana Bhosale,individual,Konkan Mercantile Bank,KMBL0602571,4735729080231,bhavanabhosale3854@konkanpay,2012-01-16,2012-12-25
+EXT70421,Zoya Khan,individual,Konkan Mercantile Bank,KMBL0014206,12406946140741,zoyakhan9175@konkanpay,2011-07-05,2022-07-24
+EXT38054,Patil Brothers Suppliers,proprietorship,Western Ghats Co-operative Bank,WGCB0994204,7648506809174,patilbrotherss6511@wgcbupi,2008-09-23,2011-04-09
+EXT70779,Seema Jadhav,individual,Indus Valley Bank,IVBK0916957,282012161612,seemajadhav7388@ivbupi,2015-10-04,2016-04-08
+EXT77333,Revati Khan,individual,Konkan Mercantile Bank,KMBL0878415,6530925259890,revatikhan6367@konkanpay,2016-07-23,2025-05-07
+EXT84691,Sachin Pillai,individual,Ganga Gramin Bank,GGBN0807414,825605147901,sachinpillai7767@gangaupi,2011-04-28,2012-04-29
+EXT13635,Faisal Gupta,individual,Indus Valley Bank,IVBK0281560,656320708232,faisalgupta3264@ivbupi,2010-01-16,2018-05-25
+EXT53830,Pranav Iyer,individual,Konkan Mercantile Bank,KMBL0385396,57297678995,pranaviyer818@konkanpay,2018-06-01,2019-06-24
+EXT80808,Deshmukh Agencies,proprietorship,Indus Valley Bank,IVBK0062762,61313769537648,deshmukhagenci4497@ivbupi,2008-12-21,2009-05-17
+EXT79689,Sahyadri Cold Storage,proprietorship,Narmada Small Finance Bank,NSFB0489324,17739459148059,sahyadricoldst7721@narmadapay,2016-10-27,2022-11-01
+EXT54397,Sneha Deshpande,individual,Narmada Small Finance Bank,NSFB0950893,922393787795069,snehadeshpande3542@narmadapay,2021-12-10,2024-05-17
+EXT68817,Sayali Naidu,individual,Konkan Mercantile Bank,KMBL0042780,524681481627,sayalinaidu7362@konkanpay,2021-11-20,2026-01-27
+EXT90101,Anand Hardware Mart,proprietorship,Ganga Gramin Bank,GGBN0266861,1633862404577,,2009-12-29,2010-06-16
+EXT55161,Raksha General Insurance Ltd,company,Konkan Mercantile Bank,KMBL0783404,086907437478,,2009-11-23,2020-12-18
+EXT62918,Manoj Choudhary,individual,Western Ghats Co-operative Bank,WGCB0069993,43628447285,manojchoudhary9784@wgcbupi,2016-06-07,2026-07-02
+EXT14079,Anthony Das,individual,Indus Valley Bank,IVBK0894730,609655231812951,anthonydas204@ivbupi,2014-01-28,2014-03-09
+EXT53057,Pooja Kale,individual,Ganga Gramin Bank,GGBN0879169,0909949385808,poojakale2427@gangaupi,2009-05-02,2014-01-02
+EXT83074,Suresh Kamat Classes,individual,Ganga Gramin Bank,GGBN0962137,7536151262806,sureshkamatcla4142@gangaupi,2015-05-27,2024-10-09
+EXT21167,Harleen Menon,individual,Konkan Mercantile Bank,KMBL0784660,90108131447,harleenmenon1257@konkanpay,2022-05-05,2026-07-07
+EXT31330,Geeta Mane,individual,Narmada Small Finance Bank,NSFB0848302,95257344585628,geetamane6150@narmadapay,2016-09-29,2026-07-20
+EXT27486,Komal Pandey,individual,Western Ghats Co-operative Bank,WGCB0339308,214664051965,komalpandey8923@wgcbupi,2019-09-30,2024-03-14
+EXT94884,Rohini Shinde,individual,Indus Valley Bank,IVBK0014403,0307216171807,rohinishinde1554@ivbupi,2019-06-05,2022-07-17
+EXT26850,Kunal Rao,individual,Ganga Gramin Bank,GGBN0114495,6561072272406591,kunalrao4062@gangaupi,2019-02-24,2021-12-16
+EXT37648,Rekha Mishra,individual,Indus Valley Bank,IVBK0281236,86767164555,rekhamishra1661@ivbupi,2023-03-02,2025-08-26
+EXT86071,Sunrise Software Services LLP,company,Ganga Gramin Bank,GGBN0323460,9749555431465230,,2003-08-09,2019-10-29
+EXT37682,Sanjay More,individual,Indus Valley Bank,IVBK0690170,96640687903,sanjaymore3211@ivbupi,2021-07-08,2026-07-14
+EXT83493,Pooja Kamat,individual,Ganga Gramin Bank,GGBN0883500,379045875477,poojakamat429@gangaupi,2021-09-29,2026-01-02
+EXT73503,Global Digital Services,proprietorship,Western Ghats Co-operative Bank,WGCB0475395,078127849283297,globaldigitals5313@wgcbupi,2026-08-06,2026-09-11
+EXT86597,Tejaswini Thakur Classes,individual,Konkan Mercantile Bank,KMBL0304877,121689917887036,tejaswinithaku9216@konkanpay,2014-03-19,2024-07-29
+EXT80921,Rekha Sharma,individual,Narmada Small Finance Bank,NSFB0789321,905746164175,rekhasharma6216@narmadapay,2017-06-24,2019-03-25
+EXT39420,Deepak Dixit,individual,Western Ghats Co-operative Bank,WGCB0257095,928488237985,deepakdixit2631@wgcbupi,2009-03-12,2016-09-16
+EXT85203,Bhairavnath Motors,company,Indus Valley Bank,IVBK0048508,78758389164621,bhairavnathmot1965@ivbupi,2008-06-11,2014-07-27
+EXT27037,Trident Software Services LLP,company,Konkan Mercantile Bank,KMBL0602980,9171118281526985,,2017-12-02,2019-03-14
+EXT14241,Dinesh Kadam,individual,Ganga Gramin Bank,GGBN0066278,245067969388,dineshkadam8336@gangaupi,2023-05-01,2024-07-05
+EXT20370,Rajesh Rao,individual,Indus Valley Bank,IVBK0551202,85764226844345,rajeshrao1642@ivbupi,2017-07-14,2020-10-06
+EXT10993,Faisal Jadhav,individual,Narmada Small Finance Bank,NSFB0709963,788394960912,faisaljadhav2691@narmadapay,2023-08-14,2026-05-21
+EXT31239,Vandana Desai,individual,Indus Valley Bank,IVBK0707084,9836214740905116,vandanadesai4751@ivbupi,2012-07-04,2016-09-29
+EXT34469,Siddharth Kale,individual,Konkan Mercantile Bank,KMBL0081779,8487629043322,siddharthkale6558@konkanpay,2016-08-13,2025-07-27
+EXT92632,Farah Shah,individual,Narmada Small Finance Bank,NSFB0860195,224508459703,farahshah9776@narmadapay,2014-12-25,2026-07-07
+EXT58135,Vertex Packaging Ltd,company,Indus Valley Bank,IVBK0842931,16017192477,,1992-08-25,2007-03-20
+EXT63122,Samarth Printers,proprietorship,Konkan Mercantile Bank,KMBL0346727,846549043002,samarthprinter3015@konkanpay,2012-12-16,2018-03-14
+EXT39788,Mrunal Tiwari,individual,Indus Valley Bank,IVBK0743491,3910079475853096,mrunaltiwari2261@ivbupi,2022-10-14,2023-08-21
+EXT56272,Keerthi Pawar,individual,Narmada Small Finance Bank,NSFB0667211,195758528208,keerthipawar5909@narmadapay,2018-12-17,2026-02-24
+EXT35270,Anita Desai,individual,Indus Valley Bank,IVBK0769970,41041997521030,anitadesai6731@ivbupi,2014-06-10,2016-02-10
+EXT73487,Ganesh Dixit,individual,Western Ghats Co-operative Bank,WGCB0935363,1398164941667,ganeshdixit1236@wgcbupi,2015-01-01,2023-10-18
+EXT73483,Rohini Shah,individual,Ganga Gramin Bank,GGBN0567417,052014113382830,rohinishah9561@gangaupi,2010-03-23,2018-03-10
+EXT28498,Nisha Banerjee,individual,Konkan Mercantile Bank,KMBL0028338,04760559639444,nishabanerjee4568@konkanpay,2015-05-16,2026-07-04
+EXT10599,Lata Kulkarni,individual,Ganga Gramin Bank,GGBN0047684,971267445708,latakulkarni4982@gangaupi,2023-05-28,2023-08-23
+EXT64449,Omkar Yadav,individual,Konkan Mercantile Bank,KMBL0752591,779496359148,omkaryadav3863@konkanpay,2012-08-15,2026-07-01
+EXT52832,Divya Joshi,individual,Konkan Mercantile Bank,KMBL0453219,9456386840696,divyajoshi3295@konkanpay,2025-08-03,2026-06-29
+EXT89504,Bhavana Kamat,individual,Konkan Mercantile Bank,KMBL0909745,92085419789,bhavanakamat8959@konkanpay,2017-06-10,2026-07-24
+EXT63765,Archana Thakur,individual,Konkan Mercantile Bank,KMBL0406235,223195768178,archanathakur7343@konkanpay,2012-08-14,2013-12-25
+EXT23644,Girish Choudhary,individual,Konkan Mercantile Bank,KMBL0436162,53492461838,girishchoudhar8362@konkanpay,2018-11-01,2025-06-25
+EXT63692,Srinivas Salunkhe,individual,Narmada Small Finance Bank,NSFB0977103,3148529291760725,srinivassalunk9533@narmadapay,2011-09-13,2023-04-03
+EXT42687,Mangesh Salunkhe,individual,Konkan Mercantile Bank,KMBL0916436,4755399184856,mangeshsalunkh5332@konkanpay,2009-06-24,2012-06-02
+EXT52914,Suvidha Auto Loans Ltd,company,Western Ghats Co-operative Bank,WGCB0737596,8943859509145,,1999-02-25,2005-01-22
+EXT38347,Komal Shah,individual,Narmada Small Finance Bank,NSFB0672922,576417691326,komalshah3319@narmadapay,2023-11-28,2024-01-30
+EXT63397,Rathi Commodities,company,Indus Valley Bank,IVBK0459346,205238933142,,2008-07-19,2012-12-20
+EXT57531,Nitin Sawant,individual,Narmada Small Finance Bank,NSFB0970225,2220603188121939,nitinsawant9277@narmadapay,2009-05-25,2022-07-18
+EXT68168,Siddharth Apte,individual,Narmada Small Finance Bank,NSFB0311172,10744946580509,siddharthapte4547@narmadapay,2011-04-01,2020-02-10
+EXT25451,Pragati Engg Works Ltd,company,Konkan Mercantile Bank,KMBL0030338,832340540077,,1990-01-11,2013-09-17
+EXT35057,Vaishali Bhatt,individual,Indus Valley Bank,IVBK0106338,5967602284839460,vaishalibhatt4853@ivbupi,2021-08-29,2024-12-26
+EXT71860,Hemant Naik,individual,Ganga Gramin Bank,GGBN0285484,48641725612232,hemantnaik1899@gangaupi,2019-07-18,2021-12-15
+EXT17696,Ganesh Mane,individual,Konkan Mercantile Bank,KMBL0191155,39430676383071,ganeshmane1570@konkanpay,2008-08-05,2021-09-24
+EXT45338,Kavita Tiwari,individual,Western Ghats Co-operative Bank,WGCB0846581,16272953101,kavitatiwari3318@wgcbupi,2011-05-11,2025-01-13
+EXT31640,Nilgiri Auto Components Ltd,company,Western Ghats Co-operative Bank,WGCB0766061,7331615177866328,,2017-10-28,2019-07-07
+EXT46076,Panchganga Education Society,company,Ganga Gramin Bank,GGBN0565084,6645831798765,,1989-01-03,2007-03-21
+EXT51252,Royal Packaging Works,proprietorship,Narmada Small Finance Bank,NSFB0184349,174018865474313,royalpackaging9342@narmadapay,2017-10-26,2020-11-06
+EXT49856,Ananya Pandey,individual,Indus Valley Bank,IVBK0932879,36298149684947,ananyapandey9083@ivbupi,2012-01-21,2023-01-02
+EXT18413,Prakash Kulkarni,individual,Konkan Mercantile Bank,KMBL0350436,0776241970553,prakashkulkarn5507@konkanpay,2013-05-09,2021-11-15
+EXT17551,Nandini Deshpande,individual,Indus Valley Bank,IVBK0156000,460710926381,nandinideshpan1293@ivbupi,2016-07-19,2020-10-28
+EXT68230,Lata Agarwal,individual,Western Ghats Co-operative Bank,WGCB0433836,1065015095482285,lataagarwal6472@wgcbupi,2011-02-26,2013-11-05
+EXT68832,Ganesh Electricals,company,Narmada Small Finance Bank,NSFB0796276,8223459983346745,,2021-08-20,2023-04-13
+EXT50229,Anil Gupta,individual,Ganga Gramin Bank,GGBN0547628,295888372434,anilgupta574@gangaupi,2012-01-02,2023-12-31
+EXT66278,Pawar Auto Works,proprietorship,Indus Valley Bank,IVBK0594702,1426993046545,pawarautoworks641@ivbupi,2014-12-10,2026-02-02
+EXT69675,Bhavana Mehta,individual,Narmada Small Finance Bank,NSFB0870658,88106583306719,bhavanamehta7931@narmadapay,2013-11-25,2025-10-16
+EXT61790,Asha Shah,individual,Indus Valley Bank,IVBK0039280,8082729213600586,ashashah7119@ivbupi,2016-10-27,2021-04-10
+EXT75187,Yogesh Kamat,individual,Konkan Mercantile Bank,KMBL0479234,5934052983122,yogeshkamat9960@konkanpay,2013-05-14,2025-07-03
+EXT56098,Silverline Electricals Pvt Ltd,company,Narmada Small Finance Bank,NSFB0279157,489568511737,,1995-06-26,2018-05-20
+EXT67894,Bluestone Engg Works Ltd,company,Ganga Gramin Bank,GGBN0878435,3041966878641,,1989-05-05,2026-06-30
+EXT58673,Asha Thakur,individual,Ganga Gramin Bank,GGBN0421106,482727967552156,ashathakur1951@gangaupi,2011-08-09,2022-10-17
+EXT88874,Vaishali Sawant,individual,Konkan Mercantile Bank,KMBL0141335,09453626704756,vaishalisawant1081@konkanpay,2021-12-15,2026-07-28
+EXT63768,Vaishali Yadav,individual,Indus Valley Bank,IVBK0092714,31110180400661,vaishaliyadav7922@ivbupi,2020-02-04,2025-04-04
+EXT60298,Meena Choudhary,individual,Western Ghats Co-operative Bank,WGCB0316875,3257825431339275,meenachoudhary9107@wgcbupi,2016-07-14,2022-06-19
+EXT58809,Venkatesh Agro Traders,proprietorship,Konkan Mercantile Bank,KMBL0932253,533158778003428,,2005-06-22,2006-02-24
+EXT85850,Nilgiri Pharma Pvt Ltd,company,Indus Valley Bank,IVBK0532207,5536978386784628,,1995-12-15,2001-04-30
+EXT10531,Sai Tiffin Services,company,Konkan Mercantile Bank,KMBL0161925,7488453419540,saitiffinservi3719@konkanpay,2015-04-16,2024-07-07
+EXT86344,Omkar Furniture,proprietorship,Indus Valley Bank,IVBK0634439,0892767552271,omkarfurniture6744@ivbupi,2021-11-05,2022-06-30
+EXT81162,Lakshmi Sheikh,individual,Western Ghats Co-operative Bank,WGCB0370529,10435204531,lakshmisheikh1547@wgcbupi,2017-11-26,2019-04-02
+EXT62247,Ananya Pawar,individual,Konkan Mercantile Bank,KMBL0723183,93035038095,ananyapawar9237@konkanpay,2019-07-29,2023-12-28
+EXT61350,Meena Banerjee,individual,Ganga Gramin Bank,GGBN0949912,060467977867680,meenabanerjee2599@gangaupi,2017-07-25,2018-11-14
+EXT18113,Vikram Joshi,individual,Ganga Gramin Bank,GGBN0004420,9732008057485247,vikramjoshi1855@gangaupi,2025-09-23,2026-07-21
+EXT38685,Orbit Agro Industries Ltd,company,Konkan Mercantile Bank,KMBL0650571,1873772325593,,1996-01-17,2005-02-22
+EXT75004,Deepa Banerjee,individual,Indus Valley Bank,IVBK0379969,545339676731,deepabanerjee3432@ivbupi,2015-06-03,2026-07-04
+EXT64387,Nisha Iyer,individual,Ganga Gramin Bank,GGBN0288376,7607388075432960,nishaiyer7318@gangaupi,2012-10-26,2012-11-29
+EXT21781,Unity Hospitals Pvt Ltd,company,Ganga Gramin Bank,GGBN0541242,464051805488,,2007-10-16,2026-06-30
+EXT89998,Joseph Saxena,individual,Ganga Gramin Bank,GGBN0488394,39031027287,josephsaxena1028@gangaupi,2019-02-26,2026-07-08
+EXT53976,Golden Traders,proprietorship,Western Ghats Co-operative Bank,WGCB0363915,01922458258,goldentraders4167@wgcbupi,2025-10-11,2026-07-16
+EXT77729,Prakash Sheikh Classes,individual,Indus Valley Bank,IVBK0810678,398286974923806,prakashsheikhc8305@ivbupi,2013-11-02,2014-01-12
+EXT23486,Nisha Chavan,individual,Narmada Small Finance Bank,NSFB0490654,511160021995741,nishachavan3847@narmadapay,2010-04-12,2015-05-10
+EXT45972,Evergreen Asset Management Co,company,Narmada Small Finance Bank,NSFB0908730,2921164487126,,1996-07-30,2026-05-28
+EXT42498,Lotus Agro Industries Ltd,company,Narmada Small Finance Bank,NSFB0401293,419831227447551,,1994-10-05,2004-05-24
+EXT52349,Sanmati Constructions Pvt Ltd,company,Konkan Mercantile Bank,KMBL0743652,90078593685556,,2004-06-08,2026-06-30
+EXT68905,Gurdeep Iyer,individual,Indus Valley Bank,IVBK0219650,199465145453045,gurdeepiyer9264@ivbupi,2015-08-07,2020-07-24
+EXT78121,Siddharth More,individual,Indus Valley Bank,IVBK0320042,6453279722966,siddharthmore405@ivbupi,2021-09-01,2025-08-09
+EXT35052,Shivneri Plywood,proprietorship,Ganga Gramin Bank,GGBN0071429,332362532067,shivneriplywoo7259@gangaupi,2008-10-05,2014-11-12
+EXT30988,Neha Tiwari,individual,Narmada Small Finance Bank,NSFB0976583,07824754774492,nehatiwari3539@narmadapay,2015-03-30,2026-07-03
+EXT50897,Faisal Nair,individual,Konkan Mercantile Bank,KMBL0957965,472267187711903,faisalnair5462@konkanpay,2013-07-09,2023-05-21
+EXT33385,Revati Bhosale,individual,Narmada Small Finance Bank,NSFB0134883,94535483343,revatibhosale1401@narmadapay,2020-05-24,2020-09-15
+EXT66966,Lotus Retail Pvt Ltd,company,Indus Valley Bank,IVBK0521024,982035474960,,2006-09-23,2009-05-08
+EXT51339,Vikram Yadav,individual,Ganga Gramin Bank,GGBN0114567,718957262869,vikramyadav9949@gangaupi,2012-09-17,2020-08-06
+EXT41534,Smita Tiwari,individual,Indus Valley Bank,IVBK0053380,56864838993,smitatiwari8775@ivbupi,2017-11-06,2025-04-16
+EXT61541,Aarti Bhosale,individual,Narmada Small Finance Bank,NSFB0235268,686734874961,aartibhosale3346@narmadapay,2019-10-15,2024-08-31
+EXT58524,Chinmay Verma,individual,Ganga Gramin Bank,GGBN0609191,6657556381554,chinmayverma4520@gangaupi,2018-06-30,2022-10-08
+EXT89660,Girish Yadav,individual,Konkan Mercantile Bank,KMBL0164441,810708914567,girishyadav7558@konkanpay,2010-11-20,2026-07-06
+EXT96456,Anita Apte,individual,Ganga Gramin Bank,GGBN0057572,8588570928094241,anitaapte3595@gangaupi,2018-05-09,2024-07-01
+EXT66369,Karthik Jadhav,individual,Konkan Mercantile Bank,KMBL0788592,718637035454,karthikjadhav5139@konkanpay,2024-02-16,2026-07-13
+EXT26174,Digital Seva Kendra & Co,proprietorship,Indus Valley Bank,IVBK0534962,1758740548326,digitalsevaken2691@ivbupi,2022-08-31,2026-07-05
+EXT29910,Pallavi Mehta,individual,Western Ghats Co-operative Bank,WGCB0718784,6882052992194,pallavimehta2716@wgcbupi,2010-07-01,2019-06-02
+EXT72234,Vijay Agarwal,individual,Indus Valley Bank,IVBK0874373,97705375415,vijayagarwal4275@ivbupi,2009-06-10,2026-07-04
+EXT27685,Aditya Mane,individual,Western Ghats Co-operative Bank,WGCB0528809,040326376618264,adityamane2976@wgcbupi,2009-02-20,2024-03-04
+EXT51466,Deepa Naidu,individual,Narmada Small Finance Bank,NSFB0131508,1328700204079,deepanaidu8337@narmadapay,2011-07-13,2026-07-05
+EXT27940,Sneha Kadam,individual,Indus Valley Bank,IVBK0023984,293726953183,snehakadam2344@ivbupi,2015-06-27,2026-07-03
+EXT67126,Abhijit Gupta,individual,Western Ghats Co-operative Bank,WGCB0069368,176572046263403,abhijitgupta2512@wgcbupi,2023-10-17,2026-02-10
+EXT61118,Tejaswini Nair,individual,Western Ghats Co-operative Bank,WGCB0920694,459119087126,tejaswininair8988@wgcbupi,2019-05-01,2022-10-29
+EXT98926,Zoya Agarwal,individual,Konkan Mercantile Bank,KMBL0088401,19855555427,zoyaagarwal819@konkanpay,2020-05-24,2022-06-15
+EXT70640,Golden Traders,proprietorship,Konkan Mercantile Bank,KMBL0389077,045233059936,goldentraders7164@konkanpay,2018-11-04,2026-07-28
+EXT43729,Manoj Wagh,individual,Konkan Mercantile Bank,KMBL0552956,872143478550,manojwagh1263@konkanpay,2017-04-23,2026-05-19
+EXT29039,Archana Mehta,individual,Konkan Mercantile Bank,KMBL0051970,7231462456794,archanamehta1692@konkanpay,2020-12-13,2025-08-04
+EXT71340,Smita Sawant,individual,Konkan Mercantile Bank,KMBL0764308,761005214602,smitasawant9724@konkanpay,2020-10-12,2023-11-09
+EXT14054,Tejaswini Rao,individual,Konkan Mercantile Bank,KMBL0407220,25548091873233,tejaswinirao1948@konkanpay,2008-01-28,2012-05-23
+EXT35428,Chinmay Choudhary,individual,Konkan Mercantile Bank,KMBL0015944,7220343308815095,chinmaychoudha238@konkanpay,2012-09-19,2016-12-21
+EXT63258,Ishita Pawar,individual,Indus Valley Bank,IVBK0514091,511500682202,ishitapawar2609@ivbupi,2022-10-15,2026-02-17
+EXT49486,Shweta Verma,individual,Indus Valley Bank,IVBK0144680,88951529296608,shwetaverma6118@ivbupi,2016-03-22,2023-11-23
+EXT51584,Anjali Naik,individual,Konkan Mercantile Bank,KMBL0617925,4567426274356,anjalinaik5718@konkanpay,2022-08-17,2026-07-04
+EXT82374,Sana Shinde,individual,Narmada Small Finance Bank,NSFB0472864,8919013681151,sanashinde192@narmadapay,2012-01-29,2020-07-30
+EXT77406,Geeta Gokhale,individual,Konkan Mercantile Bank,KMBL0764615,9982692861980248,geetagokhale198@konkanpay,2022-10-20,2025-07-12
+EXT15546,Navbharat Mutual Fund,company,Konkan Mercantile Bank,KMBL0005419,0945516916002526,,2003-12-10,2017-06-16
+EXT73849,Indrayani Infotech Pvt Ltd,company,Indus Valley Bank,IVBK0943526,222986368242858,,2004-04-04,2013-10-14
+EXT32191,Arvind Solanki,individual,Indus Valley Bank,IVBK0365746,103122127677,arvindsolanki6025@ivbupi,2026-08-18,2026-08-29
+EXT24454,Aditya Saxena,individual,Western Ghats Co-operative Bank,WGCB0582600,511721014754,adityasaxena3665@wgcbupi,2006-05-06,2007-07-05
+EXT68715,Shalini Pillai,individual,Konkan Mercantile Bank,KMBL0735932,41494453832,shalinipillai714@konkanpay,2014-03-23,2022-05-22
+EXT10046,Sanjay Mane,individual,Indus Valley Bank,IVBK0956859,8517215117753912,sanjaymane7006@ivbupi,2018-03-06,2024-05-30
+EXT75374,Karthik Bhosale,individual,Western Ghats Co-operative Bank,WGCB0225883,5659469123403710,karthikbhosale2160@wgcbupi,2016-09-29,2026-07-05
+EXT99829,Shweta Deshpande,individual,Ganga Gramin Bank,GGBN0718657,537595489317,shwetadeshpand4476@gangaupi,2015-10-30,2026-07-10
+EXT47144,Usha Sheikh,individual,Konkan Mercantile Bank,KMBL0134188,051148678112,ushasheikh4035@konkanpay,2008-07-10,2011-06-19
+EXT38808,Deepa Gaikwad,individual,Ganga Gramin Bank,GGBN0040542,66937890632,deepagaikwad5859@gangaupi,2018-02-18,2021-09-29
+EXT14073,Amit Kale,individual,Konkan Mercantile Bank,KMBL0326685,61023088098,amitkale7132@konkanpay,2021-02-19,2024-06-17
+EXT75048,Sanjay Patil,individual,Konkan Mercantile Bank,KMBL0361479,0209788870875299,sanjaypatil8976@konkanpay,2014-06-29,2018-09-02
+EXT81802,Nisha Pillai,individual,Konkan Mercantile Bank,KMBL0645168,40998250300,nishapillai285@konkanpay,2017-09-13,2018-12-16
+EXT29771,Dinesh Iyer,individual,Konkan Mercantile Bank,KMBL0888585,9853228158782,dineshiyer4573@konkanpay,2016-11-29,2026-07-06
+EXT95224,Geeta Dixit,individual,Ganga Gramin Bank,GGBN0839568,1190924303135,geetadixit3239@gangaupi,2012-11-18,2017-09-03
+EXT62507,Sarita Deshmukh,individual,Western Ghats Co-operative Bank,WGCB0634051,29943204911053,saritadeshmukh3386@wgcbupi,2020-01-22,2026-07-04
+EXT72590,Kamdhenu Dairy Products,proprietorship,Indus Valley Bank,IVBK0013314,321327349241936,,2018-11-11,2026-06-28
+EXT40350,Trident Two Wheeler Finance Ltd,company,Konkan Mercantile Bank,KMBL0736218,112066178786,,2007-07-21,2022-12-25
+EXT76879,Bhavana Nair,individual,Konkan Mercantile Bank,KMBL0261396,277295736229,bhavananair9624@konkanpay,2015-05-16,2024-11-28
+EXT25911,Vaishali Mishra,individual,Narmada Small Finance Bank,NSFB0149406,981450752680390,vaishalimishra1671@narmadapay,2018-07-03,2025-11-03
+EXT60127,Smita Mane,individual,Indus Valley Bank,IVBK0513753,228343925597,smitamane4182@ivbupi,2017-03-24,2026-07-03
+EXT21975,Deccan Polymers Ltd,company,Western Ghats Co-operative Bank,WGCB0521201,93887005413045,,2009-08-14,2023-07-31
+EXT93671,Akshay More,individual,Konkan Mercantile Bank,KMBL0354402,43840428138,akshaymore2907@konkanpay,2020-07-13,2026-07-04
+EXT31120,Jyoti Sawant,individual,Konkan Mercantile Bank,KMBL0653496,043573858755,jyotisawant3110@konkanpay,2016-12-27,2025-12-03
+EXT29096,Farah Menon,individual,Ganga Gramin Bank,GGBN0368848,17031807597,farahmenon6677@gangaupi,2017-01-09,2018-09-19
+EXT77364,Crescent Auto Components Ltd,company,Indus Valley Bank,IVBK0460396,5134756094746351,,2005-09-11,2012-08-13
+EXT78014,Divya Sheikh,individual,Konkan Mercantile Bank,KMBL0809517,297025609602,divyasheikh7841@konkanpay,2019-09-30,2021-06-06
+EXT73723,Rekha Pillai,individual,Ganga Gramin Bank,GGBN0969475,6208257343268,rekhapillai5119@gangaupi,2022-07-24,2025-11-15
+EXT57447,Vandana Jadhav,individual,Indus Valley Bank,IVBK0618100,813513531308396,vandanajadhav417@ivbupi,2014-10-10,2022-11-13
+EXT57029,Dinesh Deshpande,individual,Konkan Mercantile Bank,KMBL0033388,36826063716,dineshdeshpand2868@konkanpay,2014-09-24,2018-12-19
+EXT78248,Sai Communication Services,proprietorship,Konkan Mercantile Bank,KMBL0670938,2517105747394,saicommunicati9543@konkanpay,2020-12-23,2026-09-14
+EXT80107,Shalini Nair,individual,Ganga Gramin Bank,GGBN0660490,288533591678,shalininair8913@gangaupi,2021-07-21,2025-07-26
+EXT42977,Madhuri Tiwari,individual,Konkan Mercantile Bank,KMBL0054601,74247231068,madhuritiwari6042@konkanpay,2017-11-14,2026-07-03
+EXT87530,Neha Verma,individual,Konkan Mercantile Bank,KMBL0337022,7811947134385076,nehaverma4623@konkanpay,2013-09-11,2025-01-09
+EXT74852,Ishita Saxena,individual,Indus Valley Bank,IVBK0049912,520708811830,ishitasaxena4918@ivbupi,2018-12-09,2021-11-02
+EXT11609,Seema Deshpande,individual,Indus Valley Bank,IVBK0650336,001917287570,seemadeshpande2203@ivbupi,2017-08-04,2019-11-12
+EXT89733,Mehta Chemicals,company,Indus Valley Bank,IVBK0755723,16442451063883,,2008-06-05,2022-04-27
+EXT98859,Sayali Nair,individual,Konkan Mercantile Bank,KMBL0763860,70654230003,sayalinair8424@konkanpay,2013-03-02,2016-02-16
+EXT97638,Zoya Joshi,individual,Indus Valley Bank,IVBK0041096,11007272888225,zoyajoshi1902@ivbupi,2019-10-22,2021-11-19
+EXT30958,Pankaj Tiwari,individual,Ganga Gramin Bank,GGBN0929152,751616907329,pankajtiwari5048@gangaupi,2026-05-13,2026-09-12
+EXT94371,Manisha Salunkhe,individual,Konkan Mercantile Bank,KMBL0148401,305428312980,manishasalunkh1755@konkanpay,2010-09-29,2019-06-22
+EXT62604,Madhuri Pandey,individual,Ganga Gramin Bank,GGBN0369874,0816313344258465,madhuripandey6636@gangaupi,2013-01-16,2025-11-28
+EXT39635,Swati Gupta,individual,Indus Valley Bank,IVBK0289392,9280778847459,swatigupta9052@ivbupi,2008-05-27,2022-01-10
+EXT91508,Divya Yadav,individual,Konkan Mercantile Bank,KMBL0064016,46535901552,divyayadav205@konkanpay,2017-10-08,2023-07-30
+EXT76125,Kunal Naik,individual,Konkan Mercantile Bank,KMBL0224142,5391624905271,kunalnaik5701@konkanpay,2011-02-04,2026-07-02
+EXT39729,Suresh Joshi,individual,Indus Valley Bank,IVBK0233038,3356143528734093,sureshjoshi2165@ivbupi,2023-08-29,2025-12-02
+EXT97241,Sagar Stationers,proprietorship,Konkan Mercantile Bank,KMBL0120699,09316521799817,sagarstationer5542@konkanpay,2005-11-22,2026-06-29
+EXT46082,Smita Nair,individual,Konkan Mercantile Bank,KMBL0334553,535068177180711,smitanair3026@konkanpay,2019-05-04,2024-06-18
+EXT78928,Deepa Iyer,individual,Indus Valley Bank,IVBK0143373,7206801510074526,deepaiyer3801@ivbupi,2016-09-27,2019-02-11
+EXT84420,Lotus Auto Components Ltd,company,Konkan Mercantile Bank,KMBL0112664,804355169574,,2018-02-22,2022-09-07
+EXT88524,Bharat Online Services & Co,proprietorship,Konkan Mercantile Bank,KMBL0141839,385669771832,bharatonlinese1494@konkanpay,2026-07-24,2026-07-24
+EXT97662,Shree Balaji Traders,proprietorship,Ganga Gramin Bank,GGBN0470373,79325145047,shreebalajitra3408@gangaupi,2015-09-28,2021-07-28
+EXT25352,Sana Gokhale,individual,Indus Valley Bank,IVBK0575384,3289171503544717,sanagokhale3593@ivbupi,2015-08-14,2020-04-18
+EXT96766,Vijay Tiwari,individual,Indus Valley Bank,IVBK0919462,6671751066475,vijaytiwari1321@ivbupi,2020-02-03,2026-07-14
+EXT93962,Smita Reddy,individual,Konkan Mercantile Bank,KMBL0431977,681720603904804,smitareddy8774@konkanpay,2018-03-19,2022-04-30
+EXT82164,Maa Bhavani Mobile Point,proprietorship,Konkan Mercantile Bank,KMBL0906970,3286491774324,maabhavanimobi9086@konkanpay,2026-07-02,2026-09-05
+EXT51297,Kunal Kale,individual,Western Ghats Co-operative Bank,WGCB0900446,93306477296,kunalkale3887@wgcbupi,2017-09-20,2022-12-24
+EXT48594,Harleen Thakur,individual,Western Ghats Co-operative Bank,WGCB0241082,8712303001660,harleenthakur8964@wgcbupi,2022-03-05,2024-12-10
+EXT96585,Asha Das,individual,Western Ghats Co-operative Bank,WGCB0240708,66748669199,ashadas1292@wgcbupi,2007-05-04,2026-07-03
+EXT75903,Rohini Naik,individual,Western Ghats Co-operative Bank,WGCB0677992,181129528686,rohininaik7802@wgcbupi,2020-01-13,2024-06-19
+EXT46189,Bhavana Wagh,individual,Ganga Gramin Bank,GGBN0122667,391639125858,bhavanawagh7139@gangaupi,2011-09-10,2019-04-25
+EXT84045,Mahesh Kadam,individual,Indus Valley Bank,IVBK0380892,0017447420627,maheshkadam7876@ivbupi,2020-01-08,2025-04-12
+EXT37179,Rupali Sharma,individual,Indus Valley Bank,IVBK0792477,6665425612098,rupalisharma3339@ivbupi,2018-10-09,2022-11-17
+EXT87818,Unity Software Services LLP,company,Indus Valley Bank,IVBK0973159,67705705970368,,1990-10-16,2017-03-30
+EXT42151,Ajay Mane,individual,Ganga Gramin Bank,GGBN0644209,987575192335,ajaymane8461@gangaupi,2022-07-28,2023-05-04
+EXT61687,Jeevan Suraksha Life Insurance Ltd,company,Konkan Mercantile Bank,KMBL0086089,0387604300890,,2004-08-25,2025-04-07
+EXT86166,Meena Sheikh,individual,Konkan Mercantile Bank,KMBL0873060,17880731210,meenasheikh4818@konkanpay,2021-02-27,2026-07-06
+EXT24951,R K Fashions,proprietorship,Narmada Small Finance Bank,NSFB0027478,584035325150512,rkfashions7096@narmadapay,2026-06-18,2026-09-12
+EXT32283,Mahalaxmi Textiles,proprietorship,Narmada Small Finance Bank,NSFB0949151,7190282950344,mahalaxmitexti4574@narmadapay,2009-05-31,2026-06-28
+EXT58347,Nisha Rao,individual,Ganga Gramin Bank,GGBN0212496,213602547933,nisharao4062@gangaupi,2016-04-16,2021-03-24
+EXT51396,Satpura Hospitals Pvt Ltd,company,Indus Valley Bank,IVBK0569952,96369600707487,,1996-04-03,2026-06-30
+EXT41318,Deepa Bhosale,individual,Western Ghats Co-operative Bank,WGCB0449596,848130197862514,deepabhosale991@wgcbupi,2014-05-02,2021-12-09
+EXT35161,Vandana Kadam,individual,Indus Valley Bank,IVBK0595512,90462544632,vandanakadam5374@ivbupi,2022-04-28,2024-12-28
+EXT62321,Ishita Thakur,individual,Ganga Gramin Bank,GGBN0672824,516916148351,ishitathakur227@gangaupi,2018-08-07,2019-12-10
+EXT39505,Priya Deshpande,individual,Konkan Mercantile Bank,KMBL0258689,323124777059,priyadeshpande6902@konkanpay,2020-11-28,2026-07-07
+EXT42854,Manisha Dixit,individual,Narmada Small Finance Bank,NSFB0902719,2532071225537309,manishadixit2732@narmadapay,2024-11-27,2026-07-26
+EXT35147,Manisha Agarwal,individual,Konkan Mercantile Bank,KMBL0490234,2314626474712668,manishaagarwal1761@konkanpay,2013-04-27,2026-07-05
+EXT24652,Swapnil Gaikwad,individual,Konkan Mercantile Bank,KMBL0676120,964423689619948,swapnilgaikwad9387@konkanpay,2019-10-28,2026-07-04
+EXT64858,Nandini Das,individual,Indus Valley Bank,IVBK0611839,1231429988958742,nandinidas664@ivbupi,2020-06-17,2024-12-23
+EXT23812,Suvidha Fintech Solutions Pvt Ltd,company,Ganga Gramin Bank,GGBN0011684,1256909073272676,,2015-03-08,2020-08-05
+EXT44139,Jyoti Desai,individual,Konkan Mercantile Bank,KMBL0819158,469236181110,jyotidesai5611@konkanpay,2017-05-06,2018-02-17
+EXT89710,Mrunal Nair,individual,Indus Valley Bank,IVBK0812876,08871616248,mrunalnair8981@ivbupi,2019-10-27,2024-02-15
+EXT27641,Vandana Tiwari,individual,Indus Valley Bank,IVBK0606627,62015068149867,vandanatiwari7112@ivbupi,2022-03-02,2026-07-25
+EXT27400,Vaishali Pandey,individual,Narmada Small Finance Bank,NSFB0661135,296413633506840,vaishalipandey606@narmadapay,2020-11-23,2023-06-28
+EXT17136,Seema Wagh,individual,Western Ghats Co-operative Bank,WGCB0036904,3638029819118,seemawagh1096@wgcbupi,2019-07-31,2026-07-07
+EXT40086,Sneha Pawar,individual,Western Ghats Co-operative Bank,WGCB0178485,977815046346,snehapawar2412@wgcbupi,2015-07-05,2026-06-12
+EXT37820,Anjali Deshpande,individual,Western Ghats Co-operative Bank,WGCB0298478,80025936250,anjalideshpand3394@wgcbupi,2011-11-24,2024-02-19
+EXT91386,Asha Sharma,individual,Konkan Mercantile Bank,KMBL0789701,728918217147629,ashasharma9090@konkanpay,2016-03-27,2016-05-13
+EXT27675,Mrunal Kale,individual,Indus Valley Bank,IVBK0838014,561760264029,mrunalkale1818@ivbupi,2016-04-21,2026-06-14
+EXT80165,Vandana Shah,individual,Western Ghats Co-operative Bank,WGCB0762641,84970085574144,vandanashah7494@wgcbupi,2020-01-23,2023-12-10
+EXT63634,Sunita Shinde,individual,Indus Valley Bank,IVBK0817715,371807794816,sunitashinde4787@ivbupi,2013-09-26,2026-07-07
+EXT79983,Manisha Yadav,individual,Konkan Mercantile Bank,KMBL0976473,3037427675857265,manishayadav9040@konkanpay,2012-02-09,2026-07-02
+EXT60659,Anthony Mehta,individual,Indus Valley Bank,IVBK0533970,81305977478,anthonymehta2842@ivbupi,2010-06-20,2025-09-22
+EXT42731,Neha Shinde,individual,Indus Valley Bank,IVBK0456252,7123776900210,nehashinde5522@ivbupi,2022-04-02,2026-07-04
+EXT65822,Radha Choudhary,individual,Western Ghats Co-operative Bank,WGCB0601382,02697297353,radhachoudhary8673@wgcbupi,2010-12-15,2011-08-27
+EXT46773,Deepa Khan,individual,Ganga Gramin Bank,GGBN0379737,03013250334,deepakhan6255@gangaupi,2019-07-07,2024-11-26
+EXT20719,Suvidha Constructions Pvt Ltd,company,Indus Valley Bank,IVBK0267068,771779180148794,,1998-11-24,2017-07-08
+EXT19459,Pooja Gupta,individual,Konkan Mercantile Bank,KMBL0662785,29111774547506,poojagupta8461@konkanpay,2011-11-23,2014-05-17
+EXT86646,Rohit Apte,individual,Narmada Small Finance Bank,NSFB0433129,7364840135181,rohitapte3901@narmadapay,2008-05-11,2026-06-28
+EXT12162,Anita Rao,individual,Indus Valley Bank,IVBK0380005,04710072660295,anitarao4411@ivbupi,2019-01-11,2026-07-10
+EXT58371,Anil Naidu,individual,Narmada Small Finance Bank,NSFB0676845,5540095500959668,anilnaidu8375@narmadapay,2012-11-22,2018-11-01
+EXT87270,Omkar Wagh,individual,Ganga Gramin Bank,GGBN0243595,036990716787,omkarwagh621@gangaupi,2026-02-26,2026-07-04
+EXT81601,Pragati Logistics Pvt Ltd,company,Konkan Mercantile Bank,KMBL0840952,89009092752392,,2018-10-15,2023-06-30
+EXT54807,Revati Kale,individual,Konkan Mercantile Bank,KMBL0763851,515047264959,revatikale3907@konkanpay,2016-03-29,2020-03-03
+EXT25385,Ganesh Apte,individual,Western Ghats Co-operative Bank,WGCB0412130,365686424558,ganeshapte4162@wgcbupi,2017-01-05,2020-08-07
+EXT60772,Abhijit Bhatt,individual,Indus Valley Bank,IVBK0563599,789366687884105,abhijitbhatt2215@ivbupi,2011-02-02,2022-07-09
+EXT43112,Indrayani Auto Components Ltd,company,Western Ghats Co-operative Bank,WGCB0523074,94939178346037,,1990-07-29,2020-07-25
+EXT31702,Aniket Kadam,individual,Indus Valley Bank,IVBK0289866,7213697560969,aniketkadam2390@ivbupi,2013-09-16,2023-05-12
+EXT27016,Harish Apte,individual,Western Ghats Co-operative Bank,WGCB0271034,85579470498,harishapte440@wgcbupi,2020-11-19,2026-07-05
+EXT36228,Sayali Joshi,individual,Indus Valley Bank,IVBK0535940,770388131262,sayalijoshi8043@ivbupi,2011-06-07,2026-07-07
+EXT51215,Usha Mehta,individual,Indus Valley Bank,IVBK0917191,226669524930,ushamehta4177@ivbupi,2012-08-07,2022-07-14
+EXT21899,Srinivas Dixit,individual,Ganga Gramin Bank,GGBN0624560,9489637669524877,srinivasdixit6458@gangaupi,2015-12-02,2026-07-04
+EXT44834,Godavari Engg Works Ltd,company,Indus Valley Bank,IVBK0418183,2782348102747895,,2016-07-23,2019-04-17
+EXT13593,Geeta Wagh,individual,Ganga Gramin Bank,GGBN0336323,2756933084228,geetawagh7967@gangaupi,2023-05-10,2023-10-19
+EXT39604,Kavita Naidu,individual,Konkan Mercantile Bank,KMBL0217566,8222556591723596,kavitanaidu8567@konkanpay,2013-03-01,2025-04-18
+EXT81449,Nisha Nair,individual,Western Ghats Co-operative Bank,WGCB0577316,58660333619,nishanair9774@wgcbupi,2019-03-06,2021-09-01
+EXT50196,Rupali Deshpande,individual,Indus Valley Bank,IVBK0026517,59390836658,rupalideshpand3318@ivbupi,2012-02-27,2021-01-06
+EXT84893,Girish Apte,individual,Indus Valley Bank,IVBK0074934,46342282852238,girishapte6905@ivbupi,2014-06-15,2023-11-19
+EXT72367,Tejaswini Desai Classes,individual,Narmada Small Finance Bank,NSFB0094432,13286307304240,tejaswinidesai6296@narmadapay,2022-03-09,2026-07-02
+EXT60430,Usha Joshi,individual,Indus Valley Bank,IVBK0046225,88705968408,ushajoshi7350@ivbupi,2007-11-28,2026-07-02
+EXT12577,Revati Shinde,individual,Ganga Gramin Bank,GGBN0193193,768901285380,revatishinde790@gangaupi,2022-01-29,2022-05-18
+EXT57445,Panchganga Textiles Pvt Ltd,company,Narmada Small Finance Bank,NSFB0168667,29152375161690,,2016-08-03,2021-05-27
+EXT16511,Mahesh Patil Classes,individual,Western Ghats Co-operative Bank,WGCB0634866,662080947073,maheshpatilcla9036@wgcbupi,2017-01-05,2023-03-02
+EXT36028,Meena Naik,individual,Western Ghats Co-operative Bank,WGCB0116865,4259688527717816,meenanaik2318@wgcbupi,2017-11-04,2021-07-06
+EXT82908,Swapnil Verma,individual,Western Ghats Co-operative Bank,WGCB0602268,651498850804007,swapnilverma6311@wgcbupi,2018-12-10,2025-10-31
+EXT60376,Unity Foods Pvt Ltd,company,Western Ghats Co-operative Bank,WGCB0535943,69516643266833,,2001-03-25,2003-09-07
+EXT52073,Shiv Shakti Enterprises,proprietorship,Konkan Mercantile Bank,KMBL0609266,080947073860,shivshaktiente1558@konkanpay,2026-06-23,2026-09-12
+EXT27677,Gurpreet Mishra,individual,Indus Valley Bank,IVBK0622018,34172594125,gurpreetmishra5084@ivbupi,2015-04-12,2017-08-08
+EXT17442,Swapnil Yadav,individual,Konkan Mercantile Bank,KMBL0443742,8927356002824,swapnilyadav741@konkanpay,2014-06-28,2025-06-22
